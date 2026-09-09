@@ -155,7 +155,10 @@ body {
 }
 
 .waze-btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   width: 100%;
   text-align: center;
   background: #33ccff;
@@ -168,6 +171,12 @@ body {
 
 .waze-btn:hover {
   background: #1ab8ec;
+}
+
+.waze-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .toggle-btn {
