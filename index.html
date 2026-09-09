@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מ.ס. אשדוד - ילדים ב' | לוח משחקים</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <img src="assets/logo.svg" alt="סמל מ.ס. אשדוד" class="team-logo">
+      <div class="header-text">
+        <h1>מ.ס. אשדוד</h1>
+        <p class="subtitle">ילדים ב' &middot; לוח משחקים</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title">משחקים קרובים</h2>
+      <div id="upcoming-matches" class="matches-grid"></div>
+    </section>
+
+    <section>
+      <button id="toggle-past" class="toggle-btn">הצג משחקים קודמים</button>
+      <div id="past-matches" class="matches-grid hidden"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>מ.ס. אשדוד - ילדים ב'</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

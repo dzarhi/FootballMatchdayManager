@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ניהול לוח משחקים - מ.ס. אשדוד ילדים ב'</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <img src="assets/logo.svg" alt="סמל מ.ס. אשדוד" class="team-logo">
+      <div class="header-text">
+        <h1>ניהול לוח משחקים</h1>
+        <p class="subtitle">מ.ס. אשדוד &middot; ילדים ב'</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container admin-container">
+    <p class="admin-note">
+      עמוד זה מיועד לעריכה מקומית בדפדפן בלבד (אין שרת). השינויים נשמרים כטיוטה בדפדפן שלך.
+      כדי שהעדכון יופיע לכל הצופים באתר החי, לחצו "הורד קובץ מעודכן", החליפו בו את הקובץ
+      <code>data/matches.json</code> בפרויקט, ובצעו commit + push ל-GitHub.
+      אין לשתף את הקישור לעמוד הזה בפומבי - הוא לא מוגן ולא מיועד לציבור הרחב.
+    </p>
+
+    <div class="admin-toolbar">
+      <button id="add-row-btn" class="btn">+ הוסף משחק</button>
+      <button id="load-current-btn" class="btn">טען קובץ נוכחי מהאתר</button>
+      <label class="btn file-btn">
+        ייבוא קובץ JSON
+        <input type="file" id="import-file" accept="application/json" hidden>
+      </label>
+      <button id="reset-btn" class="btn btn-secondary">אפס טיוטה</button>
+      <button id="download-btn" class="btn btn-primary">הורד קובץ מעודכן (JSON)</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="matches-table" class="admin-table">
+        <thead>
+          <tr>
+            <th>יריבה</th>
+            <th>בית/חוץ</th>
+            <th>תאריך</th>
+            <th>שעה</th>
+            <th>מגרש</th>
+            <th>כתובת (לניווט בוויז)</th>
+            <th>הערות</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="matches-tbody"></tbody>
+      </table>
+    </div>
+
+    <p id="status-msg" class="status-msg" aria-live="polite"></p>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

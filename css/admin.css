@@ -1,0 +1,79 @@
+.admin-container {
+  max-width: 100%;
+}
+
+.admin-note {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: #7a5c00;
+}
+
+.admin-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.btn {
+  background: var(--dark);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn:hover { opacity: 0.9; }
+
+.btn-primary { background: var(--primary); }
+.btn-secondary { background: var(--muted); }
+.btn-danger { background: #d32f2f; padding: 6px 12px; font-size: 0.85rem; }
+
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.admin-table th, .admin-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.admin-table input, .admin-table select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.status-msg {
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  min-height: 1.2em;
+}
+
+.status-msg.error { color: #d32f2f; }
