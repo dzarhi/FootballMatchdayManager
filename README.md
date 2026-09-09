@@ -84,9 +84,8 @@ python -m http.server 8000
 
 ## סמל הקבוצה (לוגו)
 
-הקובץ [assets/logo.svg](assets/logo.svg) הוא סמל **גנרי לדוגמה** שנוצר במיוחד עבור הפרויקט
-(לא הסמל הרשמי של המועדון, מטעמי זכויות יוצרים). כדי להשתמש בסמל הרשמי:
+הקובץ [assets/logo.png](assets/logo.png) הוא סמל הקבוצה המוצג באתר. כדי להחליף אותו בסמל אחר:
 
-1. שימו קובץ תמונה (PNG/SVG) של הסמל הרשמי בתיקיית `assets/`, לדוגמה `assets/logo.png`.
-2. עדכנו את שורת ה-`<img src="assets/logo.svg" ...>` בקבצי [index.html](index.html) ו-
+1. שימו קובץ תמונה (PNG/SVG) בתיקיית `assets/`, לדוגמה `assets/logo.png`.
+2. עדכנו את שורת ה-`<img src="assets/logo.png" ...>` בקבצי [index.html](index.html) ו-
    [admin.html](admin.html) כך שתצביע לקובץ החדש.
