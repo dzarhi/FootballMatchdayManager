@@ -46,6 +46,7 @@ function createMatchCard(m) {
     <div class="match-body">
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       <div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>
+      ${isPast(m.date) && m.result ? `<div class="match-row result"><span class="icon">⚽</span>תוצאה: ${escapeHtml(m.result)}</div>` : ''}
       ${m.notes ? `<div class="match-row notes">${escapeHtml(m.notes)}</div>` : ''}
     </div>
     <div class="match-footer">

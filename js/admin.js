@@ -70,6 +70,7 @@ function emptyMatch() {
     homeAway: 'home',
     date: '',
     time: '',
+    result: '',
     venueName: '',
     address: '',
     notes: ''
@@ -94,6 +95,7 @@ function createRow(m, idx) {
     </td>
     <td><input type="date" data-field="date" value="${attr(m.date)}"></td>
     <td><input type="time" data-field="time" value="${attr(m.time)}"></td>
+    <td><input type="text" data-field="result" value="${attr(m.result)}" placeholder="לדוגמה 3-1"></td>
     <td><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
     <td><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
     <td><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>

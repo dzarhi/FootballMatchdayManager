@@ -150,6 +150,11 @@ body {
   font-style: italic;
 }
 
+.match-row.result {
+  font-weight: 700;
+  color: var(--primary);
+}
+
 .match-footer {
   margin-top: auto;
 }
