@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
-  const activeTypes = new Set(Array.from(filterChips).map(c => c.dataset.type));
+  const activeTypes = new Set();
 
   pastToggle.addEventListener('click', () => {
     const hidden = pastEl.classList.toggle('hidden');
@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   let matches = [];
   const renderFiltered = () => {
-    const visible = matches.filter(m => activeTypes.has(m.matchType || 'league'));
+    const visible = activeTypes.size === 0
+      ? matches
+      : matches.filter(m => activeTypes.has(m.matchType || 'league'));
     const upcoming = visible.filter(m => !isPast(m.date));
     const past = visible.filter(m => isPast(m.date)).reverse();
 
