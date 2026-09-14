@@ -3,7 +3,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
-  const activeTypes = new Set();
+  const FILTER_STORAGE_KEY = 'matchTypeFilter';
+
+  let savedTypes = [];
+  try {
+    savedTypes = JSON.parse(localStorage.getItem(FILTER_STORAGE_KEY)) || [];
+  } catch {
+    savedTypes = [];
+  }
+  const activeTypes = new Set(savedTypes);
 
   pastToggle.addEventListener('click', () => {
     const hidden = pastEl.classList.toggle('hidden');
@@ -23,6 +31,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   filterChips.forEach(chip => {
+    if (activeTypes.has(chip.dataset.type)) {
+      chip.classList.add('active');
+    }
     chip.addEventListener('click', () => {
       const type = chip.dataset.type;
       if (activeTypes.has(type)) {
@@ -31,6 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         activeTypes.add(type);
       }
       chip.classList.toggle('active');
+      localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(Array.from(activeTypes)));
       renderFiltered();
     });
   });
