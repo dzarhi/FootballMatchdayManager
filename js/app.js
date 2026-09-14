@@ -5,38 +5,38 @@ document.addEventListener('DOMContentLoaded', async () => {
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
   const activeTypes = new Set(Array.from(filterChips).map(c => c.dataset.type));
 
+  pastToggle.addEventListener('click', () => {
+    const hidden = pastEl.classList.toggle('hidden');
+    pastToggle.textContent = hidden ? 'הצג משחקים קודמים' : 'הסתר משחקים קודמים';
+  });
+
+  let matches = [];
+  const renderFiltered = () => {
+    const visible = matches.filter(m => activeTypes.has(m.matchType || 'league'));
+    const upcoming = visible.filter(m => !isPast(m.date));
+    const past = visible.filter(m => isPast(m.date)).reverse();
+
+    renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
+    renderMatches(pastEl, past, 'אין משחקים קודמים.');
+  };
+
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const type = chip.dataset.type;
+      if (activeTypes.has(type)) {
+        activeTypes.delete(type);
+      } else {
+        activeTypes.add(type);
+      }
+      chip.classList.toggle('active');
+      renderFiltered();
+    });
+  });
+
   try {
-    const matches = await loadMatches();
+    matches = await loadMatches();
     matches.sort((a, b) => a.date.localeCompare(b.date) || (a.time || '').localeCompare(b.time || ''));
-
-    const renderFiltered = () => {
-      const visible = matches.filter(m => activeTypes.has(m.matchType || 'league'));
-      const upcoming = visible.filter(m => !isPast(m.date));
-      const past = visible.filter(m => isPast(m.date)).reverse();
-
-      renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
-      renderMatches(pastEl, past, 'אין משחקים קודמים.');
-    };
-
     renderFiltered();
-
-    filterChips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        const type = chip.dataset.type;
-        if (activeTypes.has(type)) {
-          activeTypes.delete(type);
-        } else {
-          activeTypes.add(type);
-        }
-        chip.classList.toggle('active');
-        renderFiltered();
-      });
-    });
-
-    pastToggle.addEventListener('click', () => {
-      const hidden = pastEl.classList.toggle('hidden');
-      pastToggle.textContent = hidden ? 'הצג משחקים קודמים' : 'הסתר משחקים קודמים';
-    });
   } catch (err) {
     upcomingEl.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
   }
