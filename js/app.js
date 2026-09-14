@@ -2,16 +2,36 @@ document.addEventListener('DOMContentLoaded', async () => {
   const upcomingEl = document.getElementById('upcoming-matches');
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
+  const filterChips = document.querySelectorAll('#type-filter .filter-chip');
+  const activeTypes = new Set(Array.from(filterChips).map(c => c.dataset.type));
 
   try {
     const matches = await loadMatches();
     matches.sort((a, b) => a.date.localeCompare(b.date) || (a.time || '').localeCompare(b.time || ''));
 
-    const upcoming = matches.filter(m => !isPast(m.date));
-    const past = matches.filter(m => isPast(m.date)).reverse();
+    const renderFiltered = () => {
+      const visible = matches.filter(m => activeTypes.has(m.matchType || 'league'));
+      const upcoming = visible.filter(m => !isPast(m.date));
+      const past = visible.filter(m => isPast(m.date)).reverse();
 
-    renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
-    renderMatches(pastEl, past, 'אין משחקים קודמים.');
+      renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
+      renderMatches(pastEl, past, 'אין משחקים קודמים.');
+    };
+
+    renderFiltered();
+
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const type = chip.dataset.type;
+        if (activeTypes.has(type)) {
+          activeTypes.delete(type);
+        } else {
+          activeTypes.add(type);
+        }
+        chip.classList.toggle('active');
+        renderFiltered();
+      });
+    });
 
     pastToggle.addEventListener('click', () => {
       const hidden = pastEl.classList.toggle('hidden');
