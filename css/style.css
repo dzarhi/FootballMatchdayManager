@@ -134,6 +134,25 @@ body {
   color: var(--primary);
 }
 
+.badge-type {
+  align-self: flex-start;
+}
+
+.badge-league {
+  background: #eef1fb;
+  color: #35408e;
+}
+
+.badge-cup {
+  background: #fff4e0;
+  color: #915c00;
+}
+
+.badge-training {
+  background: #eafaf0;
+  color: #1e7d43;
+}
+
 .match-body {
   display: flex;
   flex-direction: column;

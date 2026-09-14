@@ -38,12 +38,16 @@ function createMatchCard(m) {
   const badge = m.homeAway === 'home' ? 'בית' : 'חוץ';
   const badgeClass = m.homeAway === 'home' ? 'badge-home' : 'badge-away';
 
+  const typeLabels = { league: 'ליגה', cup: 'גביע', training: 'אימון' };
+  const typeLabel = typeLabels[m.matchType] || typeLabels.league;
+
   card.innerHTML = `
     <div class="match-header">
       <span class="opponent">${escapeHtml(m.opponent)}</span>
       <span class="badge ${badgeClass}">${badge}</span>
     </div>
     <div class="match-body">
+      <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       <div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>
       ${isPast(m.date) && m.result ? `<div class="match-row result"><span class="icon">⚽</span>תוצאה: ${escapeHtml(m.result)}</div>` : ''}

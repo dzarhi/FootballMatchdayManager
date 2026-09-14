@@ -68,6 +68,7 @@ function emptyMatch() {
     id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random())),
     opponent: '',
     homeAway: 'home',
+    matchType: 'league',
     date: '',
     time: '',
     result: '',
@@ -87,6 +88,13 @@ function createRow(m, idx) {
   const tr = document.createElement('tr');
   tr.innerHTML = `
     <td><input type="text" data-field="opponent" value="${attr(m.opponent)}" placeholder="שם היריבה"></td>
+    <td>
+      <select data-field="matchType">
+        <option value="league" ${m.matchType === 'league' ? 'selected' : ''}>ליגה</option>
+        <option value="cup" ${m.matchType === 'cup' ? 'selected' : ''}>גביע</option>
+        <option value="training" ${m.matchType === 'training' ? 'selected' : ''}>אימון</option>
+      </select>
+    </td>
     <td>
       <select data-field="homeAway">
         <option value="home" ${m.homeAway === 'home' ? 'selected' : ''}>בית</option>

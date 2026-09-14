@@ -56,6 +56,7 @@ python -m http.server 8000
   "id": "מזהה ייחודי כלשהו",
   "opponent": "שם הקבוצה היריבה",
   "homeAway": "home או away",
+  "matchType": "league / cup / training",
   "date": "YYYY-MM-DD",
   "time": "HH:MM",
   "result": "תוצאה סופית, לדוגמה 3-1 (אופציונלי, למשחקים שכבר היו)",
