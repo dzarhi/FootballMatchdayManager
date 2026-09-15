@@ -1,5 +1,17 @@
 [
   {
+    "id": "0a1b1110-5d71-45e9-a141-49039d329f74",
+    "opponent": "מכבי פתח תקווה דרום",
+    "homeAway": "home",
+    "matchType": "training",
+    "date": "2026-09-05",
+    "time": "08:00",
+    "result": "3:3",
+    "venueName": "סינטטי אשדוד",
+    "address": "בית ואקיל, אשדוד",
+    "notes": ""
+  },
+  {
     "id": "a3c20524-22f0-4767-9556-5e9c0cd10ccb",
     "opponent": "הפועל ת\"א",
     "homeAway": "home",
