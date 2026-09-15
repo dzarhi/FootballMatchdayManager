@@ -87,6 +87,8 @@ function createMatchCard(m) {
   const typeLabels = { league: 'ליגה', cup: 'גביע', training: 'אימון' };
   const typeLabel = typeLabels[m.matchType] || typeLabels.league;
 
+  const homeAwayLabel = m.homeAway === 'home' ? 'בית' : 'חוץ';
+
   const hasResult = isPast(m.date) && m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
     && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
 
@@ -101,7 +103,10 @@ function createMatchCard(m) {
   }
 
   card.innerHTML = `
-    <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
+    <div class="badge-row">
+      <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
+      <span class="badge badge-home-away badge-${m.homeAway}">${homeAwayLabel}</span>
+    </div>
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(homeTeamName)}</span>

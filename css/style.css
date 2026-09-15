@@ -187,8 +187,23 @@ body {
   font-weight: 600;
 }
 
+.badge-row {
+  display: flex;
+  gap: 6px;
+}
+
 .badge-type {
   align-self: flex-start;
+}
+
+.badge-home-away.badge-home {
+  background: #e5f6ec;
+  color: #1e7d43;
+}
+
+.badge-home-away.badge-away {
+  background: #fdeaea;
+  color: var(--primary);
 }
 
 .badge-league {
