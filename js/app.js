@@ -90,6 +90,7 @@ function createMatchCard(m) {
   }
 
   card.innerHTML = `
+    <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(homeTeamName)}</span>
@@ -102,7 +103,6 @@ function createMatchCard(m) {
       ${outcomeBadge}
     </div>
     <div class="match-body">
-      <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       <div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>
       ${m.notes ? `<div class="match-row notes">${escapeHtml(m.notes)}</div>` : ''}
