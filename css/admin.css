@@ -31,6 +31,11 @@
 
 .btn:hover { opacity: 0.9; }
 
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .btn-primary { background: var(--primary); }
 .btn-secondary { background: var(--muted); }
 .btn-danger { background: #d32f2f; padding: 6px 12px; font-size: 0.85rem; }
@@ -77,3 +82,81 @@
 }
 
 .status-msg.error { color: #d32f2f; }
+
+.hidden { display: none; }
+
+.github-connect {
+  background: var(--card-bg);
+  border: 1px solid #e0e0e8;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.gh-help {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+
+.gh-help a { color: var(--primary); }
+
+.gh-token-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gh-token-row input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.gh-status {
+  font-weight: 600;
+  color: #1e7d43;
+  margin-left: 12px;
+}
+
+@media (max-width: 720px) {
+  .admin-table {
+    min-width: 0;
+  }
+
+  .admin-table thead {
+    display: none;
+  }
+
+  .admin-table, .admin-table tbody, .admin-table tr, .admin-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .admin-table tr {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px;
+  }
+
+  .admin-table td {
+    border-bottom: none;
+    padding: 6px 2px;
+  }
+
+  .admin-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+}
+

@@ -21,10 +21,30 @@
   <main class="container admin-container">
     <p class="admin-note">
       עמוד זה מיועד לעריכה מקומית בדפדפן בלבד (אין שרת). השינויים נשמרים כטיוטה בדפדפן שלך.
-      כדי שהעדכון יופיע לכל הצופים באתר החי, לחצו "הורד קובץ מעודכן", החליפו בו את הקובץ
-      <code>data/matches.json</code> בפרויקט, ובצעו commit + push ל-GitHub.
+      כדי שהעדכון יופיע לכל הצופים באתר החי - חברו את הטוקן למטה ולחצו "שמור ישירות ל-GitHub",
+      או לחלופין לחצו "הורד קובץ מעודכן", החליפו בו את הקובץ <code>data/matches.json</code>
+      בפרויקט, ובצעו commit + push ל-GitHub.
       אין לשתף את הקישור לעמוד הזה בפומבי - הוא לא מוגן ולא מיועד לציבור הרחב.
     </p>
+
+    <div class="github-connect" id="github-connect">
+      <div id="gh-disconnected-view">
+        <p class="gh-help">
+          כדי לשמור ישירות מהטלפון בלי git, צרו
+          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Personal Access Token מוגבל (fine-grained)</a>
+          המוגבל רק ל-repo <code>FootballMatchdayManager</code> עם הרשאת <strong>Contents: Read and write</strong> בלבד, והדביקו אותו כאן.
+          הטוקן נשמר רק בדפדפן הזה ולא נשלח לשום מקום חוץ מ-GitHub.
+        </p>
+        <div class="gh-token-row">
+          <input type="password" id="gh-token-input" placeholder="הדביקו כאן את הטוקן (ghp_... / github_pat_...)">
+          <button id="gh-token-save" class="btn btn-primary">חבר טוקן</button>
+        </div>
+      </div>
+      <div id="gh-connected-view" class="hidden">
+        <span class="gh-status">✅ מחובר ל-GitHub לשמירה ישירה</span>
+        <button id="gh-token-clear" class="btn btn-secondary">התנתק</button>
+      </div>
+    </div>
 
     <div class="admin-toolbar">
       <button id="add-row-btn" class="btn">+ הוסף משחק</button>
@@ -34,7 +54,8 @@
         <input type="file" id="import-file" accept="application/json" hidden>
       </label>
       <button id="reset-btn" class="btn btn-secondary">אפס טיוטה</button>
-      <button id="download-btn" class="btn btn-primary">הורד קובץ מעודכן (JSON)</button>
+      <button id="save-github-btn" class="btn btn-primary" disabled>שמור ישירות ל-GitHub</button>
+      <button id="download-btn" class="btn">הורד קובץ מעודכן (JSON)</button>
     </div>
 
     <div class="table-wrapper">
@@ -59,6 +80,7 @@
 
     <p id="status-msg" class="status-msg" aria-live="polite"></p>
   </main>
+
 
   <script src="js/utils.js"></script>
   <script src="js/admin.js"></script>

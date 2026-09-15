@@ -1,6 +1,11 @@
-// עמוד ניהול: עריכה מקומית בדפדפן (localStorage), ייצוא/ייבוא JSON להעלאה ל-GitHub
+// עמוד ניהול: עריכה מקומית בדפדפן (localStorage), ייצוא/ייבוא JSON, ושמירה ישירה ל-GitHub דרך ה-API
 
 const DRAFT_KEY = 'fmm_draft_matches';
+const TOKEN_KEY = 'fmm_github_token';
+const GITHUB_OWNER = 'dzarhi';
+const GITHUB_REPO = 'FootballMatchdayManager';
+const GITHUB_BRANCH = 'main';
+const GITHUB_PATH = 'data/matches.json';
 let matches = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -20,6 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
   render();
+  updateGithubUI();
 
   document.getElementById('add-row-btn').addEventListener('click', () => {
     matches.push(emptyMatch());
@@ -45,6 +51,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   document.getElementById('download-btn').addEventListener('click', downloadJson);
+  document.getElementById('save-github-btn').addEventListener('click', saveToGithub);
+
+  document.getElementById('gh-token-save').addEventListener('click', () => {
+    const input = document.getElementById('gh-token-input');
+    const token = input.value.trim();
+    if (!token) return;
+    localStorage.setItem(TOKEN_KEY, token);
+    input.value = '';
+    updateGithubUI();
+    setStatus('הטוקן חובר ונשמר בדפדפן הזה בלבד.');
+  });
+
+  document.getElementById('gh-token-clear').addEventListener('click', () => {
+    if (!confirm('להתנתק ולמחוק את הטוקן השמור בדפדפן?')) return;
+    localStorage.removeItem(TOKEN_KEY);
+    updateGithubUI();
+  });
 
   document.getElementById('import-file').addEventListener('change', async (e) => {
     const file = e.target.files[0];
@@ -62,6 +85,74 @@ document.addEventListener('DOMContentLoaded', async () => {
     e.target.value = '';
   });
 });
+
+function updateGithubUI() {
+  const connected = !!localStorage.getItem(TOKEN_KEY);
+  document.getElementById('gh-disconnected-view').classList.toggle('hidden', connected);
+  document.getElementById('gh-connected-view').classList.toggle('hidden', !connected);
+  document.getElementById('save-github-btn').disabled = !connected;
+}
+
+function hasInvalidMatch() {
+  return matches.some(m => !m.opponent || !m.date || !m.venueName || !m.address);
+}
+
+function sortedMatchesJson() {
+  const sorted = [...matches].sort((a, b) => a.date.localeCompare(b.date));
+  return JSON.stringify(sorted, null, 2);
+}
+
+function base64EncodeUnicode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  bytes.forEach(b => { binary += String.fromCharCode(b); });
+  return btoa(binary);
+}
+
+async function saveToGithub() {
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) {
+    setStatus('חברו קודם טוקן GitHub.', true);
+    return;
+  }
+  if (hasInvalidMatch() && !confirm('יש משחקים עם שדות חסרים (יריבה/תאריך/מגרש/כתובת). לשמור בכל זאת?')) {
+    return;
+  }
+
+  const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${GITHUB_PATH}`;
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github+json'
+  };
+
+  setStatus('שומר ל-GitHub...');
+  try {
+    const getRes = await fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers });
+    if (!getRes.ok) throw new Error('לא ניתן לקרוא את הקובץ מ-GitHub - בדקו שהטוקן תקין ומוגבל ל-repo הנכון.');
+    const current = await getRes.json();
+
+    const putRes = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: { ...headers, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'עדכון משחקים דרך עמוד הניהול',
+        content: base64EncodeUnicode(sortedMatchesJson()),
+        sha: current.sha,
+        branch: GITHUB_BRANCH
+      })
+    });
+
+    if (!putRes.ok) {
+      const err = await putRes.json().catch(() => ({}));
+      throw new Error(err.message || 'שגיאה בשמירה ל-GitHub.');
+    }
+
+    setStatus('נשמר בהצלחה ל-GitHub! השינוי יופיע באתר החי תוך דקה-שתיים.');
+  } catch (err) {
+    setStatus(err.message || 'שגיאה בשמירה ל-GitHub.', true);
+  }
+}
+
 
 function emptyMatch() {
   return {
@@ -87,26 +178,26 @@ function render() {
 function createRow(m, idx) {
   const tr = document.createElement('tr');
   tr.innerHTML = `
-    <td><input type="text" data-field="opponent" value="${attr(m.opponent)}" placeholder="שם היריבה"></td>
-    <td>
+    <td data-label="יריבה"><input type="text" data-field="opponent" value="${attr(m.opponent)}" placeholder="שם היריבה"></td>
+    <td data-label="סוג משחק">
       <select data-field="matchType">
         <option value="league" ${m.matchType === 'league' ? 'selected' : ''}>ליגה</option>
         <option value="cup" ${m.matchType === 'cup' ? 'selected' : ''}>גביע</option>
         <option value="training" ${m.matchType === 'training' ? 'selected' : ''}>אימון</option>
       </select>
     </td>
-    <td>
+    <td data-label="בית/חוץ">
       <select data-field="homeAway">
         <option value="home" ${m.homeAway === 'home' ? 'selected' : ''}>בית</option>
         <option value="away" ${m.homeAway === 'away' ? 'selected' : ''}>חוץ</option>
       </select>
     </td>
-    <td><input type="date" data-field="date" value="${attr(m.date)}"></td>
-    <td><input type="time" data-field="time" value="${attr(m.time)}"></td>
-    <td><input type="text" data-field="result" value="${attr(m.result)}" placeholder="לדוגמה 3-1"></td>
-    <td><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
-    <td><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
-    <td><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>
+    <td data-label="תאריך"><input type="date" data-field="date" value="${attr(m.date)}"></td>
+    <td data-label="שעה"><input type="time" data-field="time" value="${attr(m.time)}"></td>
+    <td data-label="תוצאה"><input type="text" data-field="result" value="${attr(m.result)}" placeholder="לדוגמה 3-1"></td>
+    <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
+    <td data-label="כתובת (לניווט בוויז)"><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
+    <td data-label="הערות"><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>
     <td><button type="button" class="btn btn-danger" data-action="delete">מחק</button></td>
   `;
 
@@ -138,12 +229,10 @@ function saveDraft() {
 }
 
 function downloadJson() {
-  const invalid = matches.some(m => !m.opponent || !m.date || !m.venueName || !m.address);
-  if (invalid && !confirm('יש משחקים עם שדות חסרים (יריבה/תאריך/מגרש/כתובת). להוריד בכל זאת?')) {
+  if (hasInvalidMatch() && !confirm('יש משחקים עם שדות חסרים (יריבה/תאריך/מגרש/כתובת). להוריד בכל זאת?')) {
     return;
   }
-  const sorted = [...matches].sort((a, b) => a.date.localeCompare(b.date));
-  const blob = new Blob([JSON.stringify(sorted, null, 2)], { type: 'application/json' });
+  const blob = new Blob([sortedMatchesJson()], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
