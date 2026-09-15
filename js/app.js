@@ -105,11 +105,11 @@ function createMatchCard(m) {
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(homeTeamName)}</span>
-        ${hasResult ? `<span class="team-score"><span class="score-arrow${homeIsHigher ? '' : ' invisible'}">▶</span>${escapeHtml(String(m.homeGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score"><span class="score-arrow${homeIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(m.homeGoals))}</span>` : ''}
       </div>
       <div class="team-row${m.homeAway === 'away' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(awayTeamName)}</span>
-        ${hasResult ? `<span class="team-score"><span class="score-arrow${awayIsHigher ? '' : ' invisible'}">▶</span>${escapeHtml(String(m.awayGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score"><span class="score-arrow${awayIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(m.awayGoals))}</span>` : ''}
       </div>
     </div>
     <div class="match-body">
