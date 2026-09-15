@@ -128,10 +128,19 @@ body {
 }
 
 .team-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  direction: ltr;
   font-weight: 700;
   font-size: 1.05rem;
   min-width: 1.5em;
   text-align: center;
+}
+
+.score-arrow {
+  color: #1e7d43;
+  font-size: 0.75em;
 }
 
 .outcome-badge {

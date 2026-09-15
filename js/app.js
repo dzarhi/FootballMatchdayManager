@@ -81,12 +81,16 @@ function createMatchCard(m) {
   const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
 
   let outcomeBadge = '';
+  let homeIsHigher = false;
+  let awayIsHigher = false;
   if (hasResult) {
     const ourGoals = Number(m.homeAway === 'home' ? m.homeGoals : m.awayGoals);
     const theirGoals = Number(m.homeAway === 'home' ? m.awayGoals : m.homeGoals);
     const outcome = ourGoals > theirGoals ? 'win' : ourGoals < theirGoals ? 'loss' : 'draw';
     const outcomeLabels = { win: 'ניצחון', loss: 'הפסד', draw: 'תיקו' };
     outcomeBadge = `<span class="badge outcome-badge outcome-${outcome}">${outcomeLabels[outcome]}</span>`;
+    homeIsHigher = Number(m.homeGoals) > Number(m.awayGoals);
+    awayIsHigher = Number(m.awayGoals) > Number(m.homeGoals);
   }
 
   card.innerHTML = `
@@ -94,11 +98,11 @@ function createMatchCard(m) {
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(homeTeamName)}</span>
-        ${hasResult ? `<span class="team-score">${escapeHtml(String(m.homeGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score">${homeIsHigher ? '<span class="score-arrow">▶</span>' : ''}${escapeHtml(String(m.homeGoals))}</span>` : ''}
       </div>
       <div class="team-row${m.homeAway === 'away' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(awayTeamName)}</span>
-        ${hasResult ? `<span class="team-score">${escapeHtml(String(m.awayGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score">${awayIsHigher ? '<span class="score-arrow">▶</span>' : ''}${escapeHtml(String(m.awayGoals))}</span>` : ''}
       </div>
       ${outcomeBadge}
     </div>
