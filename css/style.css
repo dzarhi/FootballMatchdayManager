@@ -196,13 +196,16 @@ body {
   align-self: flex-start;
 }
 
+.badge-home-away {
+  background: transparent;
+  border: 1.5px solid currentColor;
+}
+
 .badge-home-away.badge-home {
-  background: #e5f6ec;
   color: #1e7d43;
 }
 
 .badge-home-away.badge-away {
-  background: #fdeaea;
   color: var(--primary);
 }
 
