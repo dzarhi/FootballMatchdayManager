@@ -143,24 +143,8 @@ body {
   font-size: 0.75em;
 }
 
-.outcome-badge {
-  align-self: flex-start;
-  margin-top: 2px;
-}
-
-.outcome-win {
-  background: #e5f6ec;
-  color: #1e7d43;
-}
-
-.outcome-loss {
-  background: #fdeaea;
-  color: var(--primary);
-}
-
-.outcome-draw {
-  background: #f0f0f0;
-  color: var(--muted);
+.score-arrow.invisible {
+  visibility: hidden;
 }
 
 .badge {
