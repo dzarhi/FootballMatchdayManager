@@ -1,3 +1,5 @@
+const OUR_TEAM_NAME = 'מ.ס. אשדוד';
+
 document.addEventListener('DOMContentLoaded', async () => {
   const upcomingEl = document.getElementById('upcoming-matches');
   const pastEl = document.getElementById('past-matches');
@@ -69,25 +71,30 @@ function createMatchCard(m) {
   const card = document.createElement('article');
   card.className = 'match-card' + (isPast(m.date) ? ' past' : '');
 
-  const badge = m.homeAway === 'home' ? 'בית' : 'חוץ';
-  const badgeClass = m.homeAway === 'home' ? 'badge-home' : 'badge-away';
-
   const typeLabels = { league: 'ליגה', cup: 'גביע', training: 'אימון' };
   const typeLabel = typeLabels[m.matchType] || typeLabels.league;
 
-  const hasResult = m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
+  const hasResult = isPast(m.date) && m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
     && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
+
+  const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
+  const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
 
   card.innerHTML = `
     <div class="match-header">
-      <span class="opponent">${escapeHtml(m.opponent)}</span>
-      <span class="badge ${badgeClass}">${badge}</span>
+      <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
+        <span class="team-name">${escapeHtml(homeTeamName)}</span>
+        ${hasResult ? `<span class="team-score">${escapeHtml(String(m.homeGoals))}</span>` : ''}
+      </div>
+      <div class="team-row${m.homeAway === 'away' ? ' our-team' : ''}">
+        <span class="team-name">${escapeHtml(awayTeamName)}</span>
+        ${hasResult ? `<span class="team-score">${escapeHtml(String(m.awayGoals))}</span>` : ''}
+      </div>
     </div>
     <div class="match-body">
       <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       <div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>
-      ${isPast(m.date) && hasResult ? `<div class="match-row result"><span class="icon">⚽</span>תוצאה: ${escapeHtml(String(m.homeGoals))}:${escapeHtml(String(m.awayGoals))}</div>` : ''}
       ${m.notes ? `<div class="match-row notes">${escapeHtml(m.notes)}</div>` : ''}
     </div>
     <div class="match-footer">

@@ -108,13 +108,30 @@ body {
 
 .match-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
-.opponent {
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.team-row.our-team .team-name {
+  color: var(--primary);
   font-weight: 700;
-  font-size: 1.1rem;
+}
+
+.team-score {
+  font-weight: 700;
+  font-size: 1.05rem;
+  min-width: 1.5em;
+  text-align: center;
 }
 
 .badge {
@@ -122,16 +139,6 @@ body {
   padding: 3px 10px;
   border-radius: 999px;
   font-weight: 600;
-}
-
-.badge-home {
-  background: #e5f6ec;
-  color: #1e7d43;
-}
-
-.badge-away {
-  background: #fdeaea;
-  color: var(--primary);
 }
 
 .badge-type {
@@ -167,11 +174,6 @@ body {
 
 .match-row.notes {
   font-style: italic;
-}
-
-.match-row.result {
-  font-weight: 700;
-  color: var(--primary);
 }
 
 .match-footer {
