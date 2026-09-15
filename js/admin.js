@@ -161,7 +161,6 @@ function emptyMatch() {
     homeAway: 'home',
     matchType: 'league',
     date: '',
-    time: '',
     homeGoals: '',
     awayGoals: '',
     venueName: '',
@@ -215,7 +214,6 @@ function createRow(m, idx) {
       </select>
     </td>
     <td data-label="תאריך"><input type="date" data-field="date" value="${attr(m.date)}"></td>
-    <td data-label="שעה"><input type="time" data-field="time" value="${attr(m.time)}"></td>
     <td data-label="גולי מארחת"><input type="number" min="0" data-field="homeGoals" value="${attr(m.homeGoals)}" placeholder="-"></td>
     <td data-label="גולי אורחת"><input type="number" min="0" data-field="awayGoals" value="${attr(m.awayGoals)}" placeholder="-"></td>
     <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
