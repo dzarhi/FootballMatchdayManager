@@ -198,6 +198,8 @@ function render() {
 
 function createRow(m, idx) {
   const tr = document.createElement('tr');
+  const ashdodGoals = m.homeAway === 'away' ? m.awayGoals : m.homeGoals;
+  const opponentGoals = m.homeAway === 'away' ? m.homeGoals : m.awayGoals;
   tr.innerHTML = `
     <td data-label="יריבה"><input type="text" data-field="opponent" value="${attr(m.opponent)}" placeholder="שם היריבה"></td>
     <td data-label="סוג משחק">
@@ -214,8 +216,8 @@ function createRow(m, idx) {
       </select>
     </td>
     <td data-label="תאריך"><input type="date" data-field="date" value="${attr(m.date)}"></td>
-    <td data-label="גולי מארחת"><input type="number" min="0" data-field="homeGoals" value="${attr(m.homeGoals)}" placeholder="-"></td>
-    <td data-label="גולי אורחת"><input type="number" min="0" data-field="awayGoals" value="${attr(m.awayGoals)}" placeholder="-"></td>
+    <td data-label="גולי אשדוד"><input type="number" min="0" data-field="ashdodGoals" value="${attr(ashdodGoals)}" placeholder="-"></td>
+    <td data-label="גולי יריבה"><input type="number" min="0" data-field="opponentGoals" value="${attr(opponentGoals)}" placeholder="-"></td>
     <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
     <td data-label="כתובת (לניווט בוויז)"><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
     <td data-label="הערות"><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>
@@ -224,7 +226,22 @@ function createRow(m, idx) {
 
   tr.querySelectorAll('input, select').forEach(el => {
     el.addEventListener('input', () => {
-      matches[idx][el.dataset.field] = el.value;
+      const field = el.dataset.field;
+      if (field === 'ashdodGoals') {
+        if (matches[idx].homeAway === 'away') matches[idx].awayGoals = el.value;
+        else matches[idx].homeGoals = el.value;
+      } else if (field === 'opponentGoals') {
+        if (matches[idx].homeAway === 'away') matches[idx].homeGoals = el.value;
+        else matches[idx].awayGoals = el.value;
+      } else if (field === 'homeAway') {
+        [matches[idx].homeGoals, matches[idx].awayGoals] = [matches[idx].awayGoals, matches[idx].homeGoals];
+        matches[idx][field] = el.value;
+        saveDraft();
+        render();
+        return;
+      } else {
+        matches[idx][field] = el.value;
+      }
       saveDraft();
     });
   });
