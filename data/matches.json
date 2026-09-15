@@ -1,17 +1,5 @@
 [
   {
-    "id": "07d8c245-7a6d-4493-87e9-867d816cabc9",
-    "opponent": "בדיקה",
-    "homeAway": "home",
-    "matchType": "training",
-    "date": "2026-08-30",
-    "time": "08:00",
-    "result": "3:3",
-    "venueName": "אשדוד סיננטי",
-    "address": "בית ואקיל",
-    "notes": ""
-  },
-  {
     "id": "a3c20524-22f0-4767-9556-5e9c0cd10ccb",
     "opponent": "הפועל ת\"א",
     "homeAway": "home",
