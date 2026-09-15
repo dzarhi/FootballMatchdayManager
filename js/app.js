@@ -1,6 +1,19 @@
 const OUR_TEAM_NAME = 'מ.ס. אשדוד';
+const THEME_STORAGE_KEY = 'theme';
 
 document.addEventListener('DOMContentLoaded', async () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const applyTheme = (isDark) => {
+    document.documentElement.classList.toggle('dark-mode', isDark);
+    themeToggle.textContent = isDark ? '☀️' : '🌙';
+  };
+  applyTheme(localStorage.getItem(THEME_STORAGE_KEY) === 'dark');
+  themeToggle.addEventListener('click', () => {
+    const isDark = !document.documentElement.classList.contains('dark-mode');
+    applyTheme(isDark);
+    localStorage.setItem(THEME_STORAGE_KEY, isDark ? 'dark' : 'light');
+  });
+
   const upcomingEl = document.getElementById('upcoming-matches');
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
