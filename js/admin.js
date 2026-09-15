@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const draft = localStorage.getItem(DRAFT_KEY);
   if (draft) {
     try {
-      matches = JSON.parse(draft);
+      matches = JSON.parse(draft).map(migrateLegacyResult);
       setStatus('נטענה טיוטה שנשמרה בדפדפן שלך.');
     } catch {
       matches = [];
     }
   } else {
     try {
-      matches = await loadMatches();
+      matches = (await loadMatches()).map(migrateLegacyResult);
     } catch {
       matches = [];
     }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   document.getElementById('load-current-btn').addEventListener('click', async () => {
     try {
-      matches = await loadMatches();
+      matches = (await loadMatches()).map(migrateLegacyResult);
       saveDraft();
       render();
       setStatus('נטען קובץ הנתונים הנוכחי מהאתר.');
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const parsed = JSON.parse(await file.text());
       if (!Array.isArray(parsed)) throw new Error('פורמט לא תקין');
-      matches = parsed;
+      matches = parsed.map(migrateLegacyResult);
       saveDraft();
       render();
       setStatus('קובץ יובא בהצלחה.');
@@ -162,11 +162,33 @@ function emptyMatch() {
     matchType: 'league',
     date: '',
     time: '',
-    result: '',
+    homeGoals: '',
+    awayGoals: '',
     venueName: '',
     address: '',
     notes: ''
   };
+}
+
+// ממיר רשומות ישנות שנשמרו עם שדה result יחיד (בפורמט "הקבוצה שלנו:היריבה") לשני שדות נפרדים
+function migrateLegacyResult(m) {
+  if (m.homeGoals !== undefined || m.awayGoals !== undefined || !m.result) return m;
+  const parts = String(m.result).split(/[:\-]/).map(s => s.trim());
+  if (parts.length === 2 && parts.every(p => p !== '' && !isNaN(Number(p)))) {
+    const [ours, theirs] = parts.map(Number);
+    if (m.homeAway === 'away') {
+      m.homeGoals = theirs;
+      m.awayGoals = ours;
+    } else {
+      m.homeGoals = ours;
+      m.awayGoals = theirs;
+    }
+  } else {
+    m.homeGoals = '';
+    m.awayGoals = '';
+  }
+  delete m.result;
+  return m;
 }
 
 function render() {
@@ -194,7 +216,8 @@ function createRow(m, idx) {
     </td>
     <td data-label="תאריך"><input type="date" data-field="date" value="${attr(m.date)}"></td>
     <td data-label="שעה"><input type="time" data-field="time" value="${attr(m.time)}"></td>
-    <td data-label="תוצאה"><input type="text" data-field="result" value="${attr(m.result)}" placeholder="לדוגמה 3-1"></td>
+    <td data-label="גולי מארחת"><input type="number" min="0" data-field="homeGoals" value="${attr(m.homeGoals)}" placeholder="-"></td>
+    <td data-label="גולי אורחת"><input type="number" min="0" data-field="awayGoals" value="${attr(m.awayGoals)}" placeholder="-"></td>
     <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
     <td data-label="כתובת (לניווט בוויז)"><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
     <td data-label="הערות"><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>

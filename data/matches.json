@@ -9,7 +9,8 @@
     "venueName": "אשדוד סיננטי",
     "address": "בית ואקיל",
     "notes": "",
-    "result": "3:1"
+    "homeGoals": 3,
+    "awayGoals": 1
   },
   {
     "id": "572e56ee-1441-41e9-bbe2-2a6dc3389dcb",
@@ -18,9 +19,10 @@
     "matchType": "cup",
     "date": "2026-09-17",
     "time": "08:00",
-    "result": "1:3",
     "venueName": "אוניברסיטה",
     "address": "אוניברסיטת ת\"א",
-    "notes": ""
+    "notes": "",
+    "homeGoals": 3,
+    "awayGoals": 1
   }
 ]

@@ -75,6 +75,9 @@ function createMatchCard(m) {
   const typeLabels = { league: 'ליגה', cup: 'גביע', training: 'אימון' };
   const typeLabel = typeLabels[m.matchType] || typeLabels.league;
 
+  const hasResult = m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
+    && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
+
   card.innerHTML = `
     <div class="match-header">
       <span class="opponent">${escapeHtml(m.opponent)}</span>
@@ -84,7 +87,7 @@ function createMatchCard(m) {
       <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       <div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>
-      ${isPast(m.date) && m.result ? `<div class="match-row result"><span class="icon">⚽</span>תוצאה: ${escapeHtml(m.result)}</div>` : ''}
+      ${isPast(m.date) && hasResult ? `<div class="match-row result"><span class="icon">⚽</span>תוצאה: ${escapeHtml(String(m.homeGoals))}:${escapeHtml(String(m.awayGoals))}</div>` : ''}
       ${m.notes ? `<div class="match-row notes">${escapeHtml(m.notes)}</div>` : ''}
     </div>
     <div class="match-footer">
