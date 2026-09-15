@@ -1,5 +1,19 @@
 [
   {
+    "id": "0a1b1110-5d71-45e9-a141-49039d329f74",
+    "opponent": "מכבי פ\"ת דרום",
+    "homeAway": "home",
+    "matchType": "training",
+    "date": "2026-08-08",
+    "time": "08:00",
+    "result": "",
+    "venueName": "בדיקה1",
+    "address": "11",
+    "notes": "",
+    "homeGoals": "8",
+    "awayGoals": "0"
+  },
+  {
     "id": "a3c20524-22f0-4767-9556-5e9c0cd10ccb",
     "opponent": "הפועל ת\"א",
     "homeAway": "home",
@@ -12,20 +26,6 @@
     "result": "",
     "homeGoals": "3",
     "awayGoals": "1"
-  },
-  {
-    "id": "0a1b1110-5d71-45e9-a141-49039d329f74",
-    "opponent": "מכבי פתח תקווה דרום",
-    "homeAway": "home",
-    "matchType": "training",
-    "date": "2026-09-05",
-    "time": "08:00",
-    "result": "",
-    "venueName": "בדיקה1",
-    "address": "11",
-    "notes": "",
-    "homeGoals": "8",
-    "awayGoals": "0"
   },
   {
     "id": "572e56ee-1441-41e9-bbe2-2a6dc3389dcb",
