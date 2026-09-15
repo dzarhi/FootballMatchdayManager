@@ -6,11 +6,12 @@
     "matchType": "training",
     "date": "2026-09-05",
     "time": "08:00",
-    "venueName": "סינטטי אשדוד",
-    "address": "בית ואקיל, אשדוד",
+    "result": "",
+    "venueName": "בדיקה1",
+    "address": "11",
     "notes": "",
-    "homeGoals": 3,
-    "awayGoals": 3
+    "homeGoals": "3",
+    "awayGoals": "0"
   },
   {
     "id": "a3c20524-22f0-4767-9556-5e9c0cd10ccb",
@@ -19,11 +20,12 @@
     "matchType": "league",
     "date": "2026-09-16",
     "time": "08:00",
-    "venueName": "אשדוד סיננטי",
-    "address": "בית ואקיל",
+    "venueName": "בדיקה2",
+    "address": "222",
     "notes": "",
-    "homeGoals": 3,
-    "awayGoals": 1
+    "result": "",
+    "homeGoals": "3",
+    "awayGoals": "1"
   },
   {
     "id": "572e56ee-1441-41e9-bbe2-2a6dc3389dcb",
@@ -32,10 +34,11 @@
     "matchType": "cup",
     "date": "2026-09-17",
     "time": "08:00",
-    "venueName": "אוניברסיטה",
-    "address": "אוניברסיטת ת\"א",
+    "result": "",
+    "venueName": "בדיקה3",
+    "address": "333",
     "notes": "",
-    "homeGoals": 3,
-    "awayGoals": 1
+    "homeGoals": "8",
+    "awayGoals": "2"
   }
 ]
