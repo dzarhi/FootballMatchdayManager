@@ -134,6 +134,26 @@ body {
   text-align: center;
 }
 
+.outcome-badge {
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+.outcome-win {
+  background: #e5f6ec;
+  color: #1e7d43;
+}
+
+.outcome-loss {
+  background: #fdeaea;
+  color: var(--primary);
+}
+
+.outcome-draw {
+  background: #f0f0f0;
+  color: var(--muted);
+}
+
 .badge {
   font-size: 0.8rem;
   padding: 3px 10px;

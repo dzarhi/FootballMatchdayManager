@@ -80,6 +80,15 @@ function createMatchCard(m) {
   const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
   const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
 
+  let outcomeBadge = '';
+  if (hasResult) {
+    const ourGoals = Number(m.homeAway === 'home' ? m.homeGoals : m.awayGoals);
+    const theirGoals = Number(m.homeAway === 'home' ? m.awayGoals : m.homeGoals);
+    const outcome = ourGoals > theirGoals ? 'win' : ourGoals < theirGoals ? 'loss' : 'draw';
+    const outcomeLabels = { win: 'ניצחון', loss: 'הפסד', draw: 'תיקו' };
+    outcomeBadge = `<span class="badge outcome-badge outcome-${outcome}">${outcomeLabels[outcome]}</span>`;
+  }
+
   card.innerHTML = `
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
@@ -90,6 +99,7 @@ function createMatchCard(m) {
         <span class="team-name">${escapeHtml(awayTeamName)}</span>
         ${hasResult ? `<span class="team-score">${escapeHtml(String(m.awayGoals))}</span>` : ''}
       </div>
+      ${outcomeBadge}
     </div>
     <div class="match-body">
       <span class="badge badge-type badge-${m.matchType || 'league'}">${typeLabel}</span>
