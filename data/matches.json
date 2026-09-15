@@ -6,10 +6,11 @@
     "matchType": "training",
     "date": "2026-09-05",
     "time": "08:00",
-    "result": "3:3",
     "venueName": "סינטטי אשדוד",
     "address": "בית ואקיל, אשדוד",
-    "notes": ""
+    "notes": "",
+    "homeGoals": 3,
+    "awayGoals": 3
   },
   {
     "id": "a3c20524-22f0-4767-9556-5e9c0cd10ccb",
