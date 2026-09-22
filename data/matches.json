@@ -38,8 +38,8 @@
     "venueName": "מגרש כדורגל אוניברסיטת ת\"א",
     "address": "רחוב קלצ'קין 4 ת\"א",
     "notes": "",
-    "homeGoals": "7",
-    "awayGoals": "2"
+    "homeGoals": "8",
+    "awayGoals": "3"
   },
   {
     "id": "2540a49f-1852-47ae-8212-02b7efcabae8",
@@ -52,5 +52,17 @@
     "venueName": "אשדוד סינטטי",
     "address": "בית ואקיל",
     "notes": ""
+  },
+  {
+    "id": "de12cef6-2d69-46a6-b7e1-395c358aee1a",
+    "opponent": "מ.ס. ב\"ש 2 \"צו פיוס\"",
+    "homeAway": "home",
+    "matchType": "cup",
+    "date": "2026-10-10",
+    "homeGoals": "",
+    "awayGoals": "",
+    "venueName": "אשדוד סינטטי",
+    "address": "בית ואקיל",
+    "notes": "התאריך עלול להשתנות"
   }
 ]
