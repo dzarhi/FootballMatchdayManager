@@ -52,5 +52,17 @@
     "venueName": "אשדוד סינטטי",
     "address": "בית ואקיל",
     "notes": ""
+  },
+  {
+    "id": "de12cef6-2d69-46a6-b7e1-395c358aee1a",
+    "opponent": "\"פיוס צו \"2 ש\"ב .ס.",
+    "homeAway": "home",
+    "matchType": "cup",
+    "date": "2026-10-10",
+    "homeGoals": "",
+    "awayGoals": "",
+    "venueName": "אשדוד סינטטי",
+    "address": "בית ואקיל",
+    "notes": "התאריך עלול להשתנות"
   }
 ]
