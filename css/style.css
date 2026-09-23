@@ -361,3 +361,9 @@ body {
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+.site-footer .credit {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  direction: ltr;
+}
