@@ -238,6 +238,12 @@ body {
 
 .match-row.notes {
   font-style: italic;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(245, 196, 0, 0.18);
+  border-right: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 6px 8px;
 }
 
 .match-footer {
