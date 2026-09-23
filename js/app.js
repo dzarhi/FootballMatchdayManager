@@ -17,8 +17,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const upcomingEl = document.getElementById('upcoming-matches');
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
+  const refreshBtn = document.getElementById('refresh-btn');
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
   const FILTER_STORAGE_KEY = 'matchTypeFilter';
+
+  refreshBtn.addEventListener('click', () => {
+    refreshBtn.classList.add('spinning');
+    location.reload();
+  });
 
   let savedTypes = [];
   try {
