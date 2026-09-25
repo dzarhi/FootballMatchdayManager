@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const visible = activeTypes.size === 0
       ? matches
       : matches.filter(m => activeTypes.has(m.matchType || 'league'));
-    const upcoming = visible.filter(m => !isPast(m.date));
-    const past = visible.filter(m => isPast(m.date)).reverse();
+    const upcoming = visible.filter(m => !isMatchPast(m));
+    const past = visible.filter(m => isMatchPast(m)).reverse();
 
     renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
     renderMatches(pastEl, past, 'אין משחקים קודמים.');
@@ -88,15 +88,14 @@ function renderMatches(container, matches, emptyMessage) {
 
 function createMatchCard(m) {
   const card = document.createElement('article');
-  card.className = 'match-card' + (isPast(m.date) ? ' past' : '');
+  card.className = 'match-card' + (isMatchPast(m) ? ' past' : '');
 
   const typeLabels = { league: 'ליגה', cup: 'גביע', training: 'אימון' };
   const typeLabel = typeLabels[m.matchType] || typeLabels.league;
 
   const homeAwayLabel = m.homeAway === 'home' ? 'בית' : 'חוץ';
 
-  const hasResult = isPast(m.date) && m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
-    && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
+  const hasResult = hasMatchResult(m);
 
   const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
   const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;

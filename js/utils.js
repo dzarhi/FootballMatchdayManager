@@ -25,6 +25,16 @@ function isPast(dateStr) {
   return parseLocalDate(dateStr) < today;
 }
 
+function hasMatchResult(m) {
+  return m.homeGoals !== undefined && m.homeGoals !== '' && m.homeGoals !== null
+    && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
+}
+
+// משחק עם תוצאה שהוזנה נחשב כמשחק שהיה, גם אם תאריכו טרם הגיע
+function isMatchPast(m) {
+  return isPast(m.date) || hasMatchResult(m);
+}
+
 function wazeLink(address) {
   return `https://www.waze.com/ul?q=${encodeURIComponent(address)}&navigate=yes`;
 }
