@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מ.ס. אשדוד - ילדים ב' | סטטיסטיקות משחקים</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <button id="theme-toggle" class="theme-toggle" aria-label="החלף מצב תצוגה">🌙</button>
+    <button id="refresh-btn" class="refresh-btn" aria-label="רענן נתונים">🔄</button>
+    <div class="header-content">
+      <img src="assets/logo.png" alt="סמל מ.ס. אשדוד" class="team-logo">
+      <div class="header-text">
+        <h1>מ.ס. אשדוד 2026/27</h1>
+        <p class="subtitle">ילדים ב' &middot; סטטיסטיקות משחקים</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="page-nav" aria-label="עמודים נוספים">
+      <a class="page-nav-link" href="index.html">חזרה ללוח המשחקים</a>
+    </nav>
+
+    <section>
+      <div class="filter-bar" id="type-filter" role="group" aria-label="סינון לפי סוג משחק">
+        <button type="button" class="filter-chip" data-type="league">ליגה</button>
+        <button type="button" class="filter-chip" data-type="cup">גביע</button>
+        <button type="button" class="filter-chip" data-type="training">אימון</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="summary-title">
+      <h2 id="summary-title" class="section-title">סיכום העונה</h2>
+      <p id="stats-caption" class="stats-intro">הנתונים כוללים משחקים עם תוצאה בלבד.</p>
+      <div id="summary-stats" class="stats-grid" aria-live="polite"></div>
+      <div id="result-distribution" aria-label="התפלגות תוצאות"></div>
+    </section>
+
+    <section class="stats-section" aria-labelledby="breakdown-title">
+      <h2 id="breakdown-title" class="section-title">פילוח משחקים</h2>
+      <div class="stats-table-wrap">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th scope="col">קטגוריה</th>
+              <th scope="col">משחקים</th>
+              <th scope="col">ניצחון-תיקו-הפסד</th>
+              <th scope="col">שערי זכות-חובה</th>
+              <th scope="col">הפרש</th>
+            </tr>
+          </thead>
+          <tbody id="breakdown-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-labelledby="results-title">
+      <h2 id="results-title" class="section-title">תוצאות אחרונות</h2>
+      <div id="recent-results" class="results-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>מ.ס. אשדוד - ילדים ב'</p>
+    <p class="credit">Developed by Danny Zarhi</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/stats.js"></script>
+  <script data-goatcounter="https://ashdod2014.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
