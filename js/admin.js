@@ -165,7 +165,8 @@ function emptyMatch() {
     awayGoals: '',
     venueName: '',
     address: '',
-    notes: ''
+    notes: '',
+    videoUrl: ''
   };
 }
 
@@ -221,6 +222,7 @@ function createRow(m, idx) {
     <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
     <td data-label="כתובת (לניווט בוויז)"><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
     <td data-label="הערות"><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>
+    <td data-label="לינק לצפייה במשחק"><input type="url" data-field="videoUrl" value="${attr(m.videoUrl)}" placeholder="קישור לסרטון (אופציונלי)"></td>
     <td><button type="button" class="btn btn-danger" data-action="delete">מחק</button></td>
   `;
 

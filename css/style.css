@@ -272,6 +272,8 @@ body {
 
 .match-footer {
   margin-top: auto;
+  display: flex;
+  gap: 8px;
 }
 
 .waze-btn {
@@ -297,6 +299,25 @@ body {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+}
+
+.video-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  text-align: center;
+  background: #ff4d4d;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.video-btn:hover {
+  background: #e63939;
 }
 
 .toggle-btn {
