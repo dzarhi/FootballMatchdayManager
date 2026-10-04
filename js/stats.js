@@ -50,7 +50,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     matches = (await loadMatches()).filter(hasMatchResult);
     renderFiltered();
   } catch (error) {
-    document.getElementById('stats-caption').textContent = error.message;
+    const caption = document.getElementById('stats-caption');
+    caption.textContent = error.message;
+    caption.hidden = false;
   }
 });
 
