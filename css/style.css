@@ -308,7 +308,7 @@ body {
   gap: 6px;
   width: 100%;
   text-align: center;
-  background: #ff4d4d;
+  background: #16783f;
   color: #fff;
   font-weight: 700;
   padding: 10px;
@@ -317,7 +317,13 @@ body {
 }
 
 .video-btn:hover {
-  background: #e63939;
+  background: #105c30;
+}
+
+.veo-icon {
+  width: 36px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .toggle-btn {
