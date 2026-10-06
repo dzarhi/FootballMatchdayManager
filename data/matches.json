@@ -69,6 +69,19 @@
     "videoUrl": "https://app.veo.co/matches/20260925-fc-ashdod-2014-vs-hapoel-pt-ve19f941/"
   },
   {
+    "id": "0762df7b-8e55-4770-8711-b3c908937e57",
+    "opponent": "פנתרות אשדוד",
+    "homeAway": "away",
+    "matchType": "training",
+    "date": "2026-10-06",
+    "homeGoals": "3",
+    "awayGoals": "3",
+    "venueName": "לכיש",
+    "address": "שדרות הרצל 1038, אשדוד",
+    "notes": "",
+    "videoUrl": ""
+  },
+  {
     "id": "de12cef6-2d69-46a6-b7e1-395c358aee1a",
     "opponent": "מ.ס. ב\"ש 2 \"צו פיוס\"",
     "homeAway": "home",
