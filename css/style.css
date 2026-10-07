@@ -608,3 +608,12 @@ body {
   font-size: 0.75rem;
   direction: ltr;
 }
+
+.site-footer a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  color: var(--primary-dark);
+}
