@@ -127,13 +127,22 @@ body {
 .page-nav-link {
   display: inline-flex;
   align-items: center;
-  color: var(--primary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
+  transition: background 0.2s;
 }
 
 .page-nav-link:hover {
-  text-decoration: underline;
+  background: var(--primary-dark);
+}
+
+.page-nav-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 .stats-intro {
