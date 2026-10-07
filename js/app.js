@@ -1,6 +1,13 @@
 const OUR_TEAM_NAME = 'מ.ס. אשדוד';
 const THEME_STORAGE_KEY = 'theme';
 
+function normalizeTeamSearch(value) {
+  return String(value ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\u05f3\u05f4'"‘’“”\u02bc\u2032]/g, '');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const themeToggle = document.getElementById('theme-toggle');
   const applyTheme = (isDark) => {
@@ -42,12 +49,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   let matches = [];
   const renderFiltered = () => {
-    const query = teamFilter.value.trim().toLowerCase();
+    const query = normalizeTeamSearch(teamFilter.value.trim());
     const visible = matches.filter(m => {
       const matchesType = activeTypes.size === 0 || activeTypes.has(m.matchType || 'league');
       const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
       const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
-      const matchesTeam = `${homeTeamName} ${awayTeamName}`.toLowerCase().includes(query);
+      const matchesTeam = normalizeTeamSearch(`${homeTeamName} ${awayTeamName}`).includes(query);
       return matchesType && matchesTeam;
     });
     const upcoming = visible.filter(m => !isMatchPast(m));
