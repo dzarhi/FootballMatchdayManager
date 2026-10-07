@@ -541,6 +541,29 @@ body {
   margin-bottom: 8px;
 }
 
+.team-filter {
+  display: grid;
+  gap: 6px;
+  width: min(100%, 360px);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.team-filter input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.team-filter input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 .filter-chip {
   background: var(--card-bg);
   border: 2px solid var(--border);

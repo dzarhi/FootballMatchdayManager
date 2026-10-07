@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
   const refreshBtn = document.getElementById('refresh-btn');
+  const teamFilter = document.getElementById('team-filter');
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
   const FILTER_STORAGE_KEY = 'matchTypeFilter';
 
@@ -41,15 +42,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   let matches = [];
   const renderFiltered = () => {
-    const visible = activeTypes.size === 0
-      ? matches
-      : matches.filter(m => activeTypes.has(m.matchType || 'league'));
+    const query = teamFilter.value.trim().toLowerCase();
+    const visible = matches.filter(m => {
+      const matchesType = activeTypes.size === 0 || activeTypes.has(m.matchType || 'league');
+      const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
+      const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
+      const matchesTeam = `${homeTeamName} ${awayTeamName}`.toLowerCase().includes(query);
+      return matchesType && matchesTeam;
+    });
     const upcoming = visible.filter(m => !isMatchPast(m));
     const past = visible.filter(m => isMatchPast(m)).reverse();
 
     renderMatches(upcomingEl, upcoming, 'אין משחקים קרובים בלוח כרגע.');
     renderMatches(pastEl, past, 'אין משחקים קודמים.');
   };
+
+  teamFilter.addEventListener('input', renderFiltered);
 
   filterChips.forEach(chip => {
     if (activeTypes.has(chip.dataset.type)) {
