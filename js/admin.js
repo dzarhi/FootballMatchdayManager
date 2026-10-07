@@ -94,7 +94,7 @@ function updateGithubUI() {
 }
 
 function hasInvalidMatch() {
-  return matches.some(m => !m.opponent || !m.date || !m.venueName || !m.address);
+  return matches.some(m => !m.opponent || !m.date);
 }
 
 function sortedMatchesJson() {
@@ -115,7 +115,7 @@ async function saveToGithub() {
     setStatus('חברו קודם טוקן GitHub.', true);
     return;
   }
-  if (hasInvalidMatch() && !confirm('יש משחקים עם שדות חסרים (יריבה/תאריך/מגרש/כתובת). לשמור בכל זאת?')) {
+  if (hasInvalidMatch() && !confirm('יש משחקים ללא יריבה או תאריך. לשמור בכל זאת?')) {
     return;
   }
 
@@ -269,7 +269,7 @@ function saveDraft() {
 }
 
 function downloadJson() {
-  if (hasInvalidMatch() && !confirm('יש משחקים עם שדות חסרים (יריבה/תאריך/מגרש/כתובת). להוריד בכל זאת?')) {
+  if (hasInvalidMatch() && !confirm('יש משחקים ללא יריבה או תאריך. להוריד בכל זאת?')) {
     return;
   }
   const blob = new Blob([sortedMatchesJson()], { type: 'application/json' });
