@@ -87,11 +87,12 @@
     "homeAway": "home",
     "matchType": "cup",
     "date": "2026-10-09",
-    "homeGoals": "",
-    "awayGoals": "",
+    "homeGoals": "15",
+    "awayGoals": "0",
     "venueName": "אשדוד סינטטי",
     "address": "בית ואקיל",
-    "notes": ""
+    "notes": "",
+    "videoUrl": "https://app.veo.co/matches/20261009-fc-ashdod-2014-vs-2-v82c9e0e/"
   },
   {
     "id": "league-r01-2026-10-14",
