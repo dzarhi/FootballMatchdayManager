@@ -103,7 +103,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "תל אביב וולפסון 2",
-    "address": "מתחם האימונים וולפסון",
+    "address": "מגרש כדורגל הלוחמים, תל אביב - יפו",
     "notes": "מחזור 1",
     "videoUrl": ""
   },
@@ -116,7 +116,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 2",
     "videoUrl": ""
   },
@@ -128,8 +128,8 @@
     "date": "2026-10-31",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "תל אביב שכונת התקוה סינטטי 2",
+    "address": "כביר 20, תל אביב-יפו",
     "notes": "מחזור 3",
     "videoUrl": ""
   },
@@ -142,7 +142,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 4 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -154,8 +154,8 @@
     "date": "2026-11-28",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "אשקלון סינטטי ע״ש איציק „חיפה” כהן",
+    "address": "קיבוץ גלויות, גיבורי שיחרור, אשקלון",
     "notes": "מחזור 5 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -168,7 +168,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 6",
     "videoUrl": ""
   },
@@ -180,8 +180,8 @@
     "date": "2026-12-19",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "פתח תקוה מכבי סינטטי",
+    "address": "מגרש אימונים מכבי פ״ת",
     "notes": "מחזור 7",
     "videoUrl": ""
   },
@@ -194,7 +194,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 8",
     "videoUrl": ""
   },
@@ -206,8 +206,8 @@
     "date": "2027-01-09",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "אבו גוש",
+    "address": "מגרש כדורגל סינטטי אבו גוש",
     "notes": "מחזור 9",
     "videoUrl": ""
   },
@@ -220,7 +220,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 10",
     "videoUrl": ""
   },
@@ -232,8 +232,8 @@
     "date": "2027-01-23",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "ראשון לציון סופרלנד מערבי סינטטי",
+    "address": "יוסף טומי לפיד 8, ראשון לציון",
     "notes": "מחזור 11",
     "videoUrl": ""
   },
@@ -246,7 +246,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 12 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -258,8 +258,8 @@
     "date": "2027-02-06",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "כפר סבא אימונים תחתון (סינטטי)",
+    "address": "התוכנה 9, כפר סבא",
     "notes": "מחזור 13",
     "videoUrl": ""
   },
@@ -272,7 +272,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 14 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -284,8 +284,8 @@
     "date": "2027-02-20",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "פתח תקוה סירקין ספורטק אצטדיון",
+    "address": "סירקין הספורטק",
     "notes": "מחזור 15 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -298,7 +298,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 16",
     "videoUrl": ""
   },
@@ -310,8 +310,8 @@
     "date": "2027-03-13",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "פתח תקוה מושבה דרומי",
+    "address": "מגרש כדורגל המושבה סינטטי",
     "notes": "מחזור 17",
     "videoUrl": ""
   },
@@ -323,8 +323,8 @@
     "date": "2027-03-20",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "תל אביב קרית שלום סינטטי",
+    "address": "דרך בן צבי 108, תל אביב-יפו",
     "notes": "מחזור 18",
     "videoUrl": ""
   },
@@ -337,7 +337,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 19 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -349,8 +349,8 @@
     "date": "2027-04-03",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "נתניה שפירא",
+    "address": "מועדון הכדורגל מכבי נתניה",
     "notes": "מחזור 20",
     "videoUrl": ""
   },
@@ -363,7 +363,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 21 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -375,8 +375,8 @@
     "date": "2027-04-10",
     "homeGoals": "",
     "awayGoals": "",
-    "venueName": "",
-    "address": "",
+    "venueName": "באר שבע רייסר 1 סינטטי",
+    "address": "מגרשי אימונים רייסר",
     "notes": "מחזור 22 · התאריך עלול להשתנות",
     "videoUrl": ""
   },
@@ -389,7 +389,7 @@
     "homeGoals": "",
     "awayGoals": "",
     "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל",
+    "address": "בית ואקיל אשדוד",
     "notes": "מחזור 23 · התאריך עלול להשתנות",
     "videoUrl": ""
   }
