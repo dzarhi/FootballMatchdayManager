@@ -125,6 +125,11 @@
 }
 
 @media (max-width: 720px) {
+  .site-header .header-content {
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .admin-table {
     min-width: 0;
   }
