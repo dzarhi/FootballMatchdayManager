@@ -10,6 +10,12 @@ let matches = [];
 let showCompletedMatches = false;
 
 document.addEventListener('DOMContentLoaded', async () => {
+  const refreshButton = document.getElementById('refresh-btn');
+  refreshButton.addEventListener('click', () => {
+    refreshButton.classList.add('spinning');
+    location.reload();
+  });
+
   const draft = localStorage.getItem(DRAFT_KEY);
   if (draft) {
     try {
