@@ -7,6 +7,7 @@ const GITHUB_REPO = 'FootballMatchdayManager';
 const GITHUB_BRANCH = 'main';
 const GITHUB_PATH = 'data/matches.json';
 let matches = [];
+let showCompletedMatches = false;
 
 document.addEventListener('DOMContentLoaded', async () => {
   const draft = localStorage.getItem(DRAFT_KEY);
@@ -42,6 +43,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch {
       setStatus('שגיאה בטעינת הקובץ.', true);
     }
+  });
+
+  document.getElementById('toggle-completed-btn').addEventListener('click', () => {
+    showCompletedMatches = !showCompletedMatches;
+    render();
   });
 
   document.getElementById('reset-btn').addEventListener('click', () => {
@@ -194,7 +200,14 @@ function migrateLegacyResult(m) {
 function render() {
   const tbody = document.getElementById('matches-tbody');
   tbody.innerHTML = '';
-  matches.forEach((m, idx) => tbody.appendChild(createRow(m, idx)));
+  matches.forEach((m, idx) => {
+    if (showCompletedMatches || !hasMatchResult(m)) {
+      tbody.appendChild(createRow(m, idx));
+    }
+  });
+  const toggleButton = document.getElementById('toggle-completed-btn');
+  toggleButton.textContent = showCompletedMatches ? 'הסתר משחקים עם תוצאה' : 'הצג משחקים עם תוצאה';
+  toggleButton.setAttribute('aria-pressed', String(showCompletedMatches));
 }
 
 function createRow(m, idx) {
@@ -245,6 +258,7 @@ function createRow(m, idx) {
         matches[idx][field] = el.value;
       }
       saveDraft();
+      if (!showCompletedMatches && hasMatchResult(matches[idx])) render();
     });
   });
 
