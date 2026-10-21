@@ -121,19 +121,6 @@
     "videoUrl": ""
   },
   {
-    "id": "league-r02-2026-10-28",
-    "opponent": "מכבי חיפה \"שמואל\"",
-    "homeAway": "home",
-    "matchType": "league",
-    "date": "2026-10-28",
-    "homeGoals": "",
-    "awayGoals": "",
-    "venueName": "אשדוד סינטטי",
-    "address": "בית ואקיל אשדוד",
-    "notes": "מחזור 2",
-    "videoUrl": ""
-  },
-  {
     "id": "league-r03-2026-10-31",
     "opponent": "בני יהודה ת'א",
     "homeAway": "away",
@@ -157,6 +144,19 @@
     "venueName": "אשדוד סינטטי",
     "address": "בית ואקיל אשדוד",
     "notes": "מחזור 4 · התאריך עלול להשתנות",
+    "videoUrl": ""
+  },
+  {
+    "id": "league-r02-2026-10-28",
+    "opponent": "מכבי חיפה \"שמואל\"",
+    "homeAway": "home",
+    "matchType": "league",
+    "date": "2026-11-21",
+    "homeGoals": "",
+    "awayGoals": "",
+    "venueName": "אשדוד סינטטי",
+    "address": "בית ואקיל אשדוד",
+    "notes": "מחזור 2",
     "videoUrl": ""
   },
   {
