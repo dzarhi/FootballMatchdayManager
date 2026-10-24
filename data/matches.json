@@ -113,12 +113,16 @@
     "homeAway": "away",
     "matchType": "cup",
     "date": "2026-10-24",
-    "homeGoals": "",
-    "awayGoals": "",
+    "homeGoals": "3",
+    "awayGoals": "3",
     "venueName": "באר שבע וסרמיל 1",
     "address": "מתחם ריסר",
     "notes": "סיבוב ב׳",
-    "videoUrl": ""
+    "videoUrl": "",
+    "extraTimeAwayGoals": "0",
+    "extraTimeHomeGoals": "0",
+    "penaltiesAwayGoals": "5",
+    "penaltiesHomeGoals": "4"
   },
   {
     "id": "league-r03-2026-10-31",
