@@ -146,7 +146,7 @@ function createMatchCard(m) {
         ${hasResult ? `<span class="team-score"><span class="score-arrow${awayIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(score.awayGoals))}</span>` : ''}
       </div>
     </div>
-    ${hasExtraTime ? `<div class="match-row">${hasPenalties ? `פנדלים (אשדוד-יריבה): ${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesHomeGoals : m.penaltiesAwayGoals))}:${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesAwayGoals : m.penaltiesHomeGoals))}` : score.homeGoals === score.awayGoals ? 'ממתינים לתוצאת הפנדלים' : 'הכרעה אחרי הארכה'}</div>` : ''}
+    ${hasExtraTime ? `<div class="match-row">${hasPenalties ? `פנדלים: ${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesHomeGoals : m.penaltiesAwayGoals))}:${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesAwayGoals : m.penaltiesHomeGoals))}` : score.homeGoals === score.awayGoals ? 'ממתינים לתוצאת הפנדלים' : 'הכרעה אחרי הארכה'}</div>` : ''}
     <div class="match-body">
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       ${m.venueName ? `<div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>` : ''}
