@@ -119,10 +119,10 @@
     "address": "מתחם ריסר",
     "notes": "סיבוב ב׳",
     "videoUrl": "",
-    "extraTimeAwayGoals": "2",
+    "extraTimeAwayGoals": "0",
     "extraTimeHomeGoals": "0",
-    "penaltiesAwayGoals": "",
-    "penaltiesHomeGoals": ""
+    "penaltiesAwayGoals": "5",
+    "penaltiesHomeGoals": "4"
   },
   {
     "id": "league-r03-2026-10-31",
