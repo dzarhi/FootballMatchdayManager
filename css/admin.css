@@ -84,7 +84,7 @@
 .status-msg.error { color: #d32f2f; }
 
 .hidden { display: none; }
-.is-hidden { display: none !important; }
+.is-hidden { visibility: hidden; }
 
 .github-connect {
   background: var(--card-bg);
@@ -165,5 +165,7 @@
     color: var(--muted);
     margin-bottom: 2px;
   }
+
+  .admin-table td.is-hidden { display: none !important; }
 }
 
