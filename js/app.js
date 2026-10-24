@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const upcomingEl = document.getElementById('upcoming-matches');
   const pastEl = document.getElementById('past-matches');
   const pastToggle = document.getElementById('toggle-past');
+  const showPastTop = document.getElementById('show-past-top');
   const refreshBtn = document.getElementById('refresh-btn');
   const teamFilter = document.getElementById('team-filter');
   const filterChips = document.querySelectorAll('#type-filter .filter-chip');
@@ -45,6 +46,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   pastToggle.addEventListener('click', () => {
     const hidden = pastEl.classList.toggle('hidden');
     pastToggle.textContent = hidden ? 'הצג משחקים קודמים' : 'הסתר משחקים קודמים';
+  });
+
+  showPastTop.addEventListener('click', () => {
+    if (pastEl.classList.contains('hidden')) pastToggle.click();
+    const pastTop = pastEl.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo(0, pastTop);
   });
 
   let matches = [];
