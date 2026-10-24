@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   pastToggle.addEventListener('click', () => {
     const hidden = pastEl.classList.toggle('hidden');
     pastToggle.textContent = hidden ? 'הצג משחקים קודמים' : 'הסתר משחקים קודמים';
+    if (hidden) window.scrollTo(0, 0);
   });
 
   showPastTop.addEventListener('click', () => {
