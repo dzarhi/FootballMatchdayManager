@@ -57,8 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function getScoreFor(match) {
-  const homeGoals = Number(match.homeGoals);
-  const awayGoals = Number(match.awayGoals);
+  const { homeGoals, awayGoals } = getMatchScore(match);
   return match.homeAway === 'away'
     ? { goalsFor: awayGoals, goalsAgainst: homeGoals }
     : { goalsFor: homeGoals, goalsAgainst: awayGoals };
@@ -70,11 +69,14 @@ function createRecord() {
 
 function addMatch(record, match) {
   const score = getScoreFor(match);
+  const outcome = getMatchOutcome(match);
   record.played += 1;
   record.goalsFor += score.goalsFor;
   record.goalsAgainst += score.goalsAgainst;
-  if (score.goalsFor > score.goalsAgainst) record.wins += 1;
-  else if (score.goalsFor < score.goalsAgainst) record.losses += 1;
+  const ourOutcome = outcome === 'draw' ? 'draw'
+    : (outcome === 'home') === (match.homeAway !== 'away') ? 'win' : 'loss';
+  if (ourOutcome === 'win') record.wins += 1;
+  else if (ourOutcome === 'loss') record.losses += 1;
   else record.draws += 1;
 }
 
@@ -160,7 +162,9 @@ function renderRecentResults(matches) {
 
   container.innerHTML = sortedMatches.map(match => {
     const { goalsFor, goalsAgainst } = getScoreFor(match);
-    const outcome = goalsFor > goalsAgainst ? 'win' : goalsFor < goalsAgainst ? 'loss' : 'draw';
+    const matchOutcome = getMatchOutcome(match);
+    const outcome = matchOutcome === 'draw' ? 'draw'
+      : (matchOutcome === 'home') === (match.homeAway !== 'away') ? 'win' : 'loss';
     const outcomeLabel = outcome === 'win' ? 'נ' : outcome === 'loss' ? 'ה' : 'ת';
     const venue = match.homeAway === 'home' ? 'בית' : 'חוץ';
     const typeLabel = TYPE_LABELS[match.matchType] || TYPE_LABELS.league;

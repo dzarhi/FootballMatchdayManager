@@ -30,6 +30,33 @@ function hasMatchResult(m) {
     && m.awayGoals !== undefined && m.awayGoals !== '' && m.awayGoals !== null;
 }
 
+function getMatchScore(m) {
+  const hasExtraTime = m.matchType === 'cup' && hasMatchResult(m)
+    && Number(m.homeGoals) === Number(m.awayGoals)
+    && m.extraTimeHomeGoals !== '' && m.extraTimeHomeGoals != null
+    && m.extraTimeAwayGoals !== '' && m.extraTimeAwayGoals != null;
+  return {
+    homeGoals: Number(m.homeGoals) + (hasExtraTime ? Number(m.extraTimeHomeGoals) : 0),
+    awayGoals: Number(m.awayGoals) + (hasExtraTime ? Number(m.extraTimeAwayGoals) : 0)
+  };
+}
+
+function getMatchOutcome(m) {
+  const score = getMatchScore(m);
+  if (score.homeGoals > score.awayGoals) return 'home';
+  if (score.awayGoals > score.homeGoals) return 'away';
+  const hasPenalties = m.matchType === 'cup'
+    && score.homeGoals === score.awayGoals
+    && m.extraTimeHomeGoals !== '' && m.extraTimeHomeGoals != null
+    && m.extraTimeAwayGoals !== '' && m.extraTimeAwayGoals != null
+    && m.penaltiesHomeGoals !== '' && m.penaltiesHomeGoals != null
+    && m.penaltiesAwayGoals !== '' && m.penaltiesAwayGoals != null;
+  if (hasPenalties && Number(m.penaltiesHomeGoals) !== Number(m.penaltiesAwayGoals)) {
+    return Number(m.penaltiesHomeGoals) > Number(m.penaltiesAwayGoals) ? 'home' : 'away';
+  }
+  return 'draw';
+}
+
 // משחק עם תוצאה שהוזנה נחשב כמשחק שהיה, גם אם תאריכו טרם הגיע
 function isMatchPast(m) {
   return isPast(m.date) || hasMatchResult(m);

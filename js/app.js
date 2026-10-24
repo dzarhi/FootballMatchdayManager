@@ -114,12 +114,21 @@ function createMatchCard(m) {
 
   const homeTeamName = m.homeAway === 'home' ? OUR_TEAM_NAME : m.opponent;
   const awayTeamName = m.homeAway === 'away' ? OUR_TEAM_NAME : m.opponent;
+  const score = hasResult ? getMatchScore(m) : null;
+  const outcome = hasResult ? getMatchOutcome(m) : 'draw';
+  const hasExtraTime = m.matchType === 'cup' && hasResult
+    && Number(m.homeGoals) === Number(m.awayGoals)
+    && m.extraTimeHomeGoals !== '' && m.extraTimeHomeGoals != null
+    && m.extraTimeAwayGoals !== '' && m.extraTimeAwayGoals != null;
+  const hasPenalties = hasExtraTime
+    && m.penaltiesHomeGoals !== '' && m.penaltiesHomeGoals != null
+    && m.penaltiesAwayGoals !== '' && m.penaltiesAwayGoals != null;
 
   let homeIsHigher = false;
   let awayIsHigher = false;
   if (hasResult) {
-    homeIsHigher = Number(m.homeGoals) > Number(m.awayGoals);
-    awayIsHigher = Number(m.awayGoals) > Number(m.homeGoals);
+    homeIsHigher = outcome === 'home';
+    awayIsHigher = outcome === 'away';
   }
 
   card.innerHTML = `
@@ -130,13 +139,14 @@ function createMatchCard(m) {
     <div class="match-header">
       <div class="team-row${m.homeAway === 'home' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(homeTeamName)}</span>
-        ${hasResult ? `<span class="team-score"><span class="score-arrow${homeIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(m.homeGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score"><span class="score-arrow${homeIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(score.homeGoals))}</span>` : ''}
       </div>
       <div class="team-row${m.homeAway === 'away' ? ' our-team' : ''}">
         <span class="team-name">${escapeHtml(awayTeamName)}</span>
-        ${hasResult ? `<span class="team-score"><span class="score-arrow${awayIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(m.awayGoals))}</span>` : ''}
+        ${hasResult ? `<span class="team-score"><span class="score-arrow${awayIsHigher ? '' : ' invisible'}">▶︎</span>${escapeHtml(String(score.awayGoals))}</span>` : ''}
       </div>
     </div>
+    ${hasExtraTime ? `<div class="match-row">${hasPenalties ? `פנדלים (אשדוד-יריבה): ${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesHomeGoals : m.penaltiesAwayGoals))}:${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesAwayGoals : m.penaltiesHomeGoals))}` : score.homeGoals === score.awayGoals ? 'ממתינים לתוצאת הפנדלים' : 'הכרעה אחרי הארכה'}</div>` : ''}
     <div class="match-body">
       <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
       ${m.venueName ? `<div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>` : ''}

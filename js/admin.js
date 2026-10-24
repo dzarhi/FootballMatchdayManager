@@ -175,6 +175,10 @@ function emptyMatch() {
     date: '',
     homeGoals: '',
     awayGoals: '',
+    extraTimeHomeGoals: '',
+    extraTimeAwayGoals: '',
+    penaltiesHomeGoals: '',
+    penaltiesAwayGoals: '',
     venueName: '',
     address: '',
     notes: '',
@@ -207,7 +211,7 @@ function render() {
   const tbody = document.getElementById('matches-tbody');
   tbody.innerHTML = '';
   matches.forEach((m, idx) => {
-    if (showCompletedMatches || !hasMatchResult(m)) {
+    if (showCompletedMatches || !hasMatchResult(m) || isCupResultPending(m)) {
       tbody.appendChild(createRow(m, idx));
     }
   });
@@ -216,10 +220,27 @@ function render() {
   toggleButton.setAttribute('aria-pressed', String(showCompletedMatches));
 }
 
+function isCupResultPending(match) {
+  const regulationIsDraw = match.matchType === 'cup' && hasMatchResult(match)
+    && Number(match.homeGoals) === Number(match.awayGoals);
+  if (!regulationIsDraw) return false;
+  const hasBothExtraTimeScores = match.extraTimeHomeGoals !== '' && match.extraTimeHomeGoals != null
+    && match.extraTimeAwayGoals !== '' && match.extraTimeAwayGoals != null;
+  if (!hasBothExtraTimeScores) return true;
+  if (Number(match.extraTimeHomeGoals) !== Number(match.extraTimeAwayGoals)) return false;
+  const hasBothPenaltyScores = match.penaltiesHomeGoals !== '' && match.penaltiesHomeGoals != null
+    && match.penaltiesAwayGoals !== '' && match.penaltiesAwayGoals != null;
+  return !hasBothPenaltyScores || Number(match.penaltiesHomeGoals) === Number(match.penaltiesAwayGoals);
+}
+
 function createRow(m, idx) {
   const tr = document.createElement('tr');
   const ashdodGoals = m.homeAway === 'away' ? m.awayGoals : m.homeGoals;
   const opponentGoals = m.homeAway === 'away' ? m.homeGoals : m.awayGoals;
+  const extraTimeAshdodGoals = m.homeAway === 'away' ? m.extraTimeAwayGoals : m.extraTimeHomeGoals;
+  const extraTimeOpponentGoals = m.homeAway === 'away' ? m.extraTimeHomeGoals : m.extraTimeAwayGoals;
+  const penaltiesAshdodGoals = m.homeAway === 'away' ? m.penaltiesAwayGoals : m.penaltiesHomeGoals;
+  const penaltiesOpponentGoals = m.homeAway === 'away' ? m.penaltiesHomeGoals : m.penaltiesAwayGoals;
   tr.innerHTML = `
     <td data-label="יריבה"><input type="text" data-field="opponent" value="${attr(m.opponent)}" placeholder="שם היריבה"></td>
     <td data-label="סוג משחק">
@@ -238,12 +259,18 @@ function createRow(m, idx) {
     <td data-label="תאריך"><input type="date" data-field="date" value="${attr(m.date)}"></td>
     <td data-label="גולי אשדוד"><input type="number" min="0" data-field="ashdodGoals" value="${attr(ashdodGoals)}" placeholder="-"></td>
     <td data-label="גולי יריבה"><input type="number" min="0" data-field="opponentGoals" value="${attr(opponentGoals)}" placeholder="-"></td>
+    <td class="knockout-field extra-time-field" data-label="שערי אשדוד בהארכה"><input type="number" min="0" data-field="extraTimeAshdodGoals" value="${attr(extraTimeAshdodGoals)}" placeholder="-"></td>
+    <td class="knockout-field extra-time-field" data-label="שערי יריבה בהארכה"><input type="number" min="0" data-field="extraTimeOpponentGoals" value="${attr(extraTimeOpponentGoals)}" placeholder="-"></td>
+    <td class="knockout-field penalties-field" data-label="פנדלים אשדוד"><input type="number" min="0" data-field="penaltiesAshdodGoals" value="${attr(penaltiesAshdodGoals)}" placeholder="-"></td>
+    <td class="knockout-field penalties-field" data-label="פנדלים יריבה"><input type="number" min="0" data-field="penaltiesOpponentGoals" value="${attr(penaltiesOpponentGoals)}" placeholder="-"></td>
     <td data-label="מגרש"><input type="text" data-field="venueName" value="${attr(m.venueName)}" placeholder="שם המגרש"></td>
     <td data-label="כתובת (לניווט בוויז)"><input type="text" data-field="address" value="${attr(m.address)}" placeholder="כתובת מדויקת"></td>
     <td data-label="הערות"><input type="text" data-field="notes" value="${attr(m.notes)}" placeholder="הערה (אופציונלי)"></td>
     <td data-label="לינק לצפייה במשחק"><input type="url" data-field="videoUrl" value="${attr(m.videoUrl)}" placeholder="קישור לסרטון (אופציונלי)"></td>
     <td><button type="button" class="btn btn-danger" data-action="delete">מחק</button></td>
   `;
+
+  updateKnockoutFields(tr, m);
 
   tr.querySelectorAll('input, select').forEach(el => {
     el.addEventListener('input', () => {
@@ -256,14 +283,25 @@ function createRow(m, idx) {
         else matches[idx].awayGoals = el.value;
       } else if (field === 'homeAway') {
         [matches[idx].homeGoals, matches[idx].awayGoals] = [matches[idx].awayGoals, matches[idx].homeGoals];
+        [matches[idx].extraTimeHomeGoals, matches[idx].extraTimeAwayGoals] = [matches[idx].extraTimeAwayGoals, matches[idx].extraTimeHomeGoals];
+        [matches[idx].penaltiesHomeGoals, matches[idx].penaltiesAwayGoals] = [matches[idx].penaltiesAwayGoals, matches[idx].penaltiesHomeGoals];
         matches[idx][field] = el.value;
         saveDraft();
         render();
         return;
+      } else if (field === 'extraTimeAshdodGoals') {
+        matches[idx][matches[idx].homeAway === 'away' ? 'extraTimeAwayGoals' : 'extraTimeHomeGoals'] = el.value;
+      } else if (field === 'extraTimeOpponentGoals') {
+        matches[idx][matches[idx].homeAway === 'away' ? 'extraTimeHomeGoals' : 'extraTimeAwayGoals'] = el.value;
+      } else if (field === 'penaltiesAshdodGoals') {
+        matches[idx][matches[idx].homeAway === 'away' ? 'penaltiesAwayGoals' : 'penaltiesHomeGoals'] = el.value;
+      } else if (field === 'penaltiesOpponentGoals') {
+        matches[idx][matches[idx].homeAway === 'away' ? 'penaltiesHomeGoals' : 'penaltiesAwayGoals'] = el.value;
       } else {
         matches[idx][field] = el.value;
       }
       saveDraft();
+      updateKnockoutFields(tr, matches[idx]);
       if (!showCompletedMatches && hasMatchResult(matches[idx])) render();
     });
   });
@@ -276,6 +314,17 @@ function createRow(m, idx) {
   });
 
   return tr;
+}
+
+function updateKnockoutFields(row, match) {
+  const regulationIsDraw = match.matchType === 'cup' && hasMatchResult(match)
+    && Number(match.homeGoals) === Number(match.awayGoals);
+  const extraTimeIsDraw = regulationIsDraw
+    && match.extraTimeHomeGoals !== '' && match.extraTimeHomeGoals != null
+    && match.extraTimeAwayGoals !== '' && match.extraTimeAwayGoals != null
+    && Number(match.extraTimeHomeGoals) === Number(match.extraTimeAwayGoals);
+  row.querySelectorAll('.extra-time-field').forEach(field => field.classList.toggle('is-hidden', !regulationIsDraw));
+  row.querySelectorAll('.penalties-field').forEach(field => field.classList.toggle('is-hidden', !extraTimeIsDraw));
 }
 
 function attr(str) {
