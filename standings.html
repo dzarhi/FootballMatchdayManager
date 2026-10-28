@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מ.ס. אשדוד - ילדים ב' | טבלת הליגה</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <button id="theme-toggle" class="theme-toggle" aria-label="החלף מצב תצוגה">🌙</button>
+    <button id="refresh-btn" class="refresh-btn" aria-label="רענן נתונים">🔄</button>
+    <div class="header-content">
+      <img src="assets/logo.png" alt="סמל מ.ס. אשדוד" class="team-logo">
+      <div class="header-text">
+        <h1>מ.ס. אשדוד 2026/27</h1>
+        <p class="subtitle">ילדים ב' &middot; טבלת הליגה</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="page-nav" aria-label="עמודים נוספים">
+      <a class="page-nav-link" href="index.html">חזרה ללוח המשחקים</a>
+      <a class="page-nav-link" href="results.html">תוצאות הליגה</a>
+      <a class="page-nav-link" href="stats.html">סטטיסטיקות המשחקים</a>
+    </nav>
+    <section aria-labelledby="league-title">
+      <h2 id="league-title" class="section-title">טבלת ילדים ב' מרכז</h2>
+      <div class="league-meta">
+        <a href="https://vole.one.co.il/league/1248" target="_blank" rel="noopener noreferrer">מקור: Vole</a>
+        <span id="league-updated"></span>
+      </div>
+      <p id="league-status" class="stats-intro" role="status">טוען נתוני ליגה...</p>
+      <div id="league-table-wrap" class="stats-table-wrap" role="region" aria-label="טבלת הליגה" tabindex="0" hidden>
+        <table class="stats-table league-table">
+          <thead><tr>
+            <th scope="col">מקום</th><th scope="col">קבוצה</th>
+            <th scope="col">מש׳</th><th scope="col">נצ׳</th>
+            <th scope="col">ת׳</th><th scope="col">הפ׳</th>
+            <th scope="col">זכות</th><th scope="col">חובה</th>
+            <th scope="col">הפרש</th><th scope="col">נק׳</th>
+          </tr></thead>
+          <tbody id="league-rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>מ.ס. אשדוד - ילדים ב'</p>
+    <p class="credit">Developed by Danny Zarhi</p>
+  </footer>
+  <script src="js/utils.js"></script>
+  <script src="js/league.js"></script>
+  <script data-goatcounter="https://ashdod2014.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

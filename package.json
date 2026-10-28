@@ -1,0 +1,13 @@
+{
+  "name": "football-matchday-manager",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "sync:vole": "node scripts/sync-vole.mjs",
+    "sync:check": "node scripts/sync-vole.mjs --check"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
