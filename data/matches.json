@@ -138,6 +138,23 @@
     "videoUrl": ""
   },
   {
+    "id": "7c3e4b4d-6cac-480e-9fd0-0d48c2493701",
+    "opponent": "הפועל ר\"ג צפון",
+    "homeAway": "away",
+    "matchType": "cup",
+    "date": "2026-11-07",
+    "homeGoals": "",
+    "awayGoals": "",
+    "extraTimeHomeGoals": "",
+    "extraTimeAwayGoals": "",
+    "penaltiesHomeGoals": "",
+    "penaltiesAwayGoals": "",
+    "venueName": "",
+    "address": "",
+    "notes": "",
+    "videoUrl": ""
+  },
+  {
     "id": "league-r04-2026-11-14",
     "opponent": "מ.ס. קדימה צורן \"צו פיוס\"",
     "homeAway": "home",
