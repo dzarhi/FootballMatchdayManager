@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   document.getElementById('download-btn').addEventListener('click', downloadJson);
   document.getElementById('save-github-btn').addEventListener('click', saveToGithub);
+  document.getElementById('sync-league-btn').addEventListener('click', syncLeagueNow);
 
   document.getElementById('gh-token-save').addEventListener('click', () => {
     const input = document.getElementById('gh-token-input');
@@ -103,6 +104,7 @@ function updateGithubUI() {
   document.getElementById('gh-disconnected-view').classList.toggle('hidden', connected);
   document.getElementById('gh-connected-view').classList.toggle('hidden', !connected);
   document.getElementById('save-github-btn').disabled = !connected;
+  document.getElementById('sync-league-btn').disabled = !connected;
 }
 
 function hasInvalidMatch() {
@@ -162,6 +164,43 @@ async function saveToGithub() {
     setStatus('השינוי נשמר ב-main ב-GitHub. הפרסום לאתר תלוי בהצלחת GitHub Actions; אם הוא לא מופיע אחרי דקה-שתיים, בדקו את Actions.');
   } catch (err) {
     setStatus(err.message || 'שגיאה בשמירה ל-GitHub.', true);
+  }
+}
+
+async function syncLeagueNow() {
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) {
+    setStatus('חברו קודם טוקן GitHub.', true);
+    return;
+  }
+
+  const button = document.getElementById('sync-league-btn');
+  button.disabled = true;
+  setStatus('שולח בקשת סנכרון ל-GitHub Actions...');
+  try {
+    const response = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/site.yml/dispatches`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ ref: GITHUB_BRANCH })
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      if (response.status === 403) {
+        throw new Error('לטוקן אין הרשאת Actions: Read and write. עדכנו את הרשאות הטוקן ונסו שוב.');
+      }
+      throw new Error(error.message || 'לא ניתן להפעיל את הסנכרון ב-GitHub.');
+    }
+
+    setStatus('בקשת הסנכרון נשלחה. הנתונים יתעדכנו באתר לאחר ש-GitHub Actions תסיים את הריצה.');
+  } catch (error) {
+    setStatus(error.message || 'שגיאה בשליחת בקשת הסנכרון.', true);
+  } finally {
+    updateGithubUI();
   }
 }
 

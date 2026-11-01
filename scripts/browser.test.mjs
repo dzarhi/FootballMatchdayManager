@@ -137,6 +137,30 @@ test('league loading failure does not break existing team statistics', async () 
   await page.context().close();
 });
 
+test('admin can manually dispatch the league sync with a connected GitHub token', async () => {
+  const page = await newPage();
+  await page.addInitScript(() => localStorage.setItem('fmm_github_token', 'test-token'));
+  let dispatchRequest;
+  await page.route('https://api.github.com/repos/dzarhi/FootballMatchdayManager/actions/workflows/site.yml/dispatches', async route => {
+    dispatchRequest = {
+      method: route.request().method(),
+      authorization: route.request().headers().authorization,
+      body: route.request().postDataJSON()
+    };
+    await route.fulfill({ status: 204 });
+  });
+  await page.goto(`${baseUrl}/admin.html`);
+  const syncButton = page.locator('#sync-league-btn');
+  await syncButton.click();
+  await page.waitForFunction(() => document.getElementById('status-msg').textContent.includes('בקשת הסנכרון נשלחה'));
+  assert.deepEqual(dispatchRequest, {
+    method: 'POST',
+    authorization: 'Bearer test-token',
+    body: { ref: 'main' }
+  });
+  await page.context().close();
+});
+
 test('stale data is marked and external names are rendered as text', async () => {
   const page = await newPage();
   const snapshot = JSON.parse(await readFile(join(root, 'data/league.json'), 'utf8'));
