@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-01T10:47:03.393Z",
+  "updatedAt": "2026-11-01T11:15:51.886Z",
   "standings": [
     {
       "rank": 1,
@@ -972,8 +972,8 @@
       "id": "6acc331c9878872a9639ec1d",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -990,8 +990,8 @@
       "id": "6acc331c9878872a9639ec1f",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -1008,8 +1008,8 @@
       "id": "6acc331c9878872a9639ec21",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -1026,8 +1026,8 @@
       "id": "6acc331c9878872a9639ec22",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -1044,8 +1044,8 @@
       "id": "6acc331c9878872a9639ec23",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -1062,8 +1062,8 @@
       "id": "6acc331c9878872a9639ec24",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -1080,8 +1080,8 @@
       "id": "6acc331c9878872a9639ec26",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -1098,8 +1098,8 @@
       "id": "6acc331c9878872a9639ec29",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -1116,8 +1116,8 @@
       "id": "6acc331c9878872a9639ec2b",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -1134,8 +1134,8 @@
       "id": "6acc331c9878872a9639ec2c",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -1152,8 +1152,8 @@
       "id": "6acc331c9878872a9639ec2e",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -1170,8 +1170,8 @@
       "id": "6acc331c9878872a9639ec30",
       "round": 4,
       "date": "2026-11-14",
-      "time": "00:00",
-      "kickoffAt": "2026-11-13T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -1188,8 +1188,8 @@
       "id": "6acc331c9878872a9639ec33",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -1206,8 +1206,8 @@
       "id": "6acc331c9878872a9639ec34",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -1224,8 +1224,8 @@
       "id": "6acc331c9878872a9639ec36",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -1242,8 +1242,8 @@
       "id": "6acc331c9878872a9639ec37",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -1260,8 +1260,8 @@
       "id": "6acc331c9878872a9639ec3a",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -1278,8 +1278,8 @@
       "id": "6acc331c9878872a9639ec3d",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -1296,8 +1296,8 @@
       "id": "6acc331c9878872a9639ec3e",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -1314,8 +1314,8 @@
       "id": "6acc331c9878872a9639ec3f",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -1332,8 +1332,8 @@
       "id": "6acc331c9878872a9639ec40",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -1350,8 +1350,8 @@
       "id": "6acc331c9878872a9639ec42",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -1368,8 +1368,8 @@
       "id": "6acc331c9878872a9639ec43",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -1386,8 +1386,8 @@
       "id": "6acc331c9878872a9639ec45",
       "round": 5,
       "date": "2026-11-28",
-      "time": "00:00",
-      "kickoffAt": "2026-11-27T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -1404,8 +1404,8 @@
       "id": "6acc331c9878872a9639ec48",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -1422,8 +1422,8 @@
       "id": "6acc331c9878872a9639ec49",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -1440,8 +1440,8 @@
       "id": "6acc331c9878872a9639ec4a",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -1458,8 +1458,8 @@
       "id": "6acc331c9878872a9639ec4c",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -1476,8 +1476,8 @@
       "id": "6acc331c9878872a9639ec4d",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -1494,8 +1494,8 @@
       "id": "6acc331c9878872a9639ec4e",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -1512,8 +1512,8 @@
       "id": "6acc331c9878872a9639ec50",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -1530,8 +1530,8 @@
       "id": "6acc331c9878872a9639ec53",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -1548,8 +1548,8 @@
       "id": "6acc331c9878872a9639ec55",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -1566,8 +1566,8 @@
       "id": "6acc331c9878872a9639ec57",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -1584,8 +1584,8 @@
       "id": "6acc331c9878872a9639ec58",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -1602,8 +1602,8 @@
       "id": "6acc331c9878872a9639ec5a",
       "round": 6,
       "date": "2026-12-05",
-      "time": "00:00",
-      "kickoffAt": "2026-12-04T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -1620,8 +1620,8 @@
       "id": "6acc331c9878872a9639ec5c",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -1638,8 +1638,8 @@
       "id": "6acc331c9878872a9639ec5e",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -1656,8 +1656,8 @@
       "id": "6acc331c9878872a9639ec5f",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -1674,8 +1674,8 @@
       "id": "6acc331c9878872a9639ec62",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -1692,8 +1692,8 @@
       "id": "6acc331c9878872a9639ec64",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -1710,8 +1710,8 @@
       "id": "6acc331c9878872a9639ec66",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -1728,8 +1728,8 @@
       "id": "6acc331c9878872a9639ec68",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -1746,8 +1746,8 @@
       "id": "6acc331c9878872a9639ec69",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -1764,8 +1764,8 @@
       "id": "6acc331c9878872a9639ec6b",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -1782,8 +1782,8 @@
       "id": "6acc331c9878872a9639ec6c",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -1800,8 +1800,8 @@
       "id": "6acc331c9878872a9639ec6d",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -1818,8 +1818,8 @@
       "id": "6acc331c9878872a9639ec6f",
       "round": 7,
       "date": "2026-12-19",
-      "time": "00:00",
-      "kickoffAt": "2026-12-18T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -1836,8 +1836,8 @@
       "id": "6acc331c9878872a9639ec71",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -1854,8 +1854,8 @@
       "id": "6acc331c9878872a9639ec73",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -1872,8 +1872,8 @@
       "id": "6acc331c9878872a9639ec74",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -1890,8 +1890,8 @@
       "id": "6acc331c9878872a9639ec75",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -1908,8 +1908,8 @@
       "id": "6acc331c9878872a9639ec77",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -1926,8 +1926,8 @@
       "id": "6acc331c9878872a9639ec79",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -1944,8 +1944,8 @@
       "id": "6acc331c9878872a9639ec7b",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -1962,8 +1962,8 @@
       "id": "6acc331c9878872a9639ec7c",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -1980,8 +1980,8 @@
       "id": "6acc331c9878872a9639ec7f",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -1998,8 +1998,8 @@
       "id": "6acc331c9878872a9639ec81",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -2016,8 +2016,8 @@
       "id": "6acc331c9878872a9639ec83",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -2034,8 +2034,8 @@
       "id": "6acc331c9878872a9639ec84",
       "round": 8,
       "date": "2026-12-26",
-      "time": "00:00",
-      "kickoffAt": "2026-12-25T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -2052,8 +2052,8 @@
       "id": "6acc331c9878872a9639ec86",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -2070,8 +2070,8 @@
       "id": "6acc331c9878872a9639ec87",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -2088,8 +2088,8 @@
       "id": "6acc331c9878872a9639ec8a",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -2106,8 +2106,8 @@
       "id": "6acc331c9878872a9639ec8c",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -2124,8 +2124,8 @@
       "id": "6acc331c9878872a9639ec8e",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -2142,8 +2142,8 @@
       "id": "6acc331c9878872a9639ec8f",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -2160,8 +2160,8 @@
       "id": "6acc331c9878872a9639ec91",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -2178,8 +2178,8 @@
       "id": "6acc331c9878872a9639ec94",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -2196,8 +2196,8 @@
       "id": "6acc331c9878872a9639ec95",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -2214,8 +2214,8 @@
       "id": "6acc331c9878872a9639ec96",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -2232,8 +2232,8 @@
       "id": "6acc331c9878872a9639ec98",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -2250,8 +2250,8 @@
       "id": "6acc331c9878872a9639ec99",
       "round": 9,
       "date": "2027-01-09",
-      "time": "00:00",
-      "kickoffAt": "2027-01-08T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -2268,8 +2268,8 @@
       "id": "6acc331c9878872a9639ec9b",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -2286,8 +2286,8 @@
       "id": "6acc331c9878872a9639ec9c",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -2304,8 +2304,8 @@
       "id": "6acc331c9878872a9639ec9e",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -2322,8 +2322,8 @@
       "id": "6acc331c9878872a9639ec9f",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -2340,8 +2340,8 @@
       "id": "6acc331c9878872a9639eca1",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -2358,8 +2358,8 @@
       "id": "6acc331c9878872a9639eca4",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -2376,8 +2376,8 @@
       "id": "6acc331c9878872a9639eca5",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -2394,8 +2394,8 @@
       "id": "6acc331c9878872a9639eca7",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -2412,8 +2412,8 @@
       "id": "6acc331c9878872a9639eca8",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -2430,8 +2430,8 @@
       "id": "6acc331c9878872a9639ecab",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -2448,8 +2448,8 @@
       "id": "6acc331c9878872a9639ecad",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -2466,8 +2466,8 @@
       "id": "6acc331c9878872a9639ecae",
       "round": 10,
       "date": "2027-01-16",
-      "time": "00:00",
-      "kickoffAt": "2027-01-15T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -2484,8 +2484,8 @@
       "id": "6acc331d9878872a9639ecb0",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -2502,8 +2502,8 @@
       "id": "6acc331d9878872a9639ecb2",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -2520,8 +2520,8 @@
       "id": "6acc331d9878872a9639ecb4",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -2538,8 +2538,8 @@
       "id": "6acc331d9878872a9639ecb6",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -2556,8 +2556,8 @@
       "id": "6acc331d9878872a9639ecb7",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -2574,8 +2574,8 @@
       "id": "6acc331d9878872a9639ecb9",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -2592,8 +2592,8 @@
       "id": "6acc331d9878872a9639ecbb",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -2610,8 +2610,8 @@
       "id": "6acc331d9878872a9639ecbd",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -2628,8 +2628,8 @@
       "id": "6acc331d9878872a9639ecbf",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -2646,8 +2646,8 @@
       "id": "6acc331d9878872a9639ecc1",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -2664,8 +2664,8 @@
       "id": "6acc331d9878872a9639ecc2",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -2682,8 +2682,8 @@
       "id": "6acc331d9878872a9639ecc3",
       "round": 11,
       "date": "2027-01-23",
-      "time": "00:00",
-      "kickoffAt": "2027-01-22T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -2700,8 +2700,8 @@
       "id": "6acc331d9878872a9639ecc5",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -2718,8 +2718,8 @@
       "id": "6acc331d9878872a9639ecc6",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -2736,8 +2736,8 @@
       "id": "6acc331d9878872a9639ecc7",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -2754,8 +2754,8 @@
       "id": "6acc331d9878872a9639ecca",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -2772,8 +2772,8 @@
       "id": "6acc331d9878872a9639eccc",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -2790,8 +2790,8 @@
       "id": "6acc331d9878872a9639eccd",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -2808,8 +2808,8 @@
       "id": "6acc331d9878872a9639ecd0",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -2826,8 +2826,8 @@
       "id": "6acc331d9878872a9639ecd1",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -2844,8 +2844,8 @@
       "id": "6acc331d9878872a9639ecd3",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -2862,8 +2862,8 @@
       "id": "6acc331d9878872a9639ecd4",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -2880,8 +2880,8 @@
       "id": "6acc331d9878872a9639ecd6",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -2898,8 +2898,8 @@
       "id": "6acc331d9878872a9639ecd8",
       "round": 12,
       "date": "2027-01-30",
-      "time": "00:00",
-      "kickoffAt": "2027-01-29T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -2916,8 +2916,8 @@
       "id": "6acc331d9878872a9639ecdb",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -2934,8 +2934,8 @@
       "id": "6acc331d9878872a9639ecdd",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -2952,8 +2952,8 @@
       "id": "6acc331d9878872a9639ecde",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -2970,8 +2970,8 @@
       "id": "6acc331d9878872a9639ecdf",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -2988,8 +2988,8 @@
       "id": "6acc331d9878872a9639ece1",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -3006,8 +3006,8 @@
       "id": "6acc331d9878872a9639ece3",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -3024,8 +3024,8 @@
       "id": "6acc331d9878872a9639ece5",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -3042,8 +3042,8 @@
       "id": "6acc331d9878872a9639ece6",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -3060,8 +3060,8 @@
       "id": "6acc331d9878872a9639ece9",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -3078,8 +3078,8 @@
       "id": "6acc331d9878872a9639eceb",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -3096,8 +3096,8 @@
       "id": "6acc331d9878872a9639ecec",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -3114,8 +3114,8 @@
       "id": "6acc331d9878872a9639eced",
       "round": 13,
       "date": "2027-02-06",
-      "time": "00:00",
-      "kickoffAt": "2027-02-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -3132,8 +3132,8 @@
       "id": "6acc331d9878872a9639ecef",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -3150,8 +3150,8 @@
       "id": "6acc331d9878872a9639ecf0",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -3168,8 +3168,8 @@
       "id": "6acc331d9878872a9639ecf2",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -3186,8 +3186,8 @@
       "id": "6acc331d9878872a9639ecf4",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -3204,8 +3204,8 @@
       "id": "6acc331d9878872a9639ecf6",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -3222,8 +3222,8 @@
       "id": "6acc331d9878872a9639ecf8",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -3240,8 +3240,8 @@
       "id": "6acc331d9878872a9639ecf9",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -3258,8 +3258,8 @@
       "id": "6acc331d9878872a9639ecfc",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -3276,8 +3276,8 @@
       "id": "6acc331d9878872a9639ecfd",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -3294,8 +3294,8 @@
       "id": "6acc331d9878872a9639ecfe",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -3312,8 +3312,8 @@
       "id": "6acc331d9878872a9639ecff",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -3330,8 +3330,8 @@
       "id": "6acc331d9878872a9639ed02",
       "round": 14,
       "date": "2027-02-13",
-      "time": "00:00",
-      "kickoffAt": "2027-02-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -3348,8 +3348,8 @@
       "id": "6acc331d9878872a9639ed05",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -3366,8 +3366,8 @@
       "id": "6acc331d9878872a9639ed07",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -3384,8 +3384,8 @@
       "id": "6acc331d9878872a9639ed08",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -3402,8 +3402,8 @@
       "id": "6acc331d9878872a9639ed09",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -3420,8 +3420,8 @@
       "id": "6acc331d9878872a9639ed0b",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -3438,8 +3438,8 @@
       "id": "6acc331d9878872a9639ed0d",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -3456,8 +3456,8 @@
       "id": "6acc331d9878872a9639ed0e",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -3474,8 +3474,8 @@
       "id": "6acc331d9878872a9639ed11",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -3492,8 +3492,8 @@
       "id": "6acc331d9878872a9639ed12",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -3510,8 +3510,8 @@
       "id": "6acc331d9878872a9639ed14",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -3528,8 +3528,8 @@
       "id": "6acc331d9878872a9639ed16",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -3546,8 +3546,8 @@
       "id": "6acc331d9878872a9639ed17",
       "round": 15,
       "date": "2027-02-20",
-      "time": "00:00",
-      "kickoffAt": "2027-02-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -3564,8 +3564,8 @@
       "id": "6acc331d9878872a9639ed19",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -3582,8 +3582,8 @@
       "id": "6acc331d9878872a9639ed1b",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -3600,8 +3600,8 @@
       "id": "6acc331d9878872a9639ed1d",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -3618,8 +3618,8 @@
       "id": "6acc331d9878872a9639ed1e",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -3636,8 +3636,8 @@
       "id": "6acc331d9878872a9639ed20",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -3654,8 +3654,8 @@
       "id": "6acc331d9878872a9639ed22",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -3672,8 +3672,8 @@
       "id": "6acc331d9878872a9639ed24",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -3690,8 +3690,8 @@
       "id": "6acc331d9878872a9639ed25",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -3708,8 +3708,8 @@
       "id": "6acc331d9878872a9639ed27",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -3726,8 +3726,8 @@
       "id": "6acc331d9878872a9639ed28",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -3744,8 +3744,8 @@
       "id": "6acc331d9878872a9639ed2a",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -3762,8 +3762,8 @@
       "id": "6acc331d9878872a9639ed2c",
       "round": 16,
       "date": "2027-03-06",
-      "time": "00:00",
-      "kickoffAt": "2027-03-05T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -3780,8 +3780,8 @@
       "id": "6acc331d9878872a9639ed2e",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -3798,8 +3798,8 @@
       "id": "6acc331d9878872a9639ed30",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -3816,8 +3816,8 @@
       "id": "6acc331d9878872a9639ed32",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -3834,8 +3834,8 @@
       "id": "6acc331d9878872a9639ed34",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -3852,8 +3852,8 @@
       "id": "6acc331d9878872a9639ed35",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -3870,8 +3870,8 @@
       "id": "6acc331d9878872a9639ed36",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -3888,8 +3888,8 @@
       "id": "6acc331d9878872a9639ed39",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -3906,8 +3906,8 @@
       "id": "6acc331d9878872a9639ed3a",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -3924,8 +3924,8 @@
       "id": "6acc331d9878872a9639ed3c",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -3942,8 +3942,8 @@
       "id": "6acc331d9878872a9639ed3d",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -3960,8 +3960,8 @@
       "id": "6acc331d9878872a9639ed3f",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -3978,8 +3978,8 @@
       "id": "6acc331d9878872a9639ed41",
       "round": 17,
       "date": "2027-03-13",
-      "time": "00:00",
-      "kickoffAt": "2027-03-12T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -3996,8 +3996,8 @@
       "id": "6acc331d9878872a9639ed44",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -4014,8 +4014,8 @@
       "id": "6acc331d9878872a9639ed46",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -4032,8 +4032,8 @@
       "id": "6acc331d9878872a9639ed47",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -4050,8 +4050,8 @@
       "id": "6acc331d9878872a9639ed49",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -4068,8 +4068,8 @@
       "id": "6acc331d9878872a9639ed4a",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -4086,8 +4086,8 @@
       "id": "6acc331d9878872a9639ed4c",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -4104,8 +4104,8 @@
       "id": "6acc331d9878872a9639ed4e",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -4122,8 +4122,8 @@
       "id": "6acc331d9878872a9639ed4f",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -4140,8 +4140,8 @@
       "id": "6acc331d9878872a9639ed50",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -4158,8 +4158,8 @@
       "id": "6acc331d9878872a9639ed53",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -4176,8 +4176,8 @@
       "id": "6acc331d9878872a9639ed55",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -4194,8 +4194,8 @@
       "id": "6acc331d9878872a9639ed56",
       "round": 18,
       "date": "2027-03-20",
-      "time": "00:00",
-      "kickoffAt": "2027-03-19T22:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -4212,8 +4212,8 @@
       "id": "6acc331d9878872a9639ed58",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -4230,8 +4230,8 @@
       "id": "6acc331d9878872a9639ed59",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -4248,8 +4248,8 @@
       "id": "6acc331d9878872a9639ed5c",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -4266,8 +4266,8 @@
       "id": "6acc331d9878872a9639ed5e",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -4284,8 +4284,8 @@
       "id": "6acc331d9878872a9639ed5f",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -4302,8 +4302,8 @@
       "id": "6acc331d9878872a9639ed61",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -4320,8 +4320,8 @@
       "id": "6acc331d9878872a9639ed62",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -4338,8 +4338,8 @@
       "id": "6acc331d9878872a9639ed64",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -4356,8 +4356,8 @@
       "id": "6acc331d9878872a9639ed65",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -4374,8 +4374,8 @@
       "id": "6acc331d9878872a9639ed67",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -4392,8 +4392,8 @@
       "id": "6acc331d9878872a9639ed68",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -4410,8 +4410,8 @@
       "id": "6acc331d9878872a9639ed6b",
       "round": 19,
       "date": "2027-03-27",
-      "time": "00:00",
-      "kickoffAt": "2027-03-26T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -4428,8 +4428,8 @@
       "id": "6acc331d9878872a9639ed6e",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -4446,8 +4446,8 @@
       "id": "6acc331d9878872a9639ed70",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
@@ -4464,8 +4464,8 @@
       "id": "6acc331d9878872a9639ed72",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -4482,8 +4482,8 @@
       "id": "6acc331d9878872a9639ed73",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -4500,8 +4500,8 @@
       "id": "6acc331d9878872a9639ed75",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -4518,8 +4518,8 @@
       "id": "6acc331d9878872a9639ed76",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -4536,8 +4536,8 @@
       "id": "6acc331d9878872a9639ed77",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -4554,8 +4554,8 @@
       "id": "6acc331d9878872a9639ed79",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -4572,8 +4572,8 @@
       "id": "6acc331d9878872a9639ed7b",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -4590,8 +4590,8 @@
       "id": "6acc331d9878872a9639ed7d",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -4608,8 +4608,8 @@
       "id": "6acc331d9878872a9639ed7f",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -4626,8 +4626,8 @@
       "id": "6acc331d9878872a9639ed80",
       "round": 20,
       "date": "2027-04-03",
-      "time": "00:00",
-      "kickoffAt": "2027-04-02T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -4644,8 +4644,8 @@
       "id": "6acc331d9878872a9639ed82",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -4662,8 +4662,8 @@
       "id": "6acc331d9878872a9639ed84",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -4680,8 +4680,8 @@
       "id": "6acc331d9878872a9639ed85",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -4698,8 +4698,8 @@
       "id": "6acc331d9878872a9639ed87",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -4716,8 +4716,8 @@
       "id": "6acc331d9878872a9639ed8a",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -4734,8 +4734,8 @@
       "id": "6acc331d9878872a9639ed8b",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -4752,8 +4752,8 @@
       "id": "6acc331d9878872a9639ed8c",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -4770,8 +4770,8 @@
       "id": "6acc331d9878872a9639ed8d",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -4788,8 +4788,8 @@
       "id": "6acc331d9878872a9639ed8f",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -4806,8 +4806,8 @@
       "id": "6acc331d9878872a9639ed90",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -4824,8 +4824,8 @@
       "id": "6acc331d9878872a9639ed93",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -4842,8 +4842,8 @@
       "id": "6acc331d9878872a9639ed95",
       "round": 21,
       "date": "2027-04-06",
-      "time": "00:00",
-      "kickoffAt": "2027-04-05T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -4860,8 +4860,8 @@
       "id": "6acc331d9878872a9639ed97",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1034,
         "name": "מכבי ת\"א"
@@ -4878,8 +4878,8 @@
       "id": "6acc331d9878872a9639ed9a",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
@@ -4896,8 +4896,8 @@
       "id": "6acc331d9878872a9639ed9c",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
@@ -4914,8 +4914,8 @@
       "id": "6acc331d9878872a9639ed9e",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5874,
         "name": "הפועל הרצליה עירוני \"צו פיוס\""
@@ -4932,8 +4932,8 @@
       "id": "6acc331d9878872a9639ed9f",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
@@ -4950,8 +4950,8 @@
       "id": "6acc331d9878872a9639eda0",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
@@ -4968,8 +4968,8 @@
       "id": "6acc331d9878872a9639eda1",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4666,
         "name": "בני יהודה ת'א"
@@ -4986,8 +4986,8 @@
       "id": "6acc331d9878872a9639eda3",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
@@ -5004,8 +5004,8 @@
       "id": "6acc331d9878872a9639eda6",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 3204,
         "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
@@ -5022,8 +5022,8 @@
       "id": "6acc331d9878872a9639eda7",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5233,
         "name": "ס. נס ציונה"
@@ -5040,8 +5040,8 @@
       "id": "6acc331d9878872a9639eda8",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
@@ -5058,8 +5058,8 @@
       "id": "6acc331d9878872a9639edaa",
       "round": 22,
       "date": "2027-04-10",
-      "time": "00:00",
-      "kickoffAt": "2027-04-09T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 4895,
         "name": "הפועל ר\"ג דרום"
@@ -5076,8 +5076,8 @@
       "id": "6acc331d9878872a9639edad",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
@@ -5094,8 +5094,8 @@
       "id": "6acc331d9878872a9639edae",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -5112,8 +5112,8 @@
       "id": "6acc331d9878872a9639edaf",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -5130,8 +5130,8 @@
       "id": "6acc331d9878872a9639edb1",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
@@ -5148,8 +5148,8 @@
       "id": "6acc331d9878872a9639edb3",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2849,
         "name": "הפועל כפ\"ס אור"
@@ -5166,8 +5166,8 @@
       "id": "6acc331d9878872a9639edb5",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
@@ -5184,8 +5184,8 @@
       "id": "6acc331d9878872a9639edb6",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
@@ -5202,8 +5202,8 @@
       "id": "6acc331d9878872a9639edb7",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 6248,
         "name": "הפועל ב\"ש לבן"
@@ -5220,8 +5220,8 @@
       "id": "6acc331d9878872a9639edb8",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
@@ -5238,8 +5238,8 @@
       "id": "6acc331d9878872a9639edbb",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
@@ -5256,8 +5256,8 @@
       "id": "6acc331d9878872a9639edbd",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
@@ -5274,8 +5274,8 @@
       "id": "6acc331d9878872a9639edbf",
       "round": 23,
       "date": "2027-04-17",
-      "time": "00:00",
-      "kickoffAt": "2027-04-16T21:00:00.000Z",
+      "time": null,
+      "kickoffAt": null,
       "home": {
         "id": 1851,
         "name": "מכבי נתניה 1"
