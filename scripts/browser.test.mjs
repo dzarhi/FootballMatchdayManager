@@ -96,7 +96,8 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(await page.locator('.team-logo').evaluate(image => image.complete && image.naturalWidth > 0), true);
     await page.locator('#league-round').selectOption('23');
     assert.equal(await page.locator('.league-result').count(), 3);
-    assert.equal(await page.locator('.league-result.upcoming .league-score').innerText(), 'טרם נערך');
+    assert.deepEqual(await page.locator('.league-result.upcoming .league-score').allInnerTexts(),
+      ['טרם נערך', 'טרם נערך']);
     await page.locator('#league-round').selectOption('1');
     await page.screenshot({ path: join(tmpdir(), `fmm-results-${name}.png`), animations: 'disabled' });
     await page.locator('#theme-toggle').click();
