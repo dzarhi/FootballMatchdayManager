@@ -24,9 +24,17 @@ test('normalizes scheduled fixtures and validates final scores', () => {
   const games = normalizeRound(payload, 1);
   assert.equal(games.length, 12);
   assert.equal(games[0].date, '2026-10-17');
+  assert.equal(games[0].time, '10:30');
+  assert.equal(games[0].kickoffAt, '2026-10-17T07:30:00.000Z');
   assert.equal(games[0].homeGoals, 2);
   assert.equal(games[1].finished, false);
+  assert.equal(games[1].time, '10:30');
   assert.equal(games[1].homeGoals, null);
+
+  payload.games[2].date = '2026-10-17';
+  const dateOnlyGame = normalizeRound(payload, 1)[2];
+  assert.equal(dateOnlyGame.time, null);
+  assert.equal(dateOnlyGame.kickoffAt, null);
 });
 
 test('rejects partial, duplicate, malformed and wrong-season responses', () => {

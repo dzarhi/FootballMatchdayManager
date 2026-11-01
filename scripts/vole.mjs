@@ -40,6 +40,10 @@ export function normalizeRound(payload, roundNumber) {
     const date = new Intl.DateTimeFormat('en-CA', {
       timeZone: 'Asia/Jerusalem', year: 'numeric', month: '2-digit', day: '2-digit'
     }).format(new Date(game.date));
+    const kickoffAt = /\d{2}:\d{2}/.test(game.date) ? new Date(game.date).toISOString() : null;
+    const time = kickoffAt ? new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Jerusalem', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+    }).format(new Date(kickoffAt)) : null;
     requireValue(date >= '2026-07-01' && date < '2027-08-01', 'Game outside configured season');
     const home = normalizeTeam(game.home?.team);
     const away = normalizeTeam(game.away?.team);
@@ -51,7 +55,7 @@ export function normalizeRound(payload, roundNumber) {
     if (game.is_finished) requireValue(isScore(game.home.goals) && isScore(game.away.goals),
       'Invalid final score');
     return {
-      id: game._id, round: roundNumber, date, home, away, finished: game.is_finished,
+      id: game._id, round: roundNumber, date, time, kickoffAt, home, away, finished: game.is_finished,
       homeGoals: game.is_finished ? game.home.goals : null,
       awayGoals: game.is_finished ? game.away.goals : null
     };

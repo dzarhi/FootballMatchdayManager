@@ -93,8 +93,10 @@ function renderLeagueResults(league, round) {
   container.replaceChildren(...games.map(game => {
     const row = document.createElement('article');
     row.className = game.finished ? 'league-result' : 'league-result upcoming';
-    const date = leagueElement('time', formatDateHe(game.date));
-    date.dateTime = game.date;
+    const dateText = formatDateHe(game.date)
+      + (!game.finished && game.time ? ` · ${game.time}` : '');
+    const date = leagueElement('time', dateText);
+    date.dateTime = game.kickoffAt || game.date;
     const score = game.finished
       ? leagueElement('strong', '', 'league-score')
       : leagueElement('span', 'טרם נערך', 'league-score league-scheduled');
