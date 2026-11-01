@@ -66,7 +66,7 @@ async function collect() {
     return {
       source: SOURCE_URL, season: '2026/27', seasonId: SEASON_ID, teamId: TEAM_ID,
       leagueName: initial.league.name, updatedAt: new Date().toISOString(),
-      standings, results: games.filter(game => game.finished)
+      standings, results: games
     };
   } finally { await browser.close(); }
 }
@@ -79,13 +79,14 @@ async function main() {
   const snapshot = await collect();
   const previous = await readJson(snapshotPath, true);
   if (previous?.seasonId === SEASON_ID) {
-    const currentIds = new Set(snapshot.results.map(game => game.id));
-    if (previous.results.some(game => !currentIds.has(game.id))) {
+    const currentFinalIds = new Set(snapshot.results.filter(game => game.finished).map(game => game.id));
+    if (previous.results.some(game => game.finished && !currentFinalIds.has(game.id))) {
       throw new Error('Previously final games disappeared; retaining previous data');
     }
   }
   const merged = mergeResults(JSON.parse(originalText), snapshot.results);
-  console.log(`${snapshot.standings.length} teams, ${snapshot.results.length} final results, ${merged.changed} local scores updated`);
+  const finalResults = snapshot.results.filter(game => game.finished).length;
+  console.log(`${snapshot.standings.length} teams, ${finalResults} final results, ${merged.changed} local scores updated`);
   merged.warnings.forEach(warning => console.warn(warning));
   if (checkOnly) { console.log('Check only: no files written'); return; }
   if (await readFile(matchesPath, 'utf8') !== originalText) throw new Error('Local matches changed during sync; retry');

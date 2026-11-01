@@ -33,7 +33,14 @@ async function loadLeague() {
     const selector = document.getElementById('league-round');
     if (selector) {
       selector.replaceChildren(...Array.from({ length: 23 }, (_, index) => new Option(index + 1, index + 1)));
-      selector.value = String(Math.max(1, ...league.results.map(game => game.round)));
+      const today = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Jerusalem', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).format(new Date());
+      const upcomingRounds = league.results.filter(game => !game.finished && game.date >= today)
+        .map(game => game.round);
+      const lastFinishedRound = Math.max(1, ...league.results
+        .filter(game => game.finished).map(game => game.round));
+      selector.value = String(upcomingRounds.length ? Math.min(...upcomingRounds) : lastFinishedRound);
       selector.disabled = false;
       selector.addEventListener('change', () => renderLeagueResults(league, Number(selector.value)));
       renderLeagueResults(league, Number(selector.value));
@@ -80,22 +87,28 @@ function renderStandings(league) {
 }
 
 function renderLeagueResults(league, round) {
-  const games = league.results.filter(game => game.round === round && game.finished)
+  const games = league.results.filter(game => game.round === round)
     .sort((first, second) => first.date.localeCompare(second.date));
   const container = document.getElementById('league-results');
   container.replaceChildren(...games.map(game => {
     const row = document.createElement('article');
-    row.className = `league-result${game.home.id === league.teamId || game.away.id === league.teamId ? ' our-team' : ''}`;
+    row.className = game.finished ? 'league-result' : 'league-result upcoming';
     const date = leagueElement('time', formatDateHe(game.date));
     date.dateTime = game.date;
-    const score = leagueElement('strong', '', 'league-score');
-    score.setAttribute('aria-label', `${game.home.name} ${game.homeGoals}, ${game.away.name} ${game.awayGoals}`);
-    const numbers = leagueElement('bdi', `${game.awayGoals} - ${game.homeGoals}`);
-    numbers.dir = 'ltr';
-    score.append(numbers);
+    const score = game.finished
+      ? leagueElement('strong', '', 'league-score')
+      : leagueElement('span', 'טרם נערך', 'league-score league-scheduled');
+    if (game.finished) {
+      score.setAttribute('aria-label', `${game.home.name} ${game.homeGoals}, ${game.away.name} ${game.awayGoals}`);
+      const numbers = leagueElement('bdi', `${game.awayGoals} - ${game.homeGoals}`);
+      numbers.dir = 'ltr';
+      score.append(numbers);
+    } else {
+      score.setAttribute('aria-label', `${game.home.name} נגד ${game.away.name}, טרם נערך`);
+    }
     row.append(date, leagueElement('span', game.home.name, 'league-home'), score,
       leagueElement('span', game.away.name, 'league-away'));
     return row;
   }));
-  if (!games.length) container.append(leagueElement('p', 'אין עדיין תוצאות סופיות למחזור זה.', 'empty'));
+  if (!games.length) container.append(leagueElement('p', 'אין משחקים במחזור זה.', 'empty'));
 }

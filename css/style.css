@@ -303,6 +303,7 @@ html.dark-mode .league-meta a { color: var(--accent); }
 .league-home { text-align: left; overflow-wrap: anywhere; }
 .league-away { text-align: right; overflow-wrap: anywhere; }
 .league-score { text-align: center; font-size: 1.25rem; white-space: nowrap; }
+.league-score.league-scheduled { color: var(--muted); font-size: 0.85rem; }
 
 .results-list {
   display: grid;

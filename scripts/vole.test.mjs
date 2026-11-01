@@ -18,13 +18,14 @@ function localMatch(overrides = {}) {
     notes: 'Keep this note', videoUrl: 'https://example.com/video', address: 'Keep address', ...overrides };
 }
 
-test('validates a full round and only publishes final scores', () => {
+test('normalizes scheduled fixtures and validates final scores', () => {
   const payload = roundFixture();
   payload.games[1].is_finished = false;
   const games = normalizeRound(payload, 1);
   assert.equal(games.length, 12);
   assert.equal(games[0].date, '2026-10-17');
   assert.equal(games[0].homeGoals, 2);
+  assert.equal(games[1].finished, false);
   assert.equal(games[1].homeGoals, null);
 });
 

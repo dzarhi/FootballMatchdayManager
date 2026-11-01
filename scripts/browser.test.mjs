@@ -40,8 +40,23 @@ async function newPage(viewport = { width: 1280, height: 900 }) {
 }
 
 test('league table and round results work on desktop and mobile without page overflow', async () => {
+  const snapshot = JSON.parse(await readFile(join(root, 'data/league.json'), 'utf8'));
+  snapshot.results = snapshot.results.filter(game => game.finished);
+  snapshot.results.push({
+    id: 'scheduled-round-23', round: 23, date: '2027-04-17',
+    home: { id: 10001, name: 'קבוצה מארחת' },
+    away: { id: 10002, name: 'קבוצה אורחת' },
+    finished: false, homeGoals: null, awayGoals: null
+  });
+  snapshot.results.push({
+    id: 'finished-round-23', round: 23, date: '2027-04-10',
+    home: { id: 10003, name: 'קבוצה עם תוצאה' },
+    away: { id: 10004, name: 'יריבה' },
+    finished: true, homeGoals: 2, awayGoals: 1
+  });
   for (const [name, viewport] of [['desktop', { width: 1280, height: 900 }], ['mobile', { width: 390, height: 844 }]]) {
     const page = await newPage(viewport);
+    await page.route('**/data/league.json', route => route.fulfill({ json: snapshot }));
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${baseUrl}/index.html`);
@@ -57,16 +72,17 @@ test('league table and round results work on desktop and mobile without page ove
     await page.waitForFunction(() => !document.getElementById('league-round').disabled);
     assert.equal(await page.locator('#league-rows').count(), 0);
     assert.equal(await page.locator('#league-round option').count(), 23);
-    const snapshot = JSON.parse(await readFile(join(root, 'data/league.json'), 'utf8'));
     const selectedRound = Number(await page.locator('#league-round').inputValue());
+    assert.equal(selectedRound, 23);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
+    assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
+    assert.equal(await page.locator('.league-result.upcoming').count(), 1);
+    assert.equal(await page.locator('.league-result.our-team').count(), 0);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     assert.equal(await page.locator('.team-logo').evaluate(image => image.complete && image.naturalWidth > 0), true);
     await page.locator('#league-round').selectOption('23');
-    if (!snapshot.results.some(game => game.round === 23)) {
-      assert.equal(await page.locator('.league-result').count(), 0);
-      assert.match(await page.locator('#league-results').innerText(), /אין עדיין/);
-    }
+    assert.equal(await page.locator('.league-result').count(), 2);
+    assert.equal(await page.locator('.league-result.upcoming .league-score').innerText(), 'טרם נערך');
     await page.locator('#league-round').selectOption('1');
     await page.screenshot({ path: join(tmpdir(), `fmm-results-${name}.png`), animations: 'disabled' });
     await page.locator('#theme-toggle').click();
