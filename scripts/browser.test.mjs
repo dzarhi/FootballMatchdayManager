@@ -84,7 +84,7 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(selectedRound, 23);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
     assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
-    assert.equal(await page.locator('.league-result.upcoming').count(), 2);
+      assert.equal(await page.locator('.league-result.upcoming').count(), 2);
     assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
       .then(times => times.includes('17.04.2027 · 16:15')), true);
     assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
@@ -95,7 +95,7 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     assert.equal(await page.locator('.team-logo').evaluate(image => image.complete && image.naturalWidth > 0), true);
     await page.locator('#league-round').selectOption('23');
-    assert.equal(await page.locator('.league-result').count(), 2);
+    assert.equal(await page.locator('.league-result').count(), 3);
     assert.equal(await page.locator('.league-result.upcoming .league-score').innerText(), 'טרם נערך');
     await page.locator('#league-round').selectOption('1');
     await page.screenshot({ path: join(tmpdir(), `fmm-results-${name}.png`), animations: 'disabled' });
