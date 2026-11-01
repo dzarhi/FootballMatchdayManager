@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-01T12:23:22.862Z",
+  "updatedAt": "2026-11-01T13:26:33.851Z",
   "standings": [
     {
       "rank": 1,
@@ -717,24 +717,6 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ebf7",
-      "round": 2,
-      "date": "2026-11-06",
-      "time": "13:50",
-      "kickoffAt": "2026-11-06T11:50:00.000Z",
-      "home": {
-        "id": 5585,
-        "name": "הפ' מרמורק רחובות \"צו פיוס\""
-      },
-      "away": {
-        "id": 4895,
-        "name": "הפועל ר\"ג דרום"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
       "id": "6acc331c9878872a9639ec00",
       "round": 2,
       "date": "2026-11-21",
@@ -747,6 +729,24 @@
       "away": {
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ebf7",
+      "round": 2,
+      "date": "2026-11-21",
+      "time": "18:50",
+      "kickoffAt": "2026-11-21T16:50:00.000Z",
+      "home": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "away": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
       },
       "finished": false,
       "homeGoals": null,
