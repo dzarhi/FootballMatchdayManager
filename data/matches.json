@@ -130,12 +130,19 @@
     "homeAway": "away",
     "matchType": "league",
     "date": "2026-10-31",
-    "homeGoals": "",
-    "awayGoals": "",
+    "homeGoals": "3",
+    "awayGoals": "2",
     "venueName": "תל אביב שכונת התקוה סינטטי 2",
     "address": "איצטדיון שכונת התקווה",
     "notes": "מחזור 3",
-    "videoUrl": "https://app.veo.co/matches/20261031-fc-ashdod-2014-vs-v46b7e05/"
+    "videoUrl": "https://app.veo.co/matches/20261031-fc-ashdod-2014-vs-v46b7e05/",
+    "voleResult": {
+      "gameId": "6acc331c9878872a9639ec10",
+      "score": [
+        3,
+        2
+      ]
+    }
   },
   {
     "id": "7c3e4b4d-6cac-480e-9fd0-0d48c2493701",
