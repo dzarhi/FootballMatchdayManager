@@ -84,7 +84,7 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(selectedRound, 23);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
     assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
-      assert.equal(await page.locator('.league-result.upcoming').count(), 2);
+    assert.equal(await page.locator('.league-result.upcoming').count(), 2);
     assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
       .then(times => times.includes('17.04.2027 · 16:15')), true);
     assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
