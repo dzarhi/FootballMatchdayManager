@@ -159,7 +159,7 @@ async function saveToGithub() {
       throw new Error(err.message || 'שגיאה בשמירה ל-GitHub.');
     }
 
-    setStatus('נשמר בהצלחה ל-GitHub! השינוי יופיע באתר החי תוך דקה-שתיים.');
+    setStatus('השינוי נשמר ב-main ב-GitHub. הפרסום לאתר תלוי בהצלחת GitHub Actions; אם הוא לא מופיע אחרי דקה-שתיים, בדקו את Actions.');
   } catch (err) {
     setStatus(err.message || 'שגיאה בשמירה ל-GitHub.', true);
   }
