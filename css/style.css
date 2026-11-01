@@ -277,7 +277,12 @@ html.dark-mode .league-meta a { color: var(--accent); }
 .league-table th { padding: 10px; text-align: center; }
 .league-table th[scope="row"] { text-align: right; color: var(--text); font-weight: 400; }
 .league-table .our-team th { font-weight: 700; }
+.league-table .our-team th,
+.league-table .our-team td { background: rgba(245, 196, 0, 0.22); }
+.league-table .our-team th { color: var(--primary); }
 .league-table .our-team { box-shadow: inset -3px 0 var(--primary); }
+html.dark-mode .league-table .our-team th,
+html.dark-mode .league-table .our-team td { background: rgba(245, 196, 0, 0.28); }
 .league-results-heading .section-title { margin: 0; }
 .league-results-heading label { display: flex; align-items: center; gap: 8px; }
 .league-results-heading select {
