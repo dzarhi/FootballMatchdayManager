@@ -4,10 +4,23 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-01T15:10:15.406Z",
+  "updatedAt": "2026-11-01T22:03:29.677Z",
   "standings": [
     {
       "rank": 1,
+      "id": 1049,
+      "name": "מכבי פ\"ת מנשה משיח",
+      "played": 3,
+      "wins": 3,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 25,
+      "goalsAgainst": 2,
+      "difference": 23,
+      "points": 9
+    },
+    {
+      "rank": 2,
       "id": 6248,
       "name": "הפועל ב\"ש לבן",
       "played": 3,
@@ -20,7 +33,7 @@
       "points": 9
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": 1034,
       "name": "מכבי ת\"א",
       "played": 2,
@@ -30,19 +43,6 @@
       "goalsFor": 16,
       "goalsAgainst": 1,
       "difference": 15,
-      "points": 6
-    },
-    {
-      "rank": 3,
-      "id": 1049,
-      "name": "מכבי פ\"ת מנשה משיח",
-      "played": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 12,
-      "goalsAgainst": 2,
-      "difference": 10,
       "points": 6
     },
     {
@@ -60,6 +60,19 @@
     },
     {
       "rank": 5,
+      "id": 1850,
+      "name": "מכבי חיפה \"שמואל\"",
+      "played": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 7,
+      "goalsAgainst": 2,
+      "difference": 5,
+      "points": 6
+    },
+    {
+      "rank": 6,
       "id": 2134,
       "name": "הפועל ת\"א \"איתי תמיר\"",
       "played": 3,
@@ -72,7 +85,7 @@
       "points": 6
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": 4895,
       "name": "הפועל ר\"ג דרום",
       "played": 2,
@@ -85,7 +98,7 @@
       "points": 6
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": 4666,
       "name": "בני יהודה ת'א",
       "played": 3,
@@ -98,7 +111,7 @@
       "points": 6
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": 2866,
       "name": "הפועל רעננה",
       "played": 3,
@@ -111,7 +124,7 @@
       "points": 6
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": 1851,
       "name": "מכבי נתניה 1",
       "played": 2,
@@ -124,7 +137,7 @@
       "points": 3
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": 2254,
       "name": "הפועל ראשל\"צ",
       "played": 3,
@@ -134,19 +147,6 @@
       "goalsFor": 5,
       "goalsAgainst": 3,
       "difference": 2,
-      "points": 3
-    },
-    {
-      "rank": 11,
-      "id": 8138,
-      "name": "ה.מ יהודה ד' \"צו פיוס\"",
-      "played": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 6,
-      "goalsAgainst": 5,
-      "difference": 1,
       "points": 3
     },
     {
@@ -164,19 +164,6 @@
     },
     {
       "rank": 13,
-      "id": 1850,
-      "name": "מכבי חיפה \"שמואל\"",
-      "played": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 2,
-      "difference": 1,
-      "points": 3
-    },
-    {
-      "rank": 14,
       "id": 4912,
       "name": "מ.ס. קדימה צורן \"צו פיוס\"",
       "played": 2,
@@ -189,7 +176,7 @@
       "points": 3
     },
     {
-      "rank": 15,
+      "rank": 14,
       "id": 5233,
       "name": "ס. נס ציונה",
       "played": 3,
@@ -199,6 +186,19 @@
       "goalsFor": 8,
       "goalsAgainst": 10,
       "difference": -2,
+      "points": 3
+    },
+    {
+      "rank": 15,
+      "id": 8138,
+      "name": "ה.מ יהודה ד' \"צו פיוס\"",
+      "played": 3,
+      "wins": 1,
+      "draws": 0,
+      "losses": 2,
+      "goalsFor": 6,
+      "goalsAgainst": 9,
+      "difference": -3,
       "points": 3
     },
     {
@@ -244,17 +244,30 @@
       "rank": 19,
       "id": 5585,
       "name": "הפ' מרמורק רחובות \"צו פיוס\"",
-      "played": 1,
+      "played": 2,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 4,
+      "goalsFor": 3,
+      "goalsAgainst": 6,
       "difference": -3,
-      "points": 0
+      "points": 1
     },
     {
       "rank": 20,
+      "id": 2930,
+      "name": "הפ' ירושלים מזרח",
+      "played": 3,
+      "wins": 0,
+      "draws": 1,
+      "losses": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 8,
+      "difference": -6,
+      "points": 1
+    },
+    {
+      "rank": 21,
       "id": 2818,
       "name": "הפ' פ\"ת זכריה רצאבי",
       "played": 2,
@@ -267,7 +280,7 @@
       "points": 0
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": 5874,
       "name": "הפועל הרצליה עירוני \"צו פיוס\"",
       "played": 1,
@@ -280,33 +293,7 @@
       "points": 0
     },
     {
-      "rank": 22,
-      "id": 2930,
-      "name": "הפ' ירושלים מזרח",
-      "played": 2,
-      "wins": 0,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 0,
-      "goalsAgainst": 6,
-      "difference": -6,
-      "points": 0
-    },
-    {
       "rank": 23,
-      "id": 1515,
-      "name": "מכבי ב\"ש \"צו פיוס\"",
-      "played": 2,
-      "wins": 0,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 0,
-      "goalsAgainst": 7,
-      "difference": -7,
-      "points": 0
-    },
-    {
-      "rank": 24,
       "id": 6059,
       "name": "מ.ס. באר שבע \"צו פיוס\"",
       "played": 2,
@@ -316,6 +303,19 @@
       "goalsFor": 0,
       "goalsAgainst": 15,
       "difference": -15,
+      "points": 0
+    },
+    {
+      "rank": 24,
+      "id": 1515,
+      "name": "מכבי ב\"ש \"צו פיוס\"",
+      "played": 3,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "goalsFor": 0,
+      "goalsAgainst": 20,
+      "difference": -20,
       "points": 0
     }
   ],
@@ -874,9 +874,9 @@
         "id": 1515,
         "name": "מכבי ב\"ש \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 13,
+      "awayGoals": 0
     },
     {
       "id": "6acc331c9878872a9639ec0e",
@@ -892,9 +892,9 @@
         "id": 8138,
         "name": "ה.מ יהודה ד' \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 4,
+      "awayGoals": 0
     },
     {
       "id": "6acc331c9878872a9639ec1a",
@@ -910,9 +910,9 @@
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 2,
+      "awayGoals": 2
     },
     {
       "id": "6acc331c9878872a9639ec08",
