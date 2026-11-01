@@ -6,6 +6,7 @@ const GITHUB_OWNER = 'dzarhi';
 const GITHUB_REPO = 'FootballMatchdayManager';
 const GITHUB_BRANCH = 'main';
 const GITHUB_PATH = 'data/matches.json';
+const SYNC_REQUEST_PATH = 'scripts/sync-request.json';
 let matches = [];
 let showCompletedMatches = false;
 
@@ -176,24 +177,45 @@ async function syncLeagueNow() {
 
   const button = document.getElementById('sync-league-btn');
   button.disabled = true;
-  setStatus('שולח בקשת סנכרון ל-GitHub Actions...');
+  setStatus('שולח בקשת סנכרון ל-GitHub...');
   try {
-    const response = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/site.yml/dispatches`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ ref: GITHUB_BRANCH })
+    const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SYNC_REQUEST_PATH}`;
+    const headers = {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json'
+    };
+    const currentResponse = await fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers });
+
+    if (!currentResponse.ok) {
+      const error = await currentResponse.json().catch(() => ({}));
+      if (currentResponse.status === 403) {
+        throw new Error('לטוקן אין הרשאת Contents: Read and write למאגר.');
+      }
+      throw new Error(error.message || 'לא ניתן לקרוא את קובץ בקשת הסנכרון מ-GitHub.');
+    }
+
+    const current = await currentResponse.json();
+    const request = {
+      requestedAt: new Date().toISOString(),
+      requestId: crypto.randomUUID ? crypto.randomUUID() : String(Date.now())
+    };
+    const response = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: { ...headers, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: '[sync] Manual league sync request',
+        content: base64EncodeUnicode(`${JSON.stringify(request, null, 2)}\n`),
+        sha: current.sha,
+        branch: GITHUB_BRANCH
+      })
     });
 
     if (!response.ok) {
       const error = await response.json().catch(() => ({}));
       if (response.status === 403) {
-        throw new Error('לטוקן אין הרשאת Actions: Read and write. עדכנו את הרשאות הטוקן ונסו שוב.');
+        throw new Error('לטוקן אין הרשאת Contents: Read and write למאגר.');
       }
-      throw new Error(error.message || 'לא ניתן להפעיל את הסנכרון ב-GitHub.');
+      throw new Error(error.message || 'לא ניתן לשלוח בקשת סנכרון ל-GitHub.');
     }
 
     setStatus('בקשת הסנכרון נשלחה. הנתונים יתעדכנו באתר לאחר ש-GitHub Actions תסיים את הריצה.');

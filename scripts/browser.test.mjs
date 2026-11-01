@@ -137,27 +137,42 @@ test('league loading failure does not break existing team statistics', async () 
   await page.context().close();
 });
 
-test('admin can manually dispatch the league sync with a connected GitHub token', async () => {
+test('admin can request a league sync with a contents-only GitHub token', async () => {
   const page = await newPage();
   await page.addInitScript(() => localStorage.setItem('fmm_github_token', 'test-token'));
-  let dispatchRequest;
-  await page.route('https://api.github.com/repos/dzarhi/FootballMatchdayManager/actions/workflows/site.yml/dispatches', async route => {
-    dispatchRequest = {
-      method: route.request().method(),
-      authorization: route.request().headers().authorization,
-      body: route.request().postDataJSON()
+  const methods = [];
+  let syncRequestUpdate;
+  await page.route('**/contents/scripts/sync-request.json*', async route => {
+    const request = route.request();
+    methods.push(request.method());
+    if (request.method() === 'GET') {
+      await route.fulfill({ json: { sha: 'sync-request-sha' } });
+      return;
+    }
+    syncRequestUpdate = {
+      authorization: request.headers().authorization,
+      body: request.postDataJSON()
     };
-    await route.fulfill({ status: 204 });
+    await route.fulfill({ json: { content: { path: 'scripts/sync-request.json' } } });
   });
   await page.goto(`${baseUrl}/admin.html`);
   const syncButton = page.locator('#sync-league-btn');
   await syncButton.click();
   await page.waitForFunction(() => document.getElementById('status-msg').textContent.includes('בקשת הסנכרון נשלחה'));
-  assert.deepEqual(dispatchRequest, {
-    method: 'POST',
-    authorization: 'Bearer test-token',
-    body: { ref: 'main' }
+  assert.deepEqual(methods, ['GET', 'PUT']);
+  assert.equal(syncRequestUpdate.authorization, 'Bearer test-token');
+  assert.deepEqual({
+    message: syncRequestUpdate.body.message,
+    sha: syncRequestUpdate.body.sha,
+    branch: syncRequestUpdate.body.branch
+  }, {
+    message: '[sync] Manual league sync request',
+    sha: 'sync-request-sha',
+    branch: 'main'
   });
+  const requestContent = JSON.parse(Buffer.from(syncRequestUpdate.body.content, 'base64').toString('utf8'));
+  assert.ok(requestContent.requestedAt);
+  assert.ok(requestContent.requestId);
   await page.context().close();
 });
 
