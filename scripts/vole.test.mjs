@@ -35,6 +35,12 @@ test('normalizes scheduled fixtures and validates final scores', () => {
   const dateOnlyGame = normalizeRound(payload, 1)[2];
   assert.equal(dateOnlyGame.time, null);
   assert.equal(dateOnlyGame.kickoffAt, null);
+
+  payload.games[2].date = '2026-11-13T22:00:00Z';
+  const unknownTimeGame = normalizeRound(payload, 1)[2];
+  assert.equal(unknownTimeGame.date, '2026-11-14');
+  assert.equal(unknownTimeGame.time, null);
+  assert.equal(unknownTimeGame.kickoffAt, null);
 });
 
 test('rejects partial, duplicate, malformed and wrong-season responses', () => {

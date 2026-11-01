@@ -94,7 +94,7 @@ function renderLeagueResults(league, round) {
     const row = document.createElement('article');
     row.className = game.finished ? 'league-result' : 'league-result upcoming';
     const dateText = formatDateHe(game.date)
-      + (!game.finished && game.time ? ` · ${game.time}` : '');
+      + (!game.finished && game.time && game.time !== '00:00' ? ` · ${game.time}` : '');
     const date = leagueElement('time', dateText);
     date.dateTime = game.kickoffAt || game.date;
     const score = game.finished

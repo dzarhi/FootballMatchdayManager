@@ -50,6 +50,13 @@ test('league table and round results work on desktop and mobile without page ove
     finished: false, homeGoals: null, awayGoals: null
   });
   snapshot.results.push({
+    id: 'scheduled-round-23-time-unknown', round: 23, date: '2027-04-10',
+    time: '00:00', kickoffAt: '2027-04-09T21:00:00.000Z',
+    home: { id: 10005, name: 'קבוצה ללא שעה' },
+    away: { id: 10006, name: 'יריבה' },
+    finished: false, homeGoals: null, awayGoals: null
+  });
+  snapshot.results.push({
     id: 'finished-round-23', round: 23, date: '2027-04-10',
     home: { id: 10003, name: 'קבוצה עם תוצאה' },
     away: { id: 10004, name: 'יריבה' },
@@ -77,8 +84,13 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(selectedRound, 23);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
     assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
-    assert.equal(await page.locator('.league-result.upcoming').count(), 1);
-    assert.equal(await page.locator('.league-result.upcoming time').innerText(), '17.04.2027 · 16:15');
+    assert.equal(await page.locator('.league-result.upcoming').count(), 2);
+    assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
+      .then(times => times.includes('17.04.2027 · 16:15')), true);
+    assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
+      .then(times => times.includes('10.04.2027')), true);
+    assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
+      .then(times => times.some(time => time.includes('00:00'))), false);
     assert.equal(await page.locator('.league-result.our-team').count(), 0);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     assert.equal(await page.locator('.team-logo').evaluate(image => image.complete && image.naturalWidth > 0), true);
