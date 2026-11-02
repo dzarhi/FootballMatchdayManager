@@ -121,6 +121,36 @@ test('league table and round results work on desktop and mobile without page ove
   }
 });
 
+test('league results default to the latest round with results, or round 1 without results', async () => {
+  const snapshot = JSON.parse(await readFile(join(root, 'data/league.json'), 'utf8'));
+  const game = snapshot.results[0];
+  const finishedGames = [6, 4].map(round => ({
+    ...game, round, finished: true, homeGoals: 0, awayGoals: 0
+  }));
+  const scheduledGames = [6, 7].map(round => ({
+    ...game, round, date: '2099-04-17', finished: false, homeGoals: null, awayGoals: null
+  }));
+  for (const [results, expectedRound] of [
+    [[...finishedGames, ...scheduledGames], '6'],
+    [finishedGames, '6'],
+    [scheduledGames, '1'],
+    [[], '1']
+  ]) {
+    const page = await newPage();
+    await page.route('**/data/league.json', route => route.fulfill({ json: { ...snapshot, results } }));
+    await page.goto(`${baseUrl}/index.html`);
+    await page.locator('a[href="results.html"]').click();
+    await page.waitForFunction(() => !document.getElementById('league-round').disabled);
+    assert.equal(await page.locator('#league-round').inputValue(), expectedRound);
+    assert.equal(await page.locator('.league-result').count(),
+      results.filter(result => result.round === Number(expectedRound)).length);
+    await page.locator('#league-round').selectOption('7');
+    assert.equal(await page.locator('.league-result').count(),
+      results.filter(result => result.round === 7).length);
+    await page.context().close();
+  }
+});
+
 test('league loading failure does not break existing team statistics', async () => {
   const page = await newPage();
   await page.route('**/data/league.json', route => route.fulfill({ status: 404, body: '' }));

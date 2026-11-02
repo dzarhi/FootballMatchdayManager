@@ -33,14 +33,9 @@ async function loadLeague() {
     const selector = document.getElementById('league-round');
     if (selector) {
       selector.replaceChildren(...Array.from({ length: 23 }, (_, index) => new Option(index + 1, index + 1)));
-      const today = new Intl.DateTimeFormat('en-CA', {
-        timeZone: 'Asia/Jerusalem', year: 'numeric', month: '2-digit', day: '2-digit'
-      }).format(new Date());
-      const upcomingRounds = league.results.filter(game => !game.finished && game.date >= today)
-        .map(game => game.round);
       const lastFinishedRound = Math.max(1, ...league.results
         .filter(game => game.finished).map(game => game.round));
-      selector.value = String(upcomingRounds.length ? Math.min(...upcomingRounds) : lastFinishedRound);
+      selector.value = String(lastFinishedRound);
       selector.disabled = false;
       selector.addEventListener('change', () => renderLeagueResults(league, Number(selector.value)));
       renderLeagueResults(league, Number(selector.value));
