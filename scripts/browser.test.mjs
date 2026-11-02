@@ -58,6 +58,7 @@ test('league table and round results work on desktop and mobile without page ove
   });
   snapshot.results.push({
     id: 'finished-round-23', round: 23, date: '2027-04-10',
+    time: '10:45', kickoffAt: '2027-04-10T07:45:00.000Z',
     home: { id: 10003, name: 'קבוצה עם תוצאה' },
     away: { id: 10004, name: 'יריבה' },
     finished: true, homeGoals: 2, awayGoals: 1
@@ -84,6 +85,8 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(selectedRound, 23);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
     assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
+    assert.equal(await page.locator('.league-result:not(.upcoming) time').innerText(), '10.04.2027 · 10:45');
+    assert.equal(await page.locator('.league-result:not(.upcoming) time').getAttribute('datetime'), '2027-04-10T07:45:00.000Z');
     assert.equal(await page.locator('.league-result.upcoming').count(), 2);
     assert.equal(await page.locator('.league-result.upcoming time').allInnerTexts()
       .then(times => times.includes('17.04.2027 · 16:15')), true);
