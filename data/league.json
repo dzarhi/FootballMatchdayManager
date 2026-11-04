@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-04T06:24:35.731Z",
+  "updatedAt": "2026-11-04T19:53:43.962Z",
   "standings": [
     {
       "rank": 1,
@@ -969,6 +969,24 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec30",
+      "round": 4,
+      "date": "2026-11-13",
+      "time": "13:00",
+      "kickoffAt": "2026-11-13T11:00:00.000Z",
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec1d",
       "round": 4,
       "date": "2026-11-14",
@@ -1161,24 +1179,6 @@
       "away": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec30",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 6059,
-        "name": "מ.ס. באר שבע \"צו פיוס\""
-      },
-      "away": {
-        "id": 5874,
-        "name": "הפועל הרצליה עירוני \"צו פיוס\""
       },
       "finished": false,
       "homeGoals": null,
