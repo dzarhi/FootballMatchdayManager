@@ -150,8 +150,8 @@
     "homeAway": "away",
     "matchType": "cup",
     "date": "2026-11-07",
-    "homeGoals": "",
-    "awayGoals": "",
+    "homeGoals": "1",
+    "awayGoals": "0",
     "extraTimeHomeGoals": "",
     "extraTimeAwayGoals": "",
     "penaltiesHomeGoals": "",
@@ -159,7 +159,7 @@
     "venueName": "רמת גן ספארי",
     "address": "מגרשי אימונים מתחם הספארי",
     "notes": "סיבוב ג'",
-    "videoUrl": ""
+    "videoUrl": "https://app.veo.co/matches/20261107-fc-ashdod-2014-vs-v7c3efb5/"
   },
   {
     "id": "league-r04-2026-11-14",
