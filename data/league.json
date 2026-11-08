@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-08T06:02:40.988Z",
+  "updatedAt": "2026-11-08T13:26:17.806Z",
   "standings": [
     {
       "rank": 1,
@@ -969,6 +969,24 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec26",
+      "round": 4,
+      "date": "2026-11-13",
+      "time": "13:00",
+      "kickoffAt": "2026-11-13T11:00:00.000Z",
+      "home": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "away": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec30",
       "round": 4,
       "date": "2026-11-13",
@@ -999,42 +1017,6 @@
       "away": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec1f",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 5585,
-        "name": "הפ' מרמורק רחובות \"צו פיוס\""
-      },
-      "away": {
-        "id": 2866,
-        "name": "הפועל רעננה"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec21",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 2849,
-        "name": "הפועל כפ\"ס אור"
-      },
-      "away": {
-        "id": 2930,
-        "name": "הפ' ירושלים מזרח"
       },
       "finished": false,
       "homeGoals": null,
@@ -1095,24 +1077,6 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ec26",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 2818,
-        "name": "הפ' פ\"ת זכריה רצאבי"
-      },
-      "away": {
-        "id": 3204,
-        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
       "id": "6acc331c9878872a9639ec29",
       "round": 4,
       "date": "2026-11-14",
@@ -1125,24 +1089,6 @@
       "away": {
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec2b",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 8138,
-        "name": "ה.מ יהודה ד' \"צו פיוס\""
-      },
-      "away": {
-        "id": 4666,
-        "name": "בני יהודה ת'א"
       },
       "finished": false,
       "homeGoals": null,
@@ -1179,6 +1125,60 @@
       "away": {
         "id": 2134,
         "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec21",
+      "round": 4,
+      "date": "2026-11-14",
+      "time": "09:00",
+      "kickoffAt": "2026-11-14T07:00:00.000Z",
+      "home": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec1f",
+      "round": 4,
+      "date": "2026-11-14",
+      "time": "19:15",
+      "kickoffAt": "2026-11-14T17:15:00.000Z",
+      "home": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "away": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec2b",
+      "round": 4,
+      "date": "2026-11-17",
+      "time": "18:30",
+      "kickoffAt": "2026-11-17T16:30:00.000Z",
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
       },
       "finished": false,
       "homeGoals": null,
