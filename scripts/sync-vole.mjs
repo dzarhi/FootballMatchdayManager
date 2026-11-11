@@ -86,8 +86,8 @@ async function main() {
   }
   const merged = mergeResults(JSON.parse(originalText), snapshot.results);
   const finalResults = snapshot.results.filter(game => game.finished).length;
-  const matchesChanged = merged.changed > 0 || merged.timesChanged > 0;
-  console.log(`${snapshot.standings.length} teams, ${finalResults} final results, ${merged.changed} local scores updated, ${merged.timesChanged} local match times added`);
+  const matchesChanged = merged.changed > 0 || merged.datesChanged > 0 || merged.timesChanged > 0;
+  console.log(`${snapshot.standings.length} teams, ${finalResults} final results, ${merged.changed} local scores updated, ${merged.datesChanged} local match dates updated, ${merged.timesChanged} local match times updated`);
   merged.warnings.forEach(warning => console.warn(warning));
   if (checkOnly) { console.log('Check only: no files written'); return; }
   if (await readFile(matchesPath, 'utf8') !== originalText) throw new Error('Local matches changed during sync; retry');

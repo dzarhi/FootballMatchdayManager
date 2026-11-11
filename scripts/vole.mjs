@@ -136,6 +136,7 @@ export function mergeResults(matches, games) {
   const updated = structuredClone(matches);
   const warnings = [];
   let changed = 0;
+  let datesChanged = 0;
   let timesChanged = 0;
   for (const game of games.filter(game => [game.home.id, game.away.id].includes(TEAM_ID))) {
     const homeAway = game.home.id === TEAM_ID ? 'home' : 'away';
@@ -148,7 +149,11 @@ export function mergeResults(matches, games) {
       continue;
     }
     const match = candidates[0];
-    if (game.time && !match.time) {
+    if (match.date !== game.date) {
+      match.date = game.date;
+      datesChanged += 1;
+    }
+    if (game.time && match.time !== game.time) {
       match.time = game.time;
       timesChanged += 1;
     }
@@ -168,5 +173,5 @@ export function mergeResults(matches, games) {
     match.voleResult = { gameId: game.id, score: incoming };
     changed += 1;
   }
-  return { matches: updated, changed, timesChanged, warnings };
+  return { matches: updated, changed, datesChanged, timesChanged, warnings };
 }

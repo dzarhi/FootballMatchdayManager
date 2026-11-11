@@ -58,12 +58,13 @@ test('rejects partial, duplicate, malformed and wrong-season responses', () => {
   }
 });
 
-test('fills Vole time and blank scores without changing metadata, dates or non-league games', () => {
+test('syncs Vole date and time and fills blank scores without changing metadata or non-league games', () => {
   const original = [localMatch(), localMatch({ id: 'cup', matchType: 'cup' })];
   const result = mergeResults(original, normalizeRound(roundFixture(), 1));
   assert.equal(result.changed, 1);
+  assert.equal(result.datesChanged, 1);
   assert.equal(result.timesChanged, 1);
-  assert.deepEqual(result.matches[0], { ...original[0], time: '10:30', homeGoals: '2', awayGoals: '0',
+  assert.deepEqual(result.matches[0], { ...original[0], date: '2026-10-17', time: '10:30', homeGoals: '2', awayGoals: '0',
     voleResult: { gameId: 'game-0', score: [2, 0] } });
   assert.deepEqual(result.matches[1], original[1]);
   assert.equal(original[0].homeGoals, '');
@@ -74,7 +75,7 @@ test('preserves manual and partial scores, but updates untouched imported result
   for (const scores of [{ homeGoals: '3', awayGoals: '1' }, { homeGoals: '0' }]) {
     const original = [localMatch(scores)];
     const result = mergeResults(original, games);
-    assert.deepEqual(result.matches, [{ ...original[0], time: '10:30' }]);
+    assert.deepEqual(result.matches, [{ ...original[0], date: '2026-10-17', time: '10:30' }]);
     assert.equal(result.warnings.length, 1);
   }
   const imported = mergeResults([localMatch()], games).matches;
@@ -84,21 +85,29 @@ test('preserves manual and partial scores, but updates untouched imported result
   assert.equal(mergeResults(imported, games).matches[0].homeGoals, '4');
 });
 
-test('fills scheduled league times without changing scores or existing manual times', () => {
+test('syncs scheduled league dates and times without changing scores', () => {
   const payload = roundFixture();
   payload.games[0].is_finished = false;
   const [game] = normalizeRound(payload, 1);
   const original = localMatch();
   const result = mergeResults([original], [game]);
+  assert.equal(result.matches[0].date, '2026-10-17');
   assert.equal(result.matches[0].time, '10:30');
   assert.equal(result.matches[0].homeGoals, '');
   assert.equal(result.changed, 0);
+  assert.equal(result.datesChanged, 1);
   assert.equal(result.timesChanged, 1);
 
   const timedMatch = localMatch({ time: '11:15' });
-  const unchangedTime = mergeResults([timedMatch], [game]);
-  assert.equal(unchangedTime.matches[0].time, '11:15');
-  assert.equal(unchangedTime.timesChanged, 0);
+  const correctedTime = mergeResults([timedMatch], [game]);
+  assert.equal(correctedTime.matches[0].time, '10:30');
+  assert.equal(correctedTime.timesChanged, 1);
+
+  const noSourceTime = { ...game, time: null };
+  const manualTime = mergeResults([timedMatch], [noSourceTime]);
+  assert.equal(manualTime.matches[0].date, '2026-10-17');
+  assert.equal(manualTime.matches[0].time, '11:15');
+  assert.equal(manualTime.timesChanged, 0);
 });
 
 test('skips ambiguous opponents and unfinished games; repeated runs are idempotent', () => {
