@@ -136,17 +136,23 @@ export function mergeResults(matches, games) {
   const updated = structuredClone(matches);
   const warnings = [];
   let changed = 0;
-  for (const game of games.filter(game => game.finished && [game.home.id, game.away.id].includes(TEAM_ID))) {
+  let timesChanged = 0;
+  for (const game of games.filter(game => [game.home.id, game.away.id].includes(TEAM_ID))) {
     const homeAway = game.home.id === TEAM_ID ? 'home' : 'away';
     const opponent = homeAway === 'home' ? game.away : game.home;
     const candidates = updated.filter(match => match.matchType === 'league'
       && localRound(match) === game.round && match.homeAway === homeAway
       && normalizedName(match.opponent) === normalizedName(opponent.name));
     if (candidates.length !== 1) {
-      warnings.push(`Round ${game.round}: no unique local match for ${opponent.name}`);
+      if (game.finished) warnings.push(`Round ${game.round}: no unique local match for ${opponent.name}`);
       continue;
     }
     const match = candidates[0];
+    if (game.time && !match.time) {
+      match.time = game.time;
+      timesChanged += 1;
+    }
+    if (!game.finished) continue;
     const existing = [match.homeGoals, match.awayGoals];
     const incoming = [game.homeGoals, game.awayGoals];
     if (existing.every((value, index) => hasScore(value) && Number(value) === incoming[index])) continue;
@@ -162,5 +168,5 @@ export function mergeResults(matches, games) {
     match.voleResult = { gameId: game.id, score: incoming };
     changed += 1;
   }
-  return { matches: updated, changed, warnings };
+  return { matches: updated, changed, timesChanged, warnings };
 }
