@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-11T09:30:27.798Z",
+  "updatedAt": "2026-11-11T19:22:59.564Z",
   "standings": [
     {
       "rank": 1,
@@ -1007,9 +1007,9 @@
     {
       "id": "6acc331c9878872a9639ec23",
       "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
+      "date": "2026-11-13",
+      "time": "13:50",
+      "kickoffAt": "2026-11-13T11:50:00.000Z",
       "home": {
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
