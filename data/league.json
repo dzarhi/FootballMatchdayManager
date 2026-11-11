@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-09T06:31:50.640Z",
+  "updatedAt": "2026-11-11T09:21:41.177Z",
   "standings": [
     {
       "rank": 1,
@@ -1005,42 +1005,6 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ec1d",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1034,
-        "name": "מכבי ת\"א"
-      },
-      "away": {
-        "id": 2254,
-        "name": "הפועל ראשל\"צ"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec22",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1515,
-        "name": "מכבי ב\"ש \"צו פיוס\""
-      },
-      "away": {
-        "id": 4895,
-        "name": "הפועל ר\"ג דרום"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
       "id": "6acc331c9878872a9639ec23",
       "round": 4,
       "date": "2026-11-14",
@@ -1053,78 +1017,6 @@
       "away": {
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec24",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 6248,
-        "name": "הפועל ב\"ש לבן"
-      },
-      "away": {
-        "id": 5233,
-        "name": "ס. נס ציונה"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec29",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1243,
-        "name": "מ.ס. אשדוד סילבן"
-      },
-      "away": {
-        "id": 4912,
-        "name": "מ.ס. קדימה צורן \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec2c",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1851,
-        "name": "מכבי נתניה 1"
-      },
-      "away": {
-        "id": 1850,
-        "name": "מכבי חיפה \"שמואל\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec2e",
-      "round": 4,
-      "date": "2026-11-14",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 3377,
-        "name": "בית\"ר י-ם \"צו פיוס\""
-      },
-      "away": {
-        "id": 2134,
-        "name": "הפועל ת\"א \"איתי תמיר\""
       },
       "finished": false,
       "homeGoals": null,
@@ -1149,6 +1041,42 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec24",
+      "round": 4,
+      "date": "2026-11-14",
+      "time": "09:00",
+      "kickoffAt": "2026-11-14T07:00:00.000Z",
+      "home": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "away": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec1d",
+      "round": 4,
+      "date": "2026-11-14",
+      "time": "10:30",
+      "kickoffAt": "2026-11-14T08:30:00.000Z",
+      "home": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "away": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec1f",
       "round": 4,
       "date": "2026-11-14",
@@ -1167,6 +1095,60 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec2e",
+      "round": 4,
+      "date": "2026-11-15",
+      "time": "18:40",
+      "kickoffAt": "2026-11-15T16:40:00.000Z",
+      "home": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec2c",
+      "round": 4,
+      "date": "2026-11-17",
+      "time": "16:00",
+      "kickoffAt": "2026-11-17T14:00:00.000Z",
+      "home": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "away": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec29",
+      "round": 4,
+      "date": "2026-11-17",
+      "time": "18:15",
+      "kickoffAt": "2026-11-17T16:15:00.000Z",
+      "home": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "away": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec2b",
       "round": 4,
       "date": "2026-11-17",
@@ -1179,6 +1161,24 @@
       "away": {
         "id": 4666,
         "name": "בני יהודה ת'א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec22",
+      "round": 4,
+      "date": "2026-11-18",
+      "time": "18:00",
+      "kickoffAt": "2026-11-18T16:00:00.000Z",
+      "home": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "away": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
       },
       "finished": false,
       "homeGoals": null,
@@ -5283,6 +5283,1518 @@
       "away": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae13f",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "away": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae140",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "away": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae141",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae142",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "away": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae143",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "away": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae144",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae145",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae146",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "away": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae147",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "away": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae148",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "away": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae149",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae14a",
+      "round": 24,
+      "date": "2027-04-24",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "away": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae14c",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "away": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae14d",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "away": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae14e",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "away": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae14f",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "away": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae150",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "away": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae151",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae152",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "away": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae153",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "away": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae154",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae155",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "away": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae156",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "away": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae157",
+      "round": 25,
+      "date": "2027-05-01",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae159",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "away": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15a",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "away": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15b",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "away": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15c",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "away": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15d",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15e",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "away": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae15f",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "away": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae160",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae161",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae162",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "away": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae163",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "away": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d2b95b1a6147bae164",
+      "round": 26,
+      "date": "2027-05-08",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "away": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae166",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "away": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae167",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "away": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae168",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "away": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae169",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "away": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16a",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "away": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16b",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "away": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16c",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "away": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16d",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16e",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "away": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae16f",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae170",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "away": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae171",
+      "round": 27,
+      "date": "2027-05-15",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae173",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "away": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae174",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "away": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae175",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "away": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae176",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "away": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae177",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae178",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "away": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae179",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae17a",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "away": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae17b",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "away": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae17c",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "away": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae17d",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "away": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae17e",
+      "round": 28,
+      "date": "2027-05-18",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "away": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae180",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae181",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae182",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "away": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae183",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "away": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae184",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "away": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae185",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "away": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae186",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "away": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae187",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "away": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae188",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "away": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae189",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae18a",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "away": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae18b",
+      "round": 29,
+      "date": "2027-05-22",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae18d",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "away": {
+        "id": 1034,
+        "name": "מכבי ת\"א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae18e",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "away": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae18f",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "away": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae190",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 1243,
+        "name": "מ.ס. אשדוד סילבן"
+      },
+      "away": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae191",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2849,
+        "name": "הפועל כפ\"ס אור"
+      },
+      "away": {
+        "id": 2818,
+        "name": "הפ' פ\"ת זכריה רצאבי"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae192",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4912,
+        "name": "מ.ס. קדימה צורן \"צו פיוס\""
+      },
+      "away": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae193",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
+      },
+      "away": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae194",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 2866,
+        "name": "הפועל רעננה"
+      },
+      "away": {
+        "id": 2930,
+        "name": "הפ' ירושלים מזרח"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae195",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "away": {
+        "id": 3204,
+        "name": "מ.כ. מכבי אשקלון \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae196",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 8138,
+        "name": "ה.מ יהודה ד' \"צו פיוס\""
+      },
+      "away": {
+        "id": 1515,
+        "name": "מכבי ב\"ש \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae197",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "away": {
+        "id": 5233,
+        "name": "ס. נס ציונה"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6af1b9d3b95b1a6147bae198",
+      "round": 30,
+      "date": "2027-05-29",
+      "time": null,
+      "kickoffAt": null,
+      "home": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "away": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
       },
       "finished": false,
       "homeGoals": null,
