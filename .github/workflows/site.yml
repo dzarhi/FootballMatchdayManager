@@ -2,7 +2,7 @@ name: Sync league and deploy site
 
 on:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
   push:
     branches: [main]

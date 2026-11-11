@@ -156,7 +156,7 @@ function createMatchCard(m) {
     </div>
     ${hasExtraTime ? `<div class="match-row">${hasPenalties ? `פנדלים: ${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesHomeGoals : m.penaltiesAwayGoals))}:${escapeHtml(String(m.homeAway === 'home' ? m.penaltiesAwayGoals : m.penaltiesHomeGoals))}` : score.homeGoals === score.awayGoals ? 'ממתינים לתוצאת הפנדלים' : 'הכרעה אחרי הארכה'}</div>` : ''}
     <div class="match-body">
-      <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time ? ' · שעה ' + escapeHtml(m.time) : ''}</div>
+      <div class="match-row"><span class="icon">📅</span>יום ${formatDayName(m.date)}, ${formatDateHe(m.date)}${m.time && m.time !== '00:00' ? ' · ' + escapeHtml(m.time) : ''}</div>
       ${m.venueName ? `<div class="match-row"><span class="icon">📍</span>${escapeHtml(m.venueName)}</div>` : ''}
       ${m.notes ? `<div class="match-row notes">${escapeHtml(m.notes)}</div>` : ''}
     </div>
