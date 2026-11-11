@@ -32,7 +32,8 @@ async function loadLeague() {
     if (document.getElementById('league-rows')) renderStandings(league);
     const selector = document.getElementById('league-round');
     if (selector) {
-      selector.replaceChildren(...Array.from({ length: 23 }, (_, index) => new Option(index + 1, index + 1)));
+      const roundCount = Math.max(1, ...league.results.map(game => game.round));
+      selector.replaceChildren(...Array.from({ length: roundCount }, (_, index) => new Option(index + 1, index + 1)));
       const lastFinishedRound = Math.max(1, ...league.results
         .filter(game => game.finished).map(game => game.round));
       selector.value = String(lastFinishedRound);

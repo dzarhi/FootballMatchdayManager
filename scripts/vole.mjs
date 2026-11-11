@@ -1,6 +1,7 @@
 export const LEAGUE_ID = '689c7b852c807e5273a17c3a';
 export const TEAM_ID = 1243;
 export const SEASON_ID = 28;
+export const ROUND_COUNT = 30;
 export const SOURCE_URL = 'https://vole.one.co.il/league/1248';
 
 function requireValue(condition, message) {
@@ -97,7 +98,7 @@ export function normalizeStandings(rows, teams) {
 }
 
 export function validateSnapshot(standings, games) {
-  requireValue(standings.length === 24 && games.length === 23 * 12, 'Incomplete season');
+  requireValue(standings.length === 24 && games.length === ROUND_COUNT * 12, 'Incomplete season');
   requireValue(new Set(games.map(game => game.id)).size === games.length, 'Duplicate season game');
   const records = new Map(standings.map(team => [team.id, { played: 0, wins: 0, draws: 0, losses: 0, difference: 0 }]));
   for (const game of games) {

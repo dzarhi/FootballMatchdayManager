@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { LEAGUE_ID, SEASON_ID, TEAM_ID, normalizeRound, normalizeStandings, validateSnapshot, mergeResults } from './vole.mjs';
+import { LEAGUE_ID, ROUND_COUNT, SEASON_ID, TEAM_ID, normalizeRound, normalizeStandings, validateSnapshot, mergeResults } from './vole.mjs';
 
 function roundFixture() {
   const games = Array.from({ length: 12 }, (_, index) => ({
@@ -108,7 +108,7 @@ test('table parsing retains source order and rejects incomplete or changed table
 });
 
 test('season validation catches missing games and disagreement with the table', () => {
-  const games = Array.from({ length: 23 }, (_, index) => {
+  const games = Array.from({ length: ROUND_COUNT }, (_, index) => {
     const payload = roundFixture();
     payload.league.round.number = index + 1;
     payload.games.forEach(game => {

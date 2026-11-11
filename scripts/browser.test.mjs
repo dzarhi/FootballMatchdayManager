@@ -41,23 +41,24 @@ async function newPage(viewport = { width: 1280, height: 900 }) {
 
 test('league table and round results work on desktop and mobile without page overflow', async () => {
   const snapshot = JSON.parse(await readFile(join(root, 'data/league.json'), 'utf8'));
+  const lastRound = Math.max(...snapshot.results.map(game => game.round));
   snapshot.results = snapshot.results.filter(game => game.finished);
   snapshot.results.push({
-    id: 'scheduled-round-23', round: 23, date: '2027-04-17',
+    id: 'scheduled-last-round', round: lastRound, date: '2027-04-17',
     time: '16:15', kickoffAt: '2027-04-17T13:15:00.000Z',
     home: { id: 10001, name: 'קבוצה מארחת' },
     away: { id: 10002, name: 'קבוצה אורחת' },
     finished: false, homeGoals: null, awayGoals: null
   });
   snapshot.results.push({
-    id: 'scheduled-round-23-time-unknown', round: 23, date: '2027-04-10',
+    id: 'scheduled-last-round-time-unknown', round: lastRound, date: '2027-04-10',
     time: '00:00', kickoffAt: '2027-04-09T21:00:00.000Z',
     home: { id: 10005, name: 'קבוצה ללא שעה' },
     away: { id: 10006, name: 'יריבה' },
     finished: false, homeGoals: null, awayGoals: null
   });
   snapshot.results.push({
-    id: 'finished-round-23', round: 23, date: '2027-04-10',
+    id: 'finished-last-round', round: lastRound, date: '2027-04-10',
     time: '10:45', kickoffAt: '2027-04-10T07:45:00.000Z',
     home: { id: 10003, name: 'קבוצה עם תוצאה' },
     away: { id: 10004, name: 'יריבה' },
@@ -80,9 +81,9 @@ test('league table and round results work on desktop and mobile without page ove
     await page.locator('a[href="results.html"]').click();
     await page.waitForFunction(() => !document.getElementById('league-round').disabled);
     assert.equal(await page.locator('#league-rows').count(), 0);
-    assert.equal(await page.locator('#league-round option').count(), 23);
+    assert.equal(await page.locator('#league-round option').count(), lastRound);
     const selectedRound = Number(await page.locator('#league-round').inputValue());
-    assert.equal(selectedRound, 23);
+    assert.equal(selectedRound, lastRound);
     assert.equal(await page.locator('.league-result').count(), snapshot.results.filter(game => game.round === selectedRound).length);
     assert.equal(await page.locator('.league-result:not(.upcoming) .league-score').innerText(), '1 - 2');
     assert.equal(await page.locator('.league-result:not(.upcoming) time').innerText(), '10.04.2027 · 10:45');
@@ -97,7 +98,7 @@ test('league table and round results work on desktop and mobile without page ove
     assert.equal(await page.locator('.league-result.our-team').count(), 0);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     assert.equal(await page.locator('.team-logo').evaluate(image => image.complete && image.naturalWidth > 0), true);
-    await page.locator('#league-round').selectOption('23');
+    await page.locator('#league-round').selectOption(String(lastRound));
     assert.equal(await page.locator('.league-result').count(), 3);
     assert.deepEqual(await page.locator('.league-result.upcoming .league-score').allInnerTexts(),
       ['טרם נערך', 'טרם נערך']);
@@ -139,6 +140,7 @@ test('league results default to the latest round with results, or round 1 withou
     [scheduledGames, '1'],
     [[], '1']
   ]) {
+    const selectableRound = Math.min(7, Math.max(1, ...results.map(result => result.round)));
     const page = await newPage();
     await page.route('**/data/league.json', route => route.fulfill({ json: { ...snapshot, results } }));
     await page.goto(`${baseUrl}/index.html`);
@@ -147,9 +149,9 @@ test('league results default to the latest round with results, or round 1 withou
     assert.equal(await page.locator('#league-round').inputValue(), expectedRound);
     assert.equal(await page.locator('.league-result').count(),
       results.filter(result => result.round === Number(expectedRound)).length);
-    await page.locator('#league-round').selectOption('7');
+    await page.locator('#league-round').selectOption(String(selectableRound));
     assert.equal(await page.locator('.league-result').count(),
-      results.filter(result => result.round === 7).length);
+      results.filter(result => result.round === selectableRound).length);
     await page.context().close();
   }
 });

@@ -1,6 +1,6 @@
 import { readFile, writeFile, rename, rm } from 'node:fs/promises';
 import { chromium } from 'playwright';
-import { LEAGUE_ID, SOURCE_URL, TEAM_ID, SEASON_ID, normalizeRound, normalizeStandings,
+import { LEAGUE_ID, SOURCE_URL, TEAM_ID, SEASON_ID, ROUND_COUNT, normalizeRound, normalizeStandings,
   validateSnapshot, mergeResults } from './vole.mjs';
 
 async function readJson(path, optional = false) {
@@ -41,7 +41,7 @@ async function collect() {
       return found;
     }, LEAGUE_ID);
     if (initial?.realLeague?.one?.id !== 1248 || initial.realLeague.round.min !== 0
-      || initial.realLeague.round.max !== 22 || initial.realLeague.round.type !== 'regular') {
+      || initial.realLeague.round.max !== ROUND_COUNT - 1 || initial.realLeague.round.type !== 'regular') {
       throw new Error('League structure changed; review before syncing');
     }
     const currentRound = initial.league.round.number;
@@ -51,7 +51,7 @@ async function collect() {
     const teams = initial.games.flatMap(game => [game.home.team, game.away.team]);
     const standings = normalizeStandings(rows, teams);
     const games = [];
-    for (let round = 1; round <= 23; round += 1) {
+    for (let round = 1; round <= ROUND_COUNT; round += 1) {
       if (round === currentRound) { games.push(...currentGames); continue; }
       const payload = await page.evaluate(async roundIndex => {
         const response = await fetch(`/api/leagues/rounds?league_id=1248&round=${roundIndex}`, {
