@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-13T14:08:59.045Z",
+  "updatedAt": "2026-11-13T21:15:16.791Z",
   "standings": [
     {
       "rank": 1,
@@ -23,17 +23,30 @@
       "rank": 2,
       "id": 1049,
       "name": "מכבי פ\"ת מנשה משיח",
-      "played": 3,
+      "played": 4,
       "wins": 3,
       "draws": 0,
-      "losses": 0,
-      "goalsFor": 25,
-      "goalsAgainst": 2,
-      "difference": 23,
+      "losses": 1,
+      "goalsFor": 27,
+      "goalsAgainst": 6,
+      "difference": 21,
       "points": 9
     },
     {
       "rank": 3,
+      "id": 5541,
+      "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
+      "played": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "goalsFor": 18,
+      "goalsAgainst": 8,
+      "difference": 10,
+      "points": 9
+    },
+    {
+      "rank": 4,
       "id": 6248,
       "name": "הפועל ב\"ש לבן",
       "played": 3,
@@ -46,7 +59,7 @@
       "points": 9
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": 2818,
       "name": "הפ' פ\"ת זכריה רצאבי",
       "played": 4,
@@ -59,7 +72,7 @@
       "points": 6
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": 1851,
       "name": "מכבי נתניה 1",
       "played": 3,
@@ -69,19 +82,6 @@
       "goalsFor": 14,
       "goalsAgainst": 4,
       "difference": 10,
-      "points": 6
-    },
-    {
-      "rank": 6,
-      "id": 5541,
-      "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
-      "played": 3,
-      "wins": 2,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 14,
-      "goalsAgainst": 6,
-      "difference": 8,
       "points": 6
     },
     {
@@ -1018,9 +1018,9 @@
         "id": 1049,
         "name": "מכבי פ\"ת מנשה משיח"
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 4,
+      "awayGoals": 2
     },
     {
       "id": "6acc331c9878872a9639ec21",
