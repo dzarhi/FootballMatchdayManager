@@ -4,62 +4,49 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-14T09:54:38.504Z",
+  "updatedAt": "2026-11-14T15:16:50.585Z",
   "standings": [
     {
       "rank": 1,
-      "id": 1034,
-      "name": "מכבי ת\"א",
-      "played": 3,
-      "wins": 3,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 26,
-      "goalsAgainst": 1,
-      "difference": 25,
-      "points": 9
-    },
-    {
-      "rank": 2,
       "id": 1049,
       "name": "מכבי פ\"ת מנשה משיח",
       "played": 4,
-      "wins": 3,
+      "wins": 4,
       "draws": 0,
-      "losses": 1,
-      "goalsFor": 27,
-      "goalsAgainst": 6,
-      "difference": 21,
-      "points": 9
+      "losses": 0,
+      "goalsFor": 29,
+      "goalsAgainst": 4,
+      "difference": 25,
+      "points": 12
+    },
+    {
+      "rank": 2,
+      "id": 6248,
+      "name": "הפועל ב\"ש לבן",
+      "played": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 20,
+      "goalsAgainst": 4,
+      "difference": 16,
+      "points": 12
     },
     {
       "rank": 3,
-      "id": 5541,
-      "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
+      "id": 1034,
+      "name": "מכבי ת\"א",
       "played": 4,
       "wins": 3,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 18,
-      "goalsAgainst": 8,
-      "difference": 10,
-      "points": 9
+      "draws": 1,
+      "losses": 0,
+      "goalsFor": 30,
+      "goalsAgainst": 5,
+      "difference": 25,
+      "points": 10
     },
     {
       "rank": 4,
-      "id": 6248,
-      "name": "הפועל ב\"ש לבן",
-      "played": 3,
-      "wins": 3,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 10,
-      "goalsAgainst": 3,
-      "difference": 7,
-      "points": 9
-    },
-    {
-      "rank": 5,
       "id": 2818,
       "name": "הפ' פ\"ת זכריה רצאבי",
       "played": 4,
@@ -72,7 +59,7 @@
       "points": 6
     },
     {
-      "rank": 6,
+      "rank": 5,
       "id": 1851,
       "name": "מכבי נתניה 1",
       "played": 3,
@@ -82,6 +69,19 @@
       "goalsFor": 14,
       "goalsAgainst": 4,
       "difference": 10,
+      "points": 6
+    },
+    {
+      "rank": 6,
+      "id": 5541,
+      "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
+      "played": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "goalsFor": 16,
+      "goalsAgainst": 10,
+      "difference": 6,
       "points": 6
     },
     {
@@ -138,6 +138,19 @@
     },
     {
       "rank": 11,
+      "id": 2849,
+      "name": "הפועל כפ\"ס אור",
+      "played": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "goalsFor": 12,
+      "goalsAgainst": 14,
+      "difference": -2,
+      "points": 6
+    },
+    {
+      "rank": 12,
       "id": 2866,
       "name": "הפועל רעננה",
       "played": 3,
@@ -150,20 +163,20 @@
       "points": 6
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": 2254,
       "name": "הפועל ראשל\"צ",
-      "played": 3,
+      "played": 4,
       "wins": 1,
-      "draws": 0,
+      "draws": 1,
       "losses": 2,
-      "goalsFor": 5,
-      "goalsAgainst": 3,
+      "goalsFor": 9,
+      "goalsAgainst": 7,
       "difference": 2,
-      "points": 3
+      "points": 4
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": 1243,
       "name": "מ.ס. אשדוד סילבן",
       "played": 2,
@@ -173,19 +186,6 @@
       "goalsFor": 4,
       "goalsAgainst": 3,
       "difference": 1,
-      "points": 3
-    },
-    {
-      "rank": 14,
-      "id": 5233,
-      "name": "ס. נס ציונה",
-      "played": 3,
-      "wins": 1,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 8,
-      "goalsAgainst": 10,
-      "difference": -2,
       "points": 3
     },
     {
@@ -242,15 +242,15 @@
     },
     {
       "rank": 19,
-      "id": 2849,
-      "name": "הפועל כפ\"ס אור",
-      "played": 3,
+      "id": 5233,
+      "name": "ס. נס ציונה",
+      "played": 4,
       "wins": 1,
       "draws": 0,
-      "losses": 2,
-      "goalsFor": 7,
-      "goalsAgainst": 13,
-      "difference": -6,
+      "losses": 3,
+      "goalsFor": 9,
+      "goalsAgainst": 20,
+      "difference": -11,
       "points": 3
     },
     {
@@ -283,13 +283,13 @@
       "rank": 22,
       "id": 2930,
       "name": "הפ' ירושלים מזרח",
-      "played": 3,
+      "played": 4,
       "wins": 0,
       "draws": 1,
-      "losses": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 8,
-      "difference": -6,
+      "losses": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 13,
+      "difference": -10,
       "points": 1
     },
     {
@@ -1019,8 +1019,8 @@
         "name": "מכבי פ\"ת מנשה משיח"
       },
       "finished": true,
-      "homeGoals": 4,
-      "awayGoals": 2
+      "homeGoals": 2,
+      "awayGoals": 4
     },
     {
       "id": "6acc331c9878872a9639ec21",
@@ -1036,9 +1036,9 @@
         "id": 2930,
         "name": "הפ' ירושלים מזרח"
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 5,
+      "awayGoals": 1
     },
     {
       "id": "6acc331c9878872a9639ec24",
@@ -1054,9 +1054,9 @@
         "id": 5233,
         "name": "ס. נס ציונה"
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 10,
+      "awayGoals": 1
     },
     {
       "id": "6acc331c9878872a9639ec1d",
@@ -1072,9 +1072,9 @@
         "id": 2254,
         "name": "הפועל ראשל\"צ"
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 4,
+      "awayGoals": 4
     },
     {
       "id": "6acc331c9878872a9639ec1f",
