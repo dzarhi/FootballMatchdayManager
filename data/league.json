@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-17T12:52:27.977Z",
+  "updatedAt": "2026-11-17T20:55:47.864Z",
   "standings": [
     {
       "rank": 1,
@@ -47,6 +47,32 @@
     },
     {
       "rank": 4,
+      "id": 4666,
+      "name": "בני יהודה ת'א",
+      "played": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "goalsFor": 14,
+      "goalsAgainst": 8,
+      "difference": 6,
+      "points": 9
+    },
+    {
+      "rank": 5,
+      "id": 1850,
+      "name": "מכבי חיפה \"שמואל\"",
+      "played": 3,
+      "wins": 3,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 9,
+      "goalsAgainst": 3,
+      "difference": 6,
+      "points": 9
+    },
+    {
+      "rank": 6,
       "id": 2134,
       "name": "הפועל ת\"א \"איתי תמיר\"",
       "played": 4,
@@ -59,7 +85,7 @@
       "points": 9
     },
     {
-      "rank": 5,
+      "rank": 7,
       "id": 2866,
       "name": "הפועל רעננה",
       "played": 4,
@@ -72,7 +98,7 @@
       "points": 9
     },
     {
-      "rank": 6,
+      "rank": 8,
       "id": 2818,
       "name": "הפ' פ\"ת זכריה רצאבי",
       "played": 4,
@@ -85,20 +111,20 @@
       "points": 6
     },
     {
-      "rank": 7,
+      "rank": 9,
       "id": 1851,
       "name": "מכבי נתניה 1",
-      "played": 3,
+      "played": 4,
       "wins": 2,
       "draws": 0,
-      "losses": 1,
-      "goalsFor": 14,
-      "goalsAgainst": 4,
-      "difference": 10,
+      "losses": 2,
+      "goalsFor": 15,
+      "goalsAgainst": 6,
+      "difference": 9,
       "points": 6
     },
     {
-      "rank": 8,
+      "rank": 10,
       "id": 5541,
       "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
       "played": 4,
@@ -111,20 +137,7 @@
       "points": 6
     },
     {
-      "rank": 9,
-      "id": 1850,
-      "name": "מכבי חיפה \"שמואל\"",
-      "played": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 7,
-      "goalsAgainst": 2,
-      "difference": 5,
-      "points": 6
-    },
-    {
-      "rank": 10,
+      "rank": 11,
       "id": 4895,
       "name": "הפועל ר\"ג דרום",
       "played": 2,
@@ -137,9 +150,9 @@
       "points": 6
     },
     {
-      "rank": 11,
-      "id": 4666,
-      "name": "בני יהודה ת'א",
+      "rank": 12,
+      "id": 1243,
+      "name": "מ.ס. אשדוד סילבן",
       "played": 3,
       "wins": 2,
       "draws": 0,
@@ -150,7 +163,7 @@
       "points": 6
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": 2849,
       "name": "הפועל כפ\"ס אור",
       "played": 4,
@@ -163,7 +176,7 @@
       "points": 6
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": 2254,
       "name": "הפועל ראשל\"צ",
       "played": 4,
@@ -174,19 +187,6 @@
       "goalsAgainst": 7,
       "difference": 2,
       "points": 4
-    },
-    {
-      "rank": 14,
-      "id": 1243,
-      "name": "מ.ס. אשדוד סילבן",
-      "played": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 4,
-      "goalsAgainst": 3,
-      "difference": 1,
-      "points": 3
     },
     {
       "rank": 15,
@@ -203,32 +203,19 @@
     },
     {
       "rank": 16,
-      "id": 8138,
-      "name": "ה.מ יהודה ד' \"צו פיוס\"",
-      "played": 3,
+      "id": 4912,
+      "name": "מ.ס. קדימה צורן \"צו פיוס\"",
+      "played": 4,
       "wins": 1,
       "draws": 0,
-      "losses": 2,
+      "losses": 3,
       "goalsFor": 6,
-      "goalsAgainst": 9,
-      "difference": -3,
+      "goalsAgainst": 10,
+      "difference": -4,
       "points": 3
     },
     {
       "rank": 17,
-      "id": 4912,
-      "name": "מ.ס. קדימה צורן \"צו פיוס\"",
-      "played": 3,
-      "wins": 1,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 3,
-      "goalsAgainst": 6,
-      "difference": -3,
-      "points": 3
-    },
-    {
-      "rank": 18,
       "id": 3377,
       "name": "בית\"ר י-ם \"צו פיוס\"",
       "played": 3,
@@ -238,6 +225,19 @@
       "goalsFor": 5,
       "goalsAgainst": 10,
       "difference": -5,
+      "points": 3
+    },
+    {
+      "rank": 18,
+      "id": 8138,
+      "name": "ה.מ יהודה ד' \"צו פיוס\"",
+      "played": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 15,
+      "difference": -7,
       "points": 3
     },
     {
@@ -1126,9 +1126,9 @@
         "id": 1850,
         "name": "מכבי חיפה \"שמואל\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 1,
+      "awayGoals": 2
     },
     {
       "id": "6acc331c9878872a9639ec29",
@@ -1144,9 +1144,9 @@
         "id": 4912,
         "name": "מ.ס. קדימה צורן \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 4,
+      "awayGoals": 3
     },
     {
       "id": "6acc331c9878872a9639ec2b",
@@ -1162,9 +1162,9 @@
         "id": 4666,
         "name": "בני יהודה ת'א"
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 2,
+      "awayGoals": 6
     },
     {
       "id": "6acc331c9878872a9639ec22",

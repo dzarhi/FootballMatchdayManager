@@ -169,13 +169,20 @@
     "homeAway": "home",
     "matchType": "league",
     "date": "2026-11-17",
-    "homeGoals": "",
-    "awayGoals": "",
+    "homeGoals": "4",
+    "awayGoals": "3",
     "venueName": "אשדוד סינטטי",
     "address": "בית ואקיל אשדוד",
     "notes": "מחזור 4",
     "videoUrl": "https://app.veo.co/matches/20261117-fc-ashdod-2014-vs-kadima-v9c21159/",
-    "time": "18:15"
+    "time": "18:15",
+    "voleResult": {
+      "gameId": "6acc331c9878872a9639ec29",
+      "score": [
+        4,
+        3
+      ]
+    }
   },
   {
     "id": "league-r02-2026-10-28",
