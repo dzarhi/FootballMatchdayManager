@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-22T10:51:35.163Z",
+  "updatedAt": "2026-11-22T18:18:42.434Z",
   "standings": [
     {
       "rank": 1,
@@ -1185,6 +1185,24 @@
       "awayGoals": 6
     },
     {
+      "id": "6acc331c9878872a9639ec34",
+      "round": 5,
+      "date": "2026-11-27",
+      "time": "11:45",
+      "kickoffAt": "2026-11-27T09:45:00.000Z",
+      "home": {
+        "id": 2134,
+        "name": "הפועל ת\"א \"איתי תמיר\""
+      },
+      "away": {
+        "id": 6059,
+        "name": "מ.ס. באר שבע \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec33",
       "round": 5,
       "date": "2026-11-28",
@@ -1203,24 +1221,6 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ec34",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 2134,
-        "name": "הפועל ת\"א \"איתי תמיר\""
-      },
-      "away": {
-        "id": 6059,
-        "name": "מ.ס. באר שבע \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
       "id": "6acc331c9878872a9639ec36",
       "round": 5,
       "date": "2026-11-28",
@@ -1233,24 +1233,6 @@
       "away": {
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec37",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 4666,
-        "name": "בני יהודה ת'א"
-      },
-      "away": {
-        "id": 1851,
-        "name": "מכבי נתניה 1"
       },
       "finished": false,
       "homeGoals": null,
@@ -1395,6 +1377,24 @@
       "away": {
         "id": 5585,
         "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec37",
+      "round": 5,
+      "date": "2026-11-28",
+      "time": "12:00",
+      "kickoffAt": "2026-11-28T10:00:00.000Z",
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
       },
       "finished": false,
       "homeGoals": null,
