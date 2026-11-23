@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-23T08:41:57.156Z",
+  "updatedAt": "2026-11-23T20:59:34.557Z",
   "standings": [
     {
       "rank": 1,
@@ -1185,6 +1185,24 @@
       "awayGoals": 6
     },
     {
+      "id": "6acc331c9878872a9639ec36",
+      "round": 5,
+      "date": "2026-11-27",
+      "time": "11:00",
+      "kickoffAt": "2026-11-27T09:00:00.000Z",
+      "home": {
+        "id": 1850,
+        "name": "מכבי חיפה \"שמואל\""
+      },
+      "away": {
+        "id": 3377,
+        "name": "בית\"ר י-ם \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec34",
       "round": 5,
       "date": "2026-11-27",
@@ -1197,42 +1215,6 @@
       "away": {
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec33",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 5874,
-        "name": "הפועל הרצליה עירוני \"צו פיוס\""
-      },
-      "away": {
-        "id": 1034,
-        "name": "מכבי ת\"א"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec36",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1850,
-        "name": "מכבי חיפה \"שמואל\""
-      },
-      "away": {
-        "id": 3377,
-        "name": "בית\"ר י-ם \"צו פיוס\""
       },
       "finished": false,
       "homeGoals": null,
@@ -1293,24 +1275,6 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ec3f",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 1049,
-        "name": "מכבי פ\"ת מנשה משיח"
-      },
-      "away": {
-        "id": 6248,
-        "name": "הפועל ב\"ש לבן"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
       "id": "6acc331c9878872a9639ec40",
       "round": 5,
       "date": "2026-11-28",
@@ -1347,11 +1311,47 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec37",
+      "round": 5,
+      "date": "2026-11-28",
+      "time": "12:00",
+      "kickoffAt": "2026-11-28T10:00:00.000Z",
+      "home": {
+        "id": 4666,
+        "name": "בני יהודה ת'א"
+      },
+      "away": {
+        "id": 1851,
+        "name": "מכבי נתניה 1"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
+      "id": "6acc331c9878872a9639ec3f",
+      "round": 5,
+      "date": "2026-11-28",
+      "time": "12:30",
+      "kickoffAt": "2026-11-28T10:30:00.000Z",
+      "home": {
+        "id": 1049,
+        "name": "מכבי פ\"ת מנשה משיח"
+      },
+      "away": {
+        "id": 6248,
+        "name": "הפועל ב\"ש לבן"
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec43",
       "round": 5,
       "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
+      "time": "12:30",
+      "kickoffAt": "2026-11-28T10:30:00.000Z",
       "home": {
         "id": 2866,
         "name": "הפועל רעננה"
@@ -1368,8 +1368,8 @@
       "id": "6acc331c9878872a9639ec45",
       "round": 5,
       "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
+      "time": "19:30",
+      "kickoffAt": "2026-11-28T17:30:00.000Z",
       "home": {
         "id": 2254,
         "name": "הפועל ראשל\"צ"
@@ -1383,18 +1383,18 @@
       "awayGoals": null
     },
     {
-      "id": "6acc331c9878872a9639ec37",
+      "id": "6acc331c9878872a9639ec33",
       "round": 5,
-      "date": "2026-11-28",
-      "time": "12:00",
-      "kickoffAt": "2026-11-28T10:00:00.000Z",
+      "date": "2026-12-01",
+      "time": "18:15",
+      "kickoffAt": "2026-12-01T16:15:00.000Z",
       "home": {
-        "id": 4666,
-        "name": "בני יהודה ת'א"
+        "id": 5874,
+        "name": "הפועל הרצליה עירוני \"צו פיוס\""
       },
       "away": {
-        "id": 1851,
-        "name": "מכבי נתניה 1"
+        "id": 1034,
+        "name": "מכבי ת\"א"
       },
       "finished": false,
       "homeGoals": null,
