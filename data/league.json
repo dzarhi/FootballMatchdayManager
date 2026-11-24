@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-23T20:59:34.557Z",
+  "updatedAt": "2026-11-24T05:13:48.422Z",
   "standings": [
     {
       "rank": 1,
@@ -1221,6 +1221,24 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec40",
+      "round": 5,
+      "date": "2026-11-27",
+      "time": "12:55",
+      "kickoffAt": "2026-11-27T10:55:00.000Z",
+      "home": {
+        "id": 4895,
+        "name": "הפועל ר\"ג דרום"
+      },
+      "away": {
+        "id": 5541,
+        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec3a",
       "round": 5,
       "date": "2026-11-28",
@@ -1269,24 +1287,6 @@
       "away": {
         "id": 2818,
         "name": "הפ' פ\"ת זכריה רצאבי"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec40",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": null,
-      "kickoffAt": null,
-      "home": {
-        "id": 4895,
-        "name": "הפועל ר\"ג דרום"
-      },
-      "away": {
-        "id": 5541,
-        "name": "מכבי עמישב פ\"ת \"צו פיוס\""
       },
       "finished": false,
       "homeGoals": null,
