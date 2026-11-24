@@ -9,7 +9,14 @@ async function readJson(path, optional = false) {
 }
 
 async function collect() {
-  const browser = await chromium.launch({ headless: true });
+  // Chromium ignores HTTP(S)_PROXY env vars; pass them explicitly so the sync
+  // works behind corporate proxies. Unset in CI, where no proxy is needed.
+  const proxyServer = process.env.HTTPS_PROXY || process.env.https_proxy
+    || process.env.HTTP_PROXY || process.env.http_proxy;
+  const browser = await chromium.launch({
+    headless: true,
+    proxy: proxyServer ? { server: proxyServer } : undefined
+  });
   try {
     const context = await browser.newContext();
     await context.route('**/*', route => {
@@ -30,8 +37,21 @@ async function collect() {
         if (value.realLeague?._id === leagueId && Array.isArray(value.games)) found = value;
         for (const child of Object.values(value)) visit(child);
       }
-      const records = (window.__next_f || []).filter(entry => entry[0] === 1)
-        .map(entry => entry[1]).join('').split('\n');
+      // Read the streamed flight data from the inline <script> tags: newer
+      // Next.js runtimes consume and empty window.__next_f during hydration.
+      const chunks = [];
+      for (const script of document.querySelectorAll('script')) {
+        const match = /^\s*(?:self|window)\.__next_f\.push\((\[[\s\S]*\])\)\s*;?\s*$/.exec(script.textContent);
+        if (!match) continue;
+        try {
+          const entry = JSON.parse(match[1]);
+          if (entry[0] === 1 && typeof entry[1] === 'string') chunks.push(entry[1]);
+        } catch { continue; }
+      }
+      for (const entry of window.__next_f || []) {
+        if (Array.isArray(entry) && entry[0] === 1 && typeof entry[1] === 'string') chunks.push(entry[1]);
+      }
+      const records = chunks.join('').split('\n');
       for (const record of records) {
         let parsed;
         try { parsed = JSON.parse(record.slice(record.indexOf(':') + 1)); }
