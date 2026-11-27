@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-26T22:52:12.931Z",
+  "updatedAt": "2026-11-27T04:51:49.112Z",
   "standings": [
     {
       "rank": 1,
@@ -1311,6 +1311,24 @@
       "awayGoals": null
     },
     {
+      "id": "6acc331c9878872a9639ec45",
+      "round": 5,
+      "date": "2026-11-28",
+      "time": "18:15",
+      "kickoffAt": "2026-11-28T16:15:00.000Z",
+      "home": {
+        "id": 2254,
+        "name": "הפועל ראשל\"צ"
+      },
+      "away": {
+        "id": 5585,
+        "name": "הפ' מרמורק רחובות \"צו פיוס\""
+      },
+      "finished": false,
+      "homeGoals": null,
+      "awayGoals": null
+    },
+    {
       "id": "6acc331c9878872a9639ec3d",
       "round": 5,
       "date": "2026-11-28",
@@ -1323,24 +1341,6 @@
       "away": {
         "id": 1243,
         "name": "מ.ס. אשדוד סילבן"
-      },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
-    },
-    {
-      "id": "6acc331c9878872a9639ec45",
-      "round": 5,
-      "date": "2026-11-28",
-      "time": "19:30",
-      "kickoffAt": "2026-11-28T17:30:00.000Z",
-      "home": {
-        "id": 2254,
-        "name": "הפועל ראשל\"צ"
-      },
-      "away": {
-        "id": 5585,
-        "name": "הפ' מרמורק רחובות \"צו פיוס\""
       },
       "finished": false,
       "homeGoals": null,
