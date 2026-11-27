@@ -4,7 +4,7 @@
   "seasonId": 28,
   "teamId": 1243,
   "leagueName": "ליגת ילדים ב' מרכז",
-  "updatedAt": "2026-11-27T14:46:56.050Z",
+  "updatedAt": "2026-11-27T23:17:15.795Z",
   "standings": [
     {
       "rank": 1,
@@ -34,6 +34,45 @@
     },
     {
       "rank": 3,
+      "id": 2134,
+      "name": "הפועל ת\"א \"איתי תמיר\"",
+      "played": 5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 1,
+      "goalsFor": 20,
+      "goalsAgainst": 5,
+      "difference": 15,
+      "points": 12
+    },
+    {
+      "rank": 4,
+      "id": 1850,
+      "name": "מכבי חיפה \"שמואל\"",
+      "played": 5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 1,
+      "goalsFor": 15,
+      "goalsAgainst": 6,
+      "difference": 9,
+      "points": 12
+    },
+    {
+      "rank": 5,
+      "id": 4895,
+      "name": "הפועל ר\"ג דרום",
+      "played": 5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 1,
+      "goalsFor": 12,
+      "goalsAgainst": 5,
+      "difference": 7,
+      "points": 12
+    },
+    {
+      "rank": 6,
       "id": 1034,
       "name": "מכבי ת\"א",
       "played": 4,
@@ -46,7 +85,7 @@
       "points": 10
     },
     {
-      "rank": 4,
+      "rank": 7,
       "id": 4666,
       "name": "בני יהודה ת'א",
       "played": 4,
@@ -59,20 +98,7 @@
       "points": 9
     },
     {
-      "rank": 5,
-      "id": 4895,
-      "name": "הפועל ר\"ג דרום",
-      "played": 4,
-      "wins": 3,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 11,
-      "goalsAgainst": 5,
-      "difference": 6,
-      "points": 9
-    },
-    {
-      "rank": 6,
+      "rank": 8,
       "id": 1243,
       "name": "מ.ס. אשדוד סילבן",
       "played": 4,
@@ -81,32 +107,6 @@
       "losses": 1,
       "goalsFor": 10,
       "goalsAgainst": 6,
-      "difference": 4,
-      "points": 9
-    },
-    {
-      "rank": 7,
-      "id": 2134,
-      "name": "הפועל ת\"א \"איתי תמיר\"",
-      "played": 4,
-      "wins": 3,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 9,
-      "goalsAgainst": 5,
-      "difference": 4,
-      "points": 9
-    },
-    {
-      "rank": 8,
-      "id": 1850,
-      "name": "מכבי חיפה \"שמואל\"",
-      "played": 4,
-      "wins": 3,
-      "draws": 0,
-      "losses": 1,
-      "goalsFor": 9,
-      "goalsAgainst": 5,
       "difference": 4,
       "points": 9
     },
@@ -153,13 +153,13 @@
       "rank": 12,
       "id": 5541,
       "name": "מכבי עמישב פ\"ת \"צו פיוס\"",
-      "played": 4,
+      "played": 5,
       "wins": 2,
       "draws": 0,
-      "losses": 2,
+      "losses": 3,
       "goalsFor": 16,
-      "goalsAgainst": 10,
-      "difference": 6,
+      "goalsAgainst": 11,
+      "difference": 5,
       "points": 6
     },
     {
@@ -229,19 +229,6 @@
     },
     {
       "rank": 18,
-      "id": 3377,
-      "name": "בית\"ר י-ם \"צו פיוס\"",
-      "played": 3,
-      "wins": 1,
-      "draws": 0,
-      "losses": 2,
-      "goalsFor": 5,
-      "goalsAgainst": 10,
-      "difference": -5,
-      "points": 3
-    },
-    {
-      "rank": 19,
       "id": 8138,
       "name": "ה.מ יהודה ד' \"צו פיוס\"",
       "played": 4,
@@ -251,6 +238,19 @@
       "goalsFor": 8,
       "goalsAgainst": 15,
       "difference": -7,
+      "points": 3
+    },
+    {
+      "rank": 19,
+      "id": 3377,
+      "name": "בית\"ר י-ם \"צו פיוס\"",
+      "played": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 16,
+      "difference": -10,
       "points": 3
     },
     {
@@ -309,13 +309,13 @@
       "rank": 24,
       "id": 6059,
       "name": "מ.ס. באר שבע \"צו פיוס\"",
-      "played": 4,
+      "played": 5,
       "wins": 0,
       "draws": 0,
-      "losses": 4,
+      "losses": 5,
       "goalsFor": 1,
-      "goalsAgainst": 29,
-      "difference": -28,
+      "goalsAgainst": 40,
+      "difference": -39,
       "points": 0
     }
   ],
@@ -1198,9 +1198,9 @@
         "id": 3377,
         "name": "בית\"ר י-ם \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 6,
+      "awayGoals": 1
     },
     {
       "id": "6acc331c9878872a9639ec34",
@@ -1216,9 +1216,9 @@
         "id": 6059,
         "name": "מ.ס. באר שבע \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 11,
+      "awayGoals": 0
     },
     {
       "id": "6acc331c9878872a9639ec40",
@@ -1234,9 +1234,9 @@
         "id": 5541,
         "name": "מכבי עמישב פ\"ת \"צו פיוס\""
       },
-      "finished": false,
-      "homeGoals": null,
-      "awayGoals": null
+      "finished": true,
+      "homeGoals": 1,
+      "awayGoals": 0
     },
     {
       "id": "6acc331c9878872a9639ec3e",
